@@ -1,3 +1,5 @@
+require 'html-proofer'
+
 task :default => :turn
 
 base_dir = File.join(File.dirname(__FILE__))
@@ -13,5 +15,6 @@ end
 
 desc 'Check broken links'
 task :check do
-  sh "bundle exec htmlproofer #{output_dir} --assume-extension"
+  options = { disable_external: true,  }
+  HTMLProofer.check_directory("#{output_dir}", options).run
 end
