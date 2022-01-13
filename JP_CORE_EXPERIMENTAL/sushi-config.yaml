@@ -6,8 +6,8 @@
 id: jp.jpfhir.experiments
 canonical: http://jpfhir.jp/core/experiments
 name: JP_CORE_EXPERIMENTAL
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: FHIR JP Core CI/CD実験
+description: JP Core Implementation Guide/profileをCI/CDで生成するための実験用リポジトリ
 status: draft # draft | active | retired | unknown
 version: 1.0.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
@@ -44,7 +44,7 @@ publisher:
 # sub-pages.
 #
 # pages:
-#   index.md:
+#   Index.guide.md:
 #     title: JP Core sushi実験
 #   implementation.xml:
 #   examples.xml:
