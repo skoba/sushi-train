@@ -6,4 +6,6 @@ task :turn do
   input_dir = File.join(base_dir, 'input')
   output_dir = File.join(base_dir, 'output')
   sh "sushi #{base_dir}"
+  sh "#{base_dir}/_updatePublisher.sh"
+  sh "#{base_dir}/_genonce.sh"
 end

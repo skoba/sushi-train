@@ -111,3 +111,6 @@ dist
 
 # Ruby
 Gemfile.lock
+
+# IG cache
+input_cache
