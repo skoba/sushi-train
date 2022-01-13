@@ -37,7 +37,7 @@ jobs:
       with:
         node-version: '12.x'
         cache: 'npm'
-        working-directory: JP_CORE_EXPERIMENTAL
+        cache-dependency-path: JP_CORE_EXPERIMENTAL/package-lock.json
     - name: Turn the table
       working-directory: JP_CORE_EXPERIMENTAL
       run: bundle exec rake
