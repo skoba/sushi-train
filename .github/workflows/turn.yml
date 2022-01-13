@@ -38,7 +38,7 @@ jobs:
         node-version: '12.x'
         cache: 'npm'
         working-directory: JP_CORE_EXPERIMENTAL
-        cache-dependency-path: sushi-train/package-lock.json
+        cache-dependency-path: package-lock.json
     - name: Setup sushi
       run: npm install -g fsh-sushi 
     - name: Turn the table
