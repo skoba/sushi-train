@@ -1,5 +1,6 @@
 task :default => :turn
 
+desc 'Turn all steps to generate IG/Profile'
 task :turn do
   base_dir = File.join(File.dirname(__FILE__))
   input_dir = File.join(base_dir, 'input')

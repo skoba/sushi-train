@@ -109,4 +109,5 @@ dist
 \#*
 .\#*
 
-
+# Ruby
+Gemfile.lock
