@@ -14,7 +14,7 @@ bundle install
 And the next, you just run rake to generate Profiles and IGs.
 
 ```shell
-rake
+bundle exec rake
 ```
 
 ## Licensing
