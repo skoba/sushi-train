@@ -33,3 +33,5 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Turn the table
       run: bundle exec rake
+    - name: Chek broken links.
+      run: bundle exec rake check
