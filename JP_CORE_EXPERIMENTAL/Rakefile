@@ -1,6 +1,8 @@
+task :default => :turn
+
 task :turn do
-  base_dir = File.join(File.dirname(__FILE__), 'doc/MML4/')
-  html_dir = File.join(base_dir, 'html')
-  adoc = File.join(base_dir, 'mml4.adoc')
-  sh "B #{base_dir} -D #{html_dir} #{adoc}"
+  base_dir = File.join(File.dirname(__FILE__))
+  input_dir = File.join(base_dir, 'input')
+  output_dir = File.join(base_dir, 'output')
+  sh "sushi #{base_dir}"
 end
