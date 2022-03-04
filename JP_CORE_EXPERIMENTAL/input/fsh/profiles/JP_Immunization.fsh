@@ -12,7 +12,3 @@ Description: "このプロファイルはImmunizationリソースに対して日
 * . ^definition = "予防接種として実施された記録。ワクチン接種についてのオーダーはMedicationRequestが利用され、注射としての実施記録はMedicationAdministrationで表現される。"
 * identifier ^definition = "このインスタンスが外部から参照されるために使われるIDであるの業務手順のIDは実施者によって割り当てられたものであり、リソースが更新されたりサーバからサーバに転送されたとしても固定のものとして存続する。"
 * identifier ^comment = "これは業務IDであって、リソースに対するIDではない。"
-
-
-
-
