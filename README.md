@@ -1,5 +1,5 @@
 # sushi-train
-HL7 FHIR Profile/IG CI/CD experiments with Sushi.
+HL7 FHIR Profile/IG CI/CD experiments with Sushi with JP Core settings.
 
 # How to work
 

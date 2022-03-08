@@ -113,3 +113,12 @@ Gemfile.lock
 
 # IG cache
 input_cache
+
+.DS_Store
+Thumbs.db
+/fsh-generated
+/input-cache
+/output
+/temp
+/template
+/docs
