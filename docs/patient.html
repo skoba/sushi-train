@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Patient - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"40"}
+    h3,h4,h5,h6{--heading-prefix:"40"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Patient</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Patient</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#2111-jp-core-patient-患者-プロファイル" id="markdown-toc-2111-jp-core-patient-患者-プロファイル">2.1.1.1. JP Core Patient (患者) プロファイル</a>    <ul>
+      <li><a href="#21111-概略" id="markdown-toc-21111-概略">2.1.1.1.1. 概略</a>        <ul>
+          <li><a href="#211111-スコープ" id="markdown-toc-211111-スコープ">2.1.1.1.1.1. スコープ</a></li>
+          <li><a href="#211112-背景および想定シナリオ" id="markdown-toc-211112-背景および想定シナリオ">2.1.1.1.1.2. 背景および想定シナリオ</a></li>
+        </ul>
+      </li>
+      <li><a href="#21112-関連するプロファイル" id="markdown-toc-21112-関連するプロファイル">2.1.1.1.2. 関連するプロファイル</a></li>
+      <li><a href="#21113-リソース定義" id="markdown-toc-21113-リソース定義">2.1.1.1.3. リソース定義</a>        <ul>
+          <li><a href="#211131-必須要素" id="markdown-toc-211131-必須要素">2.1.1.1.3.1. 必須要素</a></li>
+          <li><a href="#211132-extensions定義" id="markdown-toc-211132-extensions定義">2.1.1.1.3.2. Extensions定義</a></li>
+          <li><a href="#211133-用語定義" id="markdown-toc-211133-用語定義">2.1.1.1.3.3. 用語定義</a></li>
+          <li><a href="#211134-制約一覧" id="markdown-toc-211134-制約一覧">2.1.1.1.3.4. 制約一覧</a></li>
+        </ul>
+      </li>
+      <li><a href="#21114-利用方法" id="markdown-toc-21114-利用方法">2.1.1.1.4. 利用方法</a>        <ul>
+          <li><a href="#211141-インタラクション一覧" id="markdown-toc-211141-インタラクション一覧">2.1.1.1.4.1. インタラクション一覧</a></li>
+          <li><a href="#211142-operationおよびsearch-parameter-一覧" id="markdown-toc-211142-operationおよびsearch-parameter-一覧">2.1.1.1.4.2. OperationおよびSearch Parameter 一覧</a></li>
+          <li><a href="#211143-サンプル" id="markdown-toc-211143-サンプル">2.1.1.1.4.3. サンプル</a></li>
+        </ul>
+      </li>
+      <li><a href="#21115-注意事項" id="markdown-toc-21115-注意事項">2.1.1.1.5. 注意事項</a></li>
+      <li><a href="#21116-その他参考文献リンク等" id="markdown-toc-21116-その他参考文献リンク等">2.1.1.1.6. その他、参考文献・リンク等</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="2111-jp-core-patient-患者-プロファイル">2.1.1.1. JP Core Patient (患者) プロファイル</h1>
+
+<h2 id="21111-概略">2.1.1.1.1. 概略</h2>
+<p><br/>
+<span style="color:;">患者のケアやその他の健康関連サービスを受けている個人または動物に関する人口統計およびその他の管理情報。</span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>定義URL</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient</td>
+    </tr>
+    <tr>
+      <td>バージョン</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>名前</td>
+      <td>JPCorePatientProfile</td>
+    </tr>
+    <tr>
+      <td>タイトル</td>
+      <td>JP Core Patient Profile</td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>アクティブ（2021-09-01）</td>
+    </tr>
+    <tr>
+      <td>定義</td>
+      <td>このプロファイルはPatientリソースに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。</td>
+    </tr>
+    <tr>
+      <td>公開者</td>
+      <td>FHIR&reg; Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>FHIR&reg; Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>ソースリソース</td>
+      <td>https://simplifier.net/jp-core-draftv1/jppatient</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="211111-スコープ">2.1.1.1.1.1. スコープ</h3>
+
+<p>本リソースは、以下を含む幅広い健康関連活動に関与する患者と動物に関するデータをカバーしている。</p>
+
+<ul>
+  <li>治療</li>
+  <li>精神科医療</li>
+  <li>社会福祉</li>
+  <li>妊娠ケア</li>
+  <li>看護と生活支援</li>
+  <li>健康サービス</li>
+  <li>個人の健康と運動データの追跡</li>
+</ul>
+
+<p>本リソースのデータは、患者個人に関する情報をカバーしている。その属性は、管理、財務、およびロジスティックな手続きをサポートするために必要な人口統計学的情報に焦点を当てている。患者の記録は、通常、患者のケアを行う各組織によって作成・維持される。従って、複数の組織で治療を受けている患者又は動物は、その情報を複数のPatientリソースに存在させることができる。</p>
+
+<p>全ての概念が基本リソースに含まれているわけではないが(人種、民族、臓器提供の有無、国籍等)、特定の法域のために定義されたプロファイルや標準的な拡張機能に含まれている場合がある。このようなフィールドは、法域によって大きく異なり、似たような概念でも名前や値セットが異なることが多いのですが、マッピングや交換ができるほど似ているわけではない。</p>
+
+<p>本プロファイルは、患者に関する情報の登録や検索、取得のために 、FHIR Patientリソースを使用するにあたっての、最低限の制約を記述したものである。Patientリソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。</p>
+
+<h3 id="211112-背景および想定シナリオ">2.1.1.1.1.2. 背景および想定シナリオ</h3>
+
+<p>本プロファイルは、以下のようなユースケースを想定している。</p>
+
+<ul>
+  <li>
+    <p>氏名などの患者情報による患者基本情報の検索</p>
+  </li>
+  <li>
+    <p>他のリソースからの患者基本情報の参照</p>
+  </li>
+</ul>
+
+<h2 id="21112-関連するプロファイル">2.1.1.1.2. 関連するプロファイル</h2>
+
+<p>JP Patientリソースは、以下のリソースから直接参照される。</p>
+
+<ul>
+  <li>Annotation</li>
+  <li>Signature</li>
+  <li>Account</li>
+  <li>AdverseEvent</li>
+  <li>AllergyIntolerance</li>
+  <li>Appointment</li>
+  <li>AppointmentResponse</li>
+  <li>AuditEvent</li>
+  <li>Basic</li>
+  <li>BiologicallyDerivedProduct</li>
+  <li>BodyStructure</li>
+  <li>CarePlan</li>
+  <li>CareTeam</li>
+  <li>ChargeItem</li>
+  <li>Claim</li>
+  <li>ClaimResponse</li>
+  <li>ClinicalImpression</li>
+  <li>Communication</li>
+  <li>CommunicationRequest</li>
+  <li>Composition</li>
+  <li>Condition</li>
+  <li>Consent</li>
+  <li>Contract</li>
+  <li>Coverage</li>
+  <li>CoverageEligibilityRequest</li>
+  <li>CoverageEligibilityResponse</li>
+  <li>DetectedIssue</li>
+  <li>Device</li>
+  <li>DeviceRequest</li>
+  <li>DeviceUseStatement</li>
+  <li>DiagnosticReport</li>
+  <li>DocumentManifest</li>
+  <li>DocumentReference</li>
+  <li>Encounter</li>
+  <li>EnrollmentRequest</li>
+  <li>EpisodeOfCare</li>
+  <li>ExplanationOfBenefit</li>
+  <li>FamilyMemberHistory</li>
+  <li>Flag</li>
+  <li>Goal</li>
+  <li>Group</li>
+  <li>GuidanceResponse</li>
+  <li>ImagingStudy</li>
+  <li>Immunization</li>
+  <li>ImmunizationEvaluation</li>
+  <li>ImmunizationRecommendation</li>
+  <li>Invoice</li>
+  <li>List</li>
+  <li>MeasureReport</li>
+  <li>Media</li>
+  <li>MedicationAdministration</li>
+  <li>MedicationDispense</li>
+  <li>MedicationRequest</li>
+  <li>MedicationStatement</li>
+  <li>MolecularSequence</li>
+  <li>NutritionOrder</li>
+  <li>Observation</li>
+  <li>itself</li>
+  <li>Person</li>
+  <li>Procedure</li>
+  <li>Provenance</li>
+  <li>QuestionnaireResponse</li>
+  <li>RelatedPerson</li>
+  <li>RequestGroup</li>
+  <li>ResearchSubject</li>
+  <li>RiskAssessment</li>
+  <li>Schedule</li>
+  <li>ServiceRequest</li>
+  <li>Specimen</li>
+  <li>SupplyDelivery</li>
+  <li>SupplyRequest</li>
+  <li>Task</li>
+  <li>VisionPrescription</li>
+</ul>
+
+<p>JP Patient リソースは、以下のリソースを直接参照する。</p>
+
+<ul>
+  <li>Patient</li>
+  <li>Organization</li>
+  <li>Practitioner</li>
+  <li>PractitionerRole</li>
+  <li>RelatedPerson</li>
+</ul>
+
+<h2 id="21113-リソース定義">2.1.1.1.3. リソース定義</h2>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/jppatient">リソース定義ページの参照</a></p>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/jppatient/$download?format=json">リソース定義のダウンロード</a></p>
+
+<h3 id="211131-必須要素">2.1.1.1.3.1. 必須要素</h3>
+
+<p>次のデータ項目は必須（データが存在しなければならない）、あるいは、データが送信システムに存在する場合はサポートされなければならないことを意味する。（Must Support）。</p>
+
+<p>Patient リソースは、次の要素を持たなければならない。</p>
+
+<ul>
+  <li>identifier ：患者を識別するための識別子は必須要素であり、identifier.value が必ず存在しなければならない。また、identifierの名前空間を表すidentifier.systemも組み合わせて、医療機関固有の患者番号を表現することが一般的である。</li>
+</ul>
+
+<h3 id="211132-extensions定義">2.1.1.1.3.2. Extensions定義</h3>
+
+<p>JP Patient リソースで使用される拡張は次の通りである。</p>
+
+<ul>
+  <li>
+    <p><a href="http://hl7.org/fhir/StructureDefinition/patient-religion">religion</a></p>
+
+    <ul>
+      <li>患者の宗教を表す。</li>
+    </ul>
+  </li>
+  <li>
+    <p><a href="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">birthPlace</a></p>
+
+    <ul>
+      <li>患者の生誕地を表す。Address型を使って表現するため、すべての住所情報あるいは、都道府県名のみの情報(Address.state)だけを格納するということも可能である。</li>
+    </ul>
+  </li>
+  <li>
+    <p><a href="https://simplifier.net/jp-core-draftv1/jppatientrace">JP_Patient_Race</a></p>
+
+    <ul>
+      <li>患者の人種に関する情報を表す。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="2111321-既存のextensionの利用">2.1.1.1.3.2.1. 既存のExtensionの利用</h4>
+<ul>
+  <li>
+    <p><a name="l808">​</a><a href="&quot;http://hl7.org/fhir/R4/extension-iso21090-en-representation.html&quot;">NameRepresentationUse</a></p>
+
+    <ul>
+      <li>患者氏名(Patient.name)の漢字表記・カナ表記識別のために使用する。</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="211133-用語定義">2.1.1.1.3.3. 用語定義</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Path</th>
+      <th>定義</th>
+      <th>バインディング強度</th>
+      <th>バリューセット</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patient.gender.code<br/>Patient.contact.gender.code</td>
+      <td>患者の性別</td>
+      <td>required</td>
+      <td><a href="http://hl7.org/fhir/valueset-administrative-gender.html">AdministrativeGender</a></td>
+    </tr>
+    <tr>
+      <td>Patient.marialStatus.CodeableConcept</td>
+      <td>患者の婚姻関係の状況</td>
+      <td>Extensible</td>
+      <td><a href="http://hl7.org/fhir/valueset-marital-status.html">MarialStatus</a></td>
+    </tr>
+    <tr>
+      <td>Patient.contact.relationship.CodeableConcept</td>
+      <td>患者の連絡先(contact)との関係性</td>
+      <td>Extensible</td>
+      <td><a href="http://hl7.org/fhir/valueset-patient-contactrelationship.html">Patient Contact Relationship</a></td>
+    </tr>
+    <tr>
+      <td>Patient.link.type.code</td>
+      <td>別の患者リソースへのリンクに関するタイプ</td>
+      <td>Required</td>
+      <td><a href="http://hl7.org/fhir/valueset-link-type.html">LinkType</a></td>
+    </tr>
+    <tr>
+      <td>Patient.identifier.use</td>
+      <td>この識別子の目的を特定する</td>
+      <td>Required</td>
+      <td><a href="http://hl7.org/fhir/valueset-identifier-use.html">IdentifierUse</a></td>
+    </tr>
+    <tr>
+      <td>Patient.telecom.system</td>
+      <td>コンタクトポイントの通信方法に関する情報</td>
+      <td>Required</td>
+      <td><a href="http://hl7.org/fhir/valueset-contact-point-system.html">ContactPointSystem</a></td>
+    </tr>
+    <tr>
+      <td>Patient.telecom.use</td>
+      <td>家やオフィスなどコンタクトポイントのタイプに関する情報</td>
+      <td>Required</td>
+      <td><a href="http://hl7.org/fhir/valueset-contact-point-use.html">ContactPointUse</a></td>
+    </tr>
+    <tr>
+      <td>Patient.address.use</td>
+      <td>家やオフィスなど住所のタイプに関する情報</td>
+      <td>Required</td>
+      <td><a href="http://hl7.org/fhir/valueset-address-use.html">AddressUse</a></td>
+    </tr>
+    <tr>
+      <td>Patient.addresss.type</td>
+      <td>住所の種類</td>
+      <td>Required</td>
+      <td><a href="http://hl7.org/fhir/valueset-address-type.html">AddressType</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="211134-制約一覧">2.1.1.1.3.4. 制約一覧</h3>
+
+<p>制約はありません。</p>
+
+<h2 id="21114-利用方法">2.1.1.1.4. 利用方法</h2>
+
+<h3 id="211141-インタラクション一覧">2.1.1.1.4.1. インタラクション一覧</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>インタラクション</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHALL（必須）</td>
+      <td>search-type、read</td>
+    </tr>
+    <tr>
+      <td>SHOULD（推奨）</td>
+      <td>vread、history-instance</td>
+    </tr>
+    <tr>
+      <td>MAY（利用可能）</td>
+      <td>create、update、patch、delete、history-type</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="211142-operationおよびsearch-parameter-一覧">2.1.1.1.4.2. OperationおよびSearch Parameter 一覧</h3>
+
+<h4 id="2111421-search-parameter一覧">2.1.1.1.4.2.1. Search Parameter一覧</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>パラメータ</th>
+      <th>型</th>
+      <th>例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHALL</td>
+      <td>identifier</td>
+      <td>token</td>
+      <td>GET [base]/Patient?identifier=http://myhospital.com/fhir/pid|123456</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>name</td>
+      <td>string</td>
+      <td>GET [base]/Patient?name=山田太郎</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>birthdate,name</td>
+      <td>date,string</td>
+      <td>GET [base]/Patient?birthdate=eq2013-01-14&amp;name=山田太郎</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>birthdate,gender</td>
+      <td>date,code</td>
+      <td>GET [base]/Patient?birthdate=eq2013-01-14&amp;gender=male</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>birthdate,name,gender</td>
+      <td>date,string,code</td>
+      <td>GET [base]/Patient?birthdate=eq2013-01-14&amp;name=山田太郎&amp;gender=male</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>name,phone</td>
+      <td>string,token</td>
+      <td>GET [base]/Patient?name=山田太郎&amp;phone=111-222-3333</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>name,address-postalcode</td>
+      <td>string,string</td>
+      <td>GET [base]/Patient?name=山田太郎&amp;address-postalcode=1234567</td>
+    </tr>
+    <tr>
+      <td>MAY</td>
+      <td>family,given,birthdate,gender,phone,address-postalcode</td>
+      <td>string,string,date,token,token,string</td>
+      <td>GET [base]/Patient?family=山田&amp;given=太郎&amp;birthdate=eq2013-01-14&amp;gender=male&amp;phone=111-222-3333&amp;address-postalcode=1234567</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="21114211-必須検索パラメータ">2.1.1.1.4.2.1.1. 必須検索パラメータ</h5>
+
+<p>次の検索パラメータは必須でサポートされなければならない。</p>
+
+<ol>
+  <li>
+    <p>identifier 検索パラメータを使用して、患者番号/カルテ番号などの識別子によるPatientの検索をサポートしなければならない（SHALL）。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?identifier={system|}[code]
+</code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?identifier=http://myhospital.com/fhir/pid/us-npi|123456
+</code></pre></div>    </div>
+
+    <p>指定された識別子に一致するPatientリソースを含むBundleを検索する。</p>
+  </li>
+</ol>
+
+<h5 id="21114212-推奨検索パラメータ">2.1.1.1.4.2.1.2. 推奨検索パラメータ</h5>
+
+<p>次の検索パラメータをサポートすることが望ましい。</p>
+
+<ol>
+  <li>
+    <p>name 検索パラメータを使用して、Patientの検索をサポートすることが望ましい（SHOULD）。name検索パラメータは、HumanNameの文字列フィールド（family、give、prefix、suffix、および/またはtextを含む）のいずれかに一致するPatientリソースを検索する。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?name={string}
+</code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?name=山田太郎
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>birthdate, name 検索パラメータを使用して、Patientの検索をサポートすることが望ましい（SHOULD）。name検索パラメータは、HumanNameの文字列フィールド（family、give、prefix、suffix、および/またはtextを含む）のいずれかに一致するPatientリソースを検索する。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?birthdate={date}&amp;name={string}
+</code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?birthdate=2000-10-10&amp;name=山田太郎
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>birthdate, gender 検索パラメータを使用して、Patientの検索をサポートすることが望ましい（SHOULD）。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?birthdate={date}&amp;gender={code}
+</code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?birthdate=2000-10-10&amp;gender=male
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>birthdate, name, gender 検索パラメータを使用して、Patientの検索をサポートすることが望ましい（SHOULD）。name検索パラメータは、HumanNameの文字列フィールド（family、give、prefix、suffix、および/またはtextを含む）のいずれかに一致するPatientリソースを検索する。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?birthdate={date}&amp;name={string}&amp;gender={code}
+</code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?birthdate=2000-10-10&amp;name=山田太郎&amp;gender=male
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>name, phone 検索パラメータを使用して、Patientの検索をサポートすることが望ましい（SHOULD）。name検索パラメータは、HumanNameの文字列フィールド（family、give、prefix、suffix、および/またはtextを含む）のいずれかに一致するPatientリソースを検索する。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?name={string}&amp;phone={token}
+</code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?name=山田太郎&amp;phone=0123456789
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>name, address-postalcode 検索パラメータを使用して、Patientの検索をサポートすることが望ましい（SHOULD）。name検索パラメータは、HumanNameの文字列フィールド（family、give、prefix、suffix、および/またはtextを含む）のいずれかに一致するPatientリソースを検索する。address-postalcodeはPatient.address.postalCode要素に対する検索パラメータであり、日本の住所表記における郵便番号をキーにして検索することを想定している。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?name={string}&amp;address-postalcode={string}
+</code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient?name=山田太郎&amp;address-postalcode=1234567
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h5 id="21114213-オプション検索パラメータ">2.1.1.1.4.2.1.3. オプション検索パラメータ</h5>
+
+<p>オプションとして次の検索パラメータをサポートすることができる。</p>
+
+<ol>
+  <li>
+    <p>複合条件として、family,given,birthdate,gender,phone,address-postalcodename の各検索パラメータを複数指定したPatientの検索をサポートすることができる（MAY）。</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient??family={string}&amp;given={string}&amp;birthdate={date}&amp;gender={token}&amp;phone={token}&amp;address-postalcode={string}
+</code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient??family=山田&amp;given=太郎&amp;birthdate=eq2013-01-14&amp;gender=male&amp;phone=111-222-3333&amp;address-postalcode=1234567
+</code></pre></div>    </div>
+
+    <p>family,given,birthdate,gender,phone,address-postalcodename の各検索パラメータに一致するPatientリソースを含むBundleを検索する。</p>
+  </li>
+</ol>
+
+<h5 id="21114214-追加検索パラメータ">2.1.1.1.4.2.1.4. 追加検索パラメータ</h5>
+
+<p>JP Patientリソースに追加された検索パラメータはありません。</p>
+
+<h4 id="2111422-operation一覧">2.1.1.1.4.2.2. Operation一覧</h4>
+
+<p>JP Patient リソースに対して使用される操作は次の通りである。</p>
+
+<ul>
+  <li>
+    <p>$everything：[base]/Patient/$everything , [base]/Patient/[id]/$everything</p>
+
+    <ul>
+      <li>この操作が呼び出された場合、すべての患者の、あるいは指定された特定の[id]をもつPatientに関連した全てのリソースを返す。</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="21114221-everything-操作">2.1.1.1.4.2.2.1. $everything 操作</h5>
+
+<p>この操作は、この操作が呼び出された特定のPatientリソースに関連する全ての情報を返す。応答は “searchset” タイプのBundleリソースである。サーバは、少なくとも、識別された医療従事者のPatientコンパートメントに含まれる全てのリソースと、それらから参照されるすべてのリソースを返すことが望ましい。</p>
+
+<p>この操作の公式なURLは以下である。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://hl7.jp/fhir/OperationDefinition/Patient-everything
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>URL: [base]/Patient/[id]/$everything
+</code></pre></div></div>
+
+<p>本操作は、べき等な操作である。</p>
+
+<h6 id="211142211-入力パラメータ">2.1.1.1.4.2.2.1.1. 入力パラメータ</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>多重度</th>
+      <th>型</th>
+      <th>バインディング</th>
+      <th>プロファイル</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>start</td>
+      <td>0..1</td>
+      <td>date</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>特定の日付範囲で提供されたケアに関連する全ての記録を意味する。開始日が指定されていない場合、終了日以前のすべてのレコードが対象に含まれる。</td>
+    </tr>
+    <tr>
+      <td>end</td>
+      <td>0..1</td>
+      <td>date</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>特定の日付範囲で提供されたケアに関連する全ての記録を意味する。終了日が指定されていない場合、開始日以降のすべてのレコードが対象に含まれる。</td>
+    </tr>
+    <tr>
+      <td>_since</td>
+      <td>0..1</td>
+      <td>instant</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>指定された日時以降に更新されたリソースのみが応答に含まれる。</td>
+    </tr>
+    <tr>
+      <td>_type</td>
+      <td>0..*</td>
+      <td>code</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>応答に含むFHIRリソース型を、カンマ区切りで指定する。指定されない場合は、サーバは全てのリソース型を対象とする。</td>
+    </tr>
+    <tr>
+      <td>_count</td>
+      <td>0..1</td>
+      <td>integer</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>Bundleの1ページに含まれるリソース件数を指定。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="211142212-出力パラメータ">2.1.1.1.4.2.2.1.2. 出力パラメータ</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>多重度</th>
+      <th>型</th>
+      <th>バインディング</th>
+      <th>プロファイル</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>return</td>
+      <td>1..1</td>
+      <td>Bundle</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>バンドルのタイプは”searchset”である。この操作の結果は、リソースとして直接返される。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="211142213-例">2.1.1.1.4.2.2.1.3. 例</h6>
+
+<p>リクエスト：単一のPatientに関連する全てのリソースを取得する。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET [base]/Patient/p001/$everything
+[some headers]
+</code></pre></div></div>
+
+<p>レスポンス：指定されたPatientに関連する全てのリソースを返す。</p>
+
+<p>HTTP/1.1 200 OK
+[other headers]</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bundle"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"example"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"lastUpdated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2014-08-18T01:43:33Z"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"searchset"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"entry"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"fullUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://example.org/fhir/Patient/p001"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"resource"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+            </span><span class="err">省略</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">  
+</span></code></pre></div></div>
+
+<h3 id="211143-サンプル">2.1.1.1.4.3. サンプル</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"postalCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1600023"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"東京都新宿区"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"birthDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1970-01-01"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"gender"</span><span class="p">:</span><span class="w"> </span><span class="s2">"male"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1001"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IDE"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"山田 太郎"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"山田"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"太郎"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"valueCode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SYL"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"official"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ヤマダ タロウ"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ヤマダ"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="s2">"タロウ"</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"telecom"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0312345678"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+  
+</span></code></pre></div></div>
+
+<h2 id="21115-注意事項">2.1.1.1.5. 注意事項</h2>
+
+<p>注意事項はありません。</p>
+
+<h2 id="21116-その他参考文献リンク等">2.1.1.1.6. その他、参考文献・リンク等</h2>
+
+<p>・退院時サマリー規約
+http://www.hl7.jp/library/item/HL7J-CDA-007.pdf</p>
+
+<p>・診療情報提供書規格
+http://www.hl7.jp/intro/std/HL7J-CDA-005.pdf</p>
+
+<p>・特定健診情報ファイル仕様
+https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000165280.html</p>
+
+<p>・SS-MIX2 標準化ストレージ 仕様書 Ver.1.2f
+http://www.jami.jp/jamistd/docs/SS-MIX2/f/SS-MIX2_StndrdStrgSpecVer.1.2f.pdf</p>
+
+<p>・ICSR E2B(R3)
+https://www.pmda.go.jp/int-activities/int-harmony/ich/0093.html</p>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

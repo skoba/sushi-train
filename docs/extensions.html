@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Extensions - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"16"}
+    h3,h4,h5,h6{--heading-prefix:"16"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Extensions</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Extensions</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="22-extensions-拡張">2.2. Extensions （拡張）</h1>
+<hr />
+
+<p>JP Coreにて独自定義を行ったExtensions(拡張）を以下に列挙する。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>主な利用<br />プロファイル</th>
+      <th>タイトル</th>
+      <th>Extension</th>
+      <th>説明</th>
+      <th>その他利用<br />プロファイル</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>患者</td>
+      <td>人種</td>
+      <td> </td>
+      <td>人種(Race)に関する情報を格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>保険</td>
+      <td>被保険者証記号</td>
+      <td> </td>
+      <td>健康保険における被保険者証記号</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>保険</td>
+      <td>被保険者証番号</td>
+      <td><br /></td>
+      <td>健康保険における被保険者証番号</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>保険</td>
+      <td>被保険者証番号の枝番</td>
+      <td> </td>
+      <td>健康保険における被保険者証番号の枝番</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>組織</td>
+      <td>点数表コード</td>
+      <td> </td>
+      <td>点数表コード（１桁）<br /><code class="language-plaintext highlighter-rouge">医科:1 歯科:3</code></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>組織</td>
+      <td>保険医療機関番号</td>
+      <td> </td>
+      <td>保険医療機関番号（７桁）</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>組織</td>
+      <td>都道府県番号</td>
+      <td> </td>
+      <td>都道府県番号（２桁）</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>身体計測</td>
+      <td>部位の左右区別</td>
+      <td> </td>
+      <td>部位（bodySite）の左右の区別</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤リスト</td>
+      <td>RP内の薬剤の連番</td>
+      <td> </td>
+      <td>RP内の薬剤の連番</td>
+      <td>薬剤処方（注射）<br />処方調剤・払い出し記録（注射）</td>
+    </tr>
+    <tr>
+      <td>薬剤リスト</td>
+      <td>力価区分</td>
+      <td> </td>
+      <td>投与量が製剤単位か成分単位かを格納する</td>
+      <td>薬剤処方（注射）<br />処方調剤・払い出し記録（注射）</td>
+    </tr>
+    <tr>
+      <td>薬剤処方<br />（内服・外用）</td>
+      <td>服用開始日</td>
+      <td> </td>
+      <td>服用開始日を格納する</td>
+      <td>処方調剤・払い出し記録（内服・外用）</td>
+    </tr>
+    <tr>
+      <td>薬剤処方<br />（内服・外用）</td>
+      <td>実服用日数</td>
+      <td> </td>
+      <td>実服用日数を格納する</td>
+      <td>処方調剤・払い出し記録（内服・外用）</td>
+    </tr>
+    <tr>
+      <td>薬剤処方<br />（内服・外用・注射）</td>
+      <td>調剤指示</td>
+      <td> </td>
+      <td>薬剤単位の調剤指示を格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤処方<br />（内服・外用・注射）</td>
+      <td>頓用回数</td>
+      <td> </td>
+      <td>頓用の場合など調剤量を錠数ではなく回数で表現したい場合の回数を格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤処方<br />（注射）</td>
+      <td>指示ライン</td>
+      <td> </td>
+      <td>指示ラインを格納する</td>
+      <td>処方調剤・払い出し記録（注射）<br />薬剤投与実施（注射）</td>
+    </tr>
+    <tr>
+      <td>薬剤処方<br />（注射）</td>
+      <td>投与装置</td>
+      <td> </td>
+      <td>投与装置を格納する</td>
+      <td>処方調剤・払い出し記録（注射）</td>
+    </tr>
+    <tr>
+      <td>処方調剤・払い出し記録<br />（内服・外用・注射）</td>
+      <td>薬剤単位の調剤結果</td>
+      <td> </td>
+      <td>薬剤単位の調剤結果を格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（内服・外用・注射）</td>
+      <td>依頼科</td>
+      <td> </td>
+      <td>依頼科を格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（内服・外用・注射）</td>
+      <td>依頼医</td>
+      <td> </td>
+      <td>依頼医を格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（内服・外用・注射）</td>
+      <td>依頼日時</td>
+      <td> </td>
+      <td>依頼日時を格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（内服・外用・注射）</td>
+      <td>実施場所</td>
+      <td> </td>
+      <td>実施場所を格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（注射）</td>
+      <td>投与経路コメント</td>
+      <td> </td>
+      <td>投与経路コメントを格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（注射）</td>
+      <td>投与部位コメント</td>
+      <td> </td>
+      <td>投与部位コメントを格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（注射）</td>
+      <td>手技コメント</td>
+      <td> </td>
+      <td>手技コメントを格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（注射）</td>
+      <td>投与速度コメント</td>
+      <td> </td>
+      <td>投与速度コメントを格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（注射）</td>
+      <td>ラインコメント</td>
+      <td> </td>
+      <td>ラインコメントを格納する</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>薬剤投与実施<br />（注射）</td>
+      <td>未分類コメント</td>
+      <td> </td>
+      <td>未分類コメントを格納する</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

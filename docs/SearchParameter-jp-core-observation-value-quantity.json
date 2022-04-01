@@ -1,0 +1,142 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "jp-core-observation-value-quantity",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"jp-core-observation-value-quantity\" </p></div><p><b>url</b>: <code>http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-value-quantity</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: JPCoreObservationValueQuantity</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2021-12-01</p><p><b>publisher</b>: HL7 FHIR 日本実装検討WG</p><p><b>contact</b>: HL7 FHIR 日本実装検討WG: <a href=\"https://jpfhir.jp/\">https://jpfhir.jp/</a></p><p><b>description</b>: Observationリソースの日付(検査（採取）日)に関する検索を定義します。</p><p><b>code</b>: value-quantity</p><p><b>base</b>: Observation</p><p><b>type</b>: quantity</p><p><b>expression</b>: Observation.value.valueQuantity</p><p><b>xpath</b>: f:Observation/f:value/f:valueQuantity</p><p><b>xpathUsage</b>: normal</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>comparator</b>: eq, ne, gt, lt, le, sa, eb, ap</p><p><b>modifier</b>: missing</p></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-value-quantity",
+  "version": "1.0.0",
+  "name": "JPCoreObservationValueQuantity",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-12-01",
+  "publisher": "HL7 FHIR 日本実装検討WG",
+  "contact": [
+    {
+      "name": "HL7 FHIR 日本実装検討WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://jpfhir.jp/"
+        }
+      ]
+    }
+  ],
+  "description": "Observationリソースの日付(検査（採取）日)に関する検索を定義します。",
+  "code": "value-quantity",
+  "base": [
+    "Observation"
+  ],
+  "type": "quantity",
+  "expression": "Observation.value.valueQuantity",
+  "xpath": "f:Observation/f:value/f:valueQuantity",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "_multipleOr": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode": "MAY"
+      }
+    ]
+  },
+  "multipleAnd": true,
+  "_multipleAnd": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode": "SHOULD"
+      }
+    ]
+  },
+  "comparator": [
+    "eq",
+    "ne",
+    "gt",
+    "lt",
+    "le",
+    "sa",
+    "eb",
+    "ap"
+  ],
+  "_comparator": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "SHALL"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "SHALL"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "SHALL"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    }
+  ],
+  "modifier": [
+    "missing"
+  ],
+  "_modifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    }
+  ]
+}

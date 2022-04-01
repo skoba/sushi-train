@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="91c0caf5-6b57-4c80-b419-9196b23d41f8"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "91c0caf5-6b57-4c80-b419-9196b23d41f8" </p></div><p><b>identifier</b>: id: 123456789012345, id: 123456789012345_01_001</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>category</b>: 入院患者オーダ <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-v2-0482.html">orderType</a>#I)</span>, 入院処方 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (MR9PCategory#IHP)</span>, 定時処方 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (JHSI0001#FTP)</span></p><p><b>medication</b>: <a href="urn:uuid:91c0caf5-6b57-4c80-b419-9196b23d41f8">urn:uuid:91c0caf5-6b57-4c80-b419-9196b23d41f8</a></p><p><b>subject</b>: <a href="urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4">urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4</a></p><p><b>authoredOn</b>: 2016-07-01</p><p><b>requester</b>: <a href="urn:uuid:b598aedf-28fb-406a-b38e-250d3e92ac60">urn:uuid:b598aedf-28fb-406a-b38e-250d3e92ac60</a></p><p><b>insurance</b>: <a href="urn:uuid:df0ebf6d-e527-49d4-bce2-0885045a7afd">urn:uuid:df0ebf6d-e527-49d4-bce2-0885045a7afd</a></p></div>
+  </text>
+  <contained>
+    <Medication>
+      <id value="91c0caf5-6b57-4c80-b419-9196b23d41f8"/>
+      <ingredient>
+        <itemCodeableConcept>
+          <coding>
+            <system value="urn:oid:1.2.392.100495.20.2.74"/>
+            <code value="100558502"/>
+            <display value="ホリゾン注射液１０ｍｇ"/>
+          </coding>
+        </itemCodeableConcept>
+        <strength>
+          <numerator>
+            <value value="1"/>
+            <unit value="アンプル"/>
+            <system value="urn:oid:1.2.392.100495.20.2.101"/>
+            <code value="AMP"/>
+          </numerator>
+          <denominator>
+            <value value="1"/>
+            <unit value="回"/>
+            <system value="urn:oid:1.2.392.100495.20.2.101"/>
+            <code value="KAI"/>
+          </denominator>
+        </strength>
+      </ingredient>
+    </Medication>
+  </contained>
+  <contained>
+    <BodyStructure>
+      <id value="0cdd1de5-d48f-4cf4-9238-2dba48fbbc39"/>
+      <location>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0550"/>
+          <code value="ARM"/>
+          <display value="腕"/>
+        </coding>
+      </location>
+      <locationQualifier>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/v2-0495"/>
+          <code value="L"/>
+          <display value="左"/>
+        </coding>
+      </locationQualifier>
+      <patient>
+        <reference value="urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4"/>
+        <type value="Patient"/>
+      </patient>
+    </BodyStructure>
+  </contained>
+  <identifier>
+    <system value="urn:oid:1.2.392.100495.20.3.11"/>
+    <value value="123456789012345"/>
+  </identifier>
+  <identifier>
+    <system value="urn:oid:1.2.392.100495.20.3.81"/>
+    <value value="123456789012345_01_001"/>
+  </identifier>
+  <status value="active"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0482"/>
+      <code value="I"/>
+      <display value="入院患者オーダ"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://hl7fhir.jp/medication/MR9PCategory"/>
+      <code value="IHP"/>
+      <display value="入院処方"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://hl7fhir.jp/medication/JHSI0001"/>
+      <code value="FTP"/>
+      <display value="定時処方"/>
+    </coding>
+  </category>
+  <medicationReference>
+    <reference value="urn:uuid:91c0caf5-6b57-4c80-b419-9196b23d41f8"/>
+    <type value="Medication"/>
+  </medicationReference>
+  <subject>
+    <reference value="urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4"/>
+    <type value="Patient"/>
+  </subject>
+  <authoredOn value="2016-07-01"/>
+  <requester>
+    <reference value="urn:uuid:b598aedf-28fb-406a-b38e-250d3e92ac60"/>
+    <type value="PractitionerRole"/>
+  </requester>
+  <insurance>
+    <reference value="urn:uuid:df0ebf6d-e527-49d4-bce2-0885045a7afd"/>
+    <type value="Coverage"/>
+  </insurance>
+  <dosageInstruction>
+    <extension url="http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestDevice">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7fhir.jp/medication/99ILL"/>
+          <code value="01"/>
+          <display value="シリンジ"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2016-07-01T10:00:00+09:00"/>
+        </boundsPeriod>
+      </repeat>
+    </timing>
+    <site>
+      <extension url="http://hl7.org/fhir/StructureDefinition/bodySite">
+        <valueReference>
+          <reference value="urn:uuid:0cdd1de5-d48f-4cf4-9238-2dba48fbbc39"/>
+          <type value="BodyStructure"/>
+        </valueReference>
+      </extension>
+    </site>
+    <route>
+      <coding>
+        <system value="urn:oid:1.2.392.100495.20.2.35"/>
+        <code value="30"/>
+        <display value="静脈注射"/>
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="urn:oid:1.2.392.100495.20.2.34"/>
+        <code value="3"/>
+        <display value="注射"/>
+      </coding>
+    </method>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="2"/>
+        <unit value="ミリリッター"/>
+      </doseQuantity>
+    </doseAndRate>
+  </dosageInstruction>
+</MedicationRequest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="jp-core-diagnosticreport-servicerequest"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "jp-core-diagnosticreport-servicerequest" </p></div><p><b>url</b>: <code>http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-diagnosticreport-servicerequest</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: JPCoreDiagnosticReportServiceRequest</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2021-12-01</p><p><b>publisher</b>: HL7 FHIR 日本実装検討WG</p><p><b>contact</b>: HL7 FHIR 日本実装検討WG: <a href="https://jpfhir.jp/">https://jpfhir.jp/</a></p><p><b>description</b>: DiagnosticReportリソースのservicerequest(検査依頼診療科)に関する検索を定義します。</p><p><b>code</b>: servicerequest</p><p><b>base</b>: DiagnosticReport</p><p><b>type</b>: reference</p><p><b>expression</b>: DiagnosticReport.based-on.where(resolve() is ServiceRequest)</p><p><b>xpath</b>: f:DiagnosticReport/f:based-on</p><p><b>xpathUsage</b>: normal</p><p><b>target</b>: Patient, Group</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, type, identifier</p></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-diagnosticreport-servicerequest"/>
+  <version value="1.0.0"/>
+  <name value="JPCoreDiagnosticReportServiceRequest"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-12-01"/>
+  <publisher value="HL7 FHIR 日本実装検討WG"/>
+  <contact>
+    <name value="HL7 FHIR 日本実装検討WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://jpfhir.jp/"/>
+    </telecom>
+  </contact>
+  <description value="DiagnosticReportリソースのservicerequest(検査依頼診療科)に関する検索を定義します。"/>
+  <code value="servicerequest"/>
+  <base value="DiagnosticReport"/>
+  <type value="reference"/>
+  <expression value="DiagnosticReport.based-on.where(resolve() is ServiceRequest)"/>
+  <xpath value="f:DiagnosticReport/f:based-on"/>
+  <xpathUsage value="normal"/>
+  <target value="Patient"/>
+  <target value="Group"/>
+  <multipleOr value="true">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </multipleOr>
+  <multipleAnd value="true">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </multipleAnd>
+  <modifier value="missing">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+  <modifier value="type">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+  <modifier value="identifier">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+</SearchParameter>

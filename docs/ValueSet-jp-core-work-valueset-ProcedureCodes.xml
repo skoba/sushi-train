@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jp-core-work-valueset-ProcedureCodes"/>
+  <meta>
+    <versionId value="8"/>
+    <lastUpdated value="2021-08-17T03:38:15.455+00:00"/>
+    <source value="#mVE3UPRA1oq1NxrP"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-jp-core-work-codesystem-ProcedureCodes.html"><code>https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes</code></a></li></ul></div>
+  </text>
+  <url value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-ProcedureCodes"/>
+  <version value="1.0.0"/>
+  <name value="ProcedureCodes"/>
+  <title value="Procedureコード"/>
+  <status value="draft"/>
+  <date value="2022-04-01T16:21:14+09:00"/>
+  <publisher value="HL7 FHIR 日本実装検討WG"/>
+  <contact>
+    <name value="HL7 FHIR 日本実装検討WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://jpfhir.jp/"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes"/>
+    </include>
+  </compose>
+</ValueSet>

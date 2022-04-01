@@ -1,0 +1,670 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Diagnosticreportradiology - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"14"}
+    h3,h4,h5,h6{--heading-prefix:"14"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Diagnosticreportradiology</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Diagnosticreportradiology</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#21332-jp-core-diagnosticreport-radiology-放射線検査レポート-プロファイル" id="markdown-toc-21332-jp-core-diagnosticreport-radiology-放射線検査レポート-プロファイル">2.1.3.3.2. JP Core DiagnosticReport Radiology (放射線検査レポート) プロファイル</a>    <ul>
+      <li><a href="#213321-概略" id="markdown-toc-213321-概略">2.1.3.3.2.1. 概略</a></li>
+      <li><a href="#213322-背景および想定シナリオ" id="markdown-toc-213322-背景および想定シナリオ">2.1.3.3.2.2. 背景および想定シナリオ</a>        <ul>
+          <li><a href="#2133221-スコープ" id="markdown-toc-2133221-スコープ">2.1.3.3.2.2.1. スコープ</a></li>
+        </ul>
+      </li>
+      <li><a href="#213323-関連するプロファイル" id="markdown-toc-213323-関連するプロファイル">2.1.3.3.2.3. 関連するプロファイル</a></li>
+      <li><a href="#213324-リソース定義" id="markdown-toc-213324-リソース定義">2.1.3.3.2.4. リソース定義</a>        <ul>
+          <li><a href="#2133241-必須要素" id="markdown-toc-2133241-必須要素">2.1.3.3.2.4.1. 必須要素</a></li>
+          <li><a href="#2133242-mustsupport" id="markdown-toc-2133242-mustsupport">2.1.3.3.2.4.2. MustSupport</a></li>
+          <li><a href="#2133243-extensions定義" id="markdown-toc-2133243-extensions定義">2.1.3.3.2.4.3. Extensions定義</a></li>
+          <li><a href="#2133244-用語定義" id="markdown-toc-2133244-用語定義">2.1.3.3.2.4.4. 用語定義</a></li>
+        </ul>
+      </li>
+      <li><a href="#213325-注意" id="markdown-toc-213325-注意">2.1.3.3.2.5. 注意</a>        <ul>
+          <li><a href="#2133251-text" id="markdown-toc-2133251-text">2.1.3.3.2.5.1. Text</a></li>
+          <li><a href="#2133252-identifier" id="markdown-toc-2133252-identifier">2.1.3.3.2.5.2. Identifier</a></li>
+          <li><a href="#2133253-時間の指定" id="markdown-toc-2133253-時間の指定">2.1.3.3.2.5.3. 時間の指定</a></li>
+          <li><a href="#2133254-関連するobservation" id="markdown-toc-2133254-関連するobservation">2.1.3.3.2.5.4. 関連するObservation</a></li>
+          <li><a href="#2133255-参照画像" id="markdown-toc-2133255-参照画像">2.1.3.3.2.5.5. 参照画像</a></li>
+          <li><a href="#2133256-レポートの内容" id="markdown-toc-2133256-レポートの内容">2.1.3.3.2.5.6. レポートの内容</a></li>
+        </ul>
+      </li>
+      <li><a href="#213326-利用方法" id="markdown-toc-213326-利用方法">2.1.3.3.2.6. 利用方法</a>        <ul>
+          <li><a href="#2133261-interaction一覧" id="markdown-toc-2133261-interaction一覧">2.1.3.3.2.6.1. Interaction一覧</a></li>
+        </ul>
+      </li>
+      <li><a href="#213327-その他参考文献リンク等" id="markdown-toc-213327-その他参考文献リンク等">2.1.3.3.2.7. その他、参考文献・リンク等</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="21332-jp-core-diagnosticreport-radiology-放射線検査レポート-プロファイル">2.1.3.3.2. JP Core DiagnosticReport Radiology (放射線検査レポート) プロファイル</h1>
+
+<h2 id="213321-概略">2.1.3.3.2.1. 概略</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>定義URL</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Radiology</td>
+    </tr>
+    <tr>
+      <td>バージョン</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>名前</td>
+      <td>JPDiagnosticReportRadiology</td>
+    </tr>
+    <tr>
+      <td>タイトル</td>
+      <td>JP Core Diagnostic Report Radiology Profile</td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>アクティブ（2021-11-03）</td>
+    </tr>
+    <tr>
+      <td>定義</td>
+      <td><a name="l399">​</a>このプロファイルは<a href="DiagnosticReport#Common2"><code class="language-plaintext highlighter-rouge">DiagnosticReport</code></a>リソースに関し放射線検査の１項目を対象として表現し、データを送受信するための基礎となる制約と拡張を定めたものである。</td>
+    </tr>
+    <tr>
+      <td>公開者</td>
+      <td>FHIR&reg; Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>FHIR&reg; Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>ソースリソース</td>
+      <td>https://simplifier.net/jp-core-draftv1/jpdiagnosticreportradiology</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="l436">​</a>本プロファイルは、<a href="DiagnosticReport#Common2"><code class="language-plaintext highlighter-rouge">DiagnosticReport</code>リソース</a> のうち、放射線画像検査における患者、患者群、機器、場所、およびこれらから得られた画像に対して実施された診断結果またはその解釈を示す「報告書」を表現するリソースの定義である。ここでは、<code class="language-plaintext highlighter-rouge">DiagnosticReport</code> リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。
+報告書は、依頼者や撮影の情報などの臨床的背景のほか、いくつかの計測値、画像、テキストおよびコード化された解釈、テンプレート化された診断報告書により構成される。</p>
+
+<h2 id="213322-背景および想定シナリオ">2.1.3.3.2.2. 背景および想定シナリオ</h2>
+
+<p>本プロファイルは、以下のようなユースケースを想定する。</p>
+
+<ul>
+  <li>施設内で発生するオーダをもとに実施される画像検査に対する診断レポートの保存</li>
+  <li>他のリソースからの放射線検査レポートの参照<br/>
+（例：<a href="https://simplifier.net/jp-core-draftv1/jpimagingstudy"><code class="language-plaintext highlighter-rouge">ImagingStudy</code>リソース</a> や<a href="http://www.hl7.org/fhir/servicerequest.html"><code class="language-plaintext highlighter-rouge">ServiceRequest</code>リソース</a> の<code class="language-plaintext highlighter-rouge">reasonReference</code> エレメントで参照される放射線検査レポート）</li>
+</ul>
+
+<h3 id="2133221-スコープ">2.1.3.3.2.2.1. スコープ</h3>
+
+<p>放射線検査レポートで取り扱う診断報告書は、検査の終了後に、検査の診断結果として提供される一連の情報である。
+この情報には、テキストレポート、画像、コード、および計測値などが含まれる。この組み合わせは、診断手順や特定の検査の結果の性質に応じて変化する。FHIRでは、レポートはドキュメント、RESTful API、メッセージングフレームワークなど、さまざまな方法で伝達することができる。これらの方法に含まれるのは、<code class="language-plaintext highlighter-rouge">DiagnosticReport</code>リソースそのものである。</p>
+
+<p><code class="language-plaintext highlighter-rouge">DiagnosticReport</code>リソースは、診断レポート自体の他に、患者など対象者に関する情報を持つ。また、オーダーに関する情報や所見の詳細、画像を参照することもできる。レポートの結論は、テキスト、構造化されたコード化データ、またはPDFなどの完全に標準化された添付レポートとして表現することができる。</p>
+
+<p>もっとも典型的にはレポートの診断結果を<code class="language-plaintext highlighter-rouge">DiagnosticReport.conclusion</code>エレメントに保持し<code class="language-plaintext highlighter-rouge">DiagnosticReport.presentedForm</code>エレメントでレポート全体のデータを持つ。また、キー画像等の添付データは<code class="language-plaintext highlighter-rouge">DiagnosticReport.media</code>エレメントに<code class="language-plaintext highlighter-rouge">Media</code>リソースへのリンクとして保持する。</p>
+
+<p>レポート全体のデータは、レポーティングシステム等により作成された多彩な表現型（PDF, RichText, xhtml等）でBase64のAttachmentとして提供される。ただし、結果参照や検索の汎用性を担保しHuman readableな形で提供されることを目的とし、レポートの内容はDomainResourceであるDiagnosticReport.textエレメントにも格納される。</p>
+
+<p><code class="language-plaintext highlighter-rouge">DiagnosticReport</code>リソースは、過去の結果（リソース内での過去および現在の結果）の提示をサポートすることを意図していない。<code class="language-plaintext highlighter-rouge">DiagnosticReport</code>リソースは、シーケンスの構造化を含めレポートの完全なサポートをまだ提供できていないが、将来実装される予定である。</p>
+
+<h2 id="213323-関連するプロファイル">2.1.3.3.2.3. 関連するプロファイル</h2>
+
+<p>このプロファイルは、以下のリソースに対して定義された各プロファイルから参照される。</p>
+
+<ul>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpdiagnosticreportradiology"><code class="language-plaintext highlighter-rouge">DiagnosticReport</code></a></li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpimagingstudy"><code class="language-plaintext highlighter-rouge">ImagingStudy</code></a></li>
+</ul>
+
+<p>また，このプロファイルから直接参照されるリソースは以下の通りである。</p>
+
+<ul>
+  <li><a name="l541">​</a><a href="Patient"><code class="language-plaintext highlighter-rouge">Patient</code></a></li>
+  <li><a href="http://www.hl7.org/fhir/encounter.html"><code class="language-plaintext highlighter-rouge">Encounter</code></a></li>
+  <li><a name="l551">​</a><a href="Practitioner"><code class="language-plaintext highlighter-rouge">Practitioner</code></a></li>
+  <li><a name="l556">​</a><a href="Observation"><code class="language-plaintext highlighter-rouge">Observation</code></a></li>
+  <li><a href="http://www.hl7.org/fhir/media.html"><code class="language-plaintext highlighter-rouge">Media</code></a></li>
+  <li><a name="l566">​</a><a href="jpimagingstudy"><code class="language-plaintext highlighter-rouge">ImagingStudy</code></a></li>
+  <li><a href="http://hl7.org/fhir/servicerequest.html"><code class="language-plaintext highlighter-rouge">ServiceRequest</code></a></li>
+</ul>
+
+<p>また，以下のリソースは関連情報として<code class="language-plaintext highlighter-rouge">presentedForm</code>にて参照されるレポート内に保持される可能性がある。ただし、レポートシステムの仕様に依存するため、レポートシステムでは各リソースとの相互運用性の確保に配慮することが求められる。</p>
+
+<ul>
+  <li><a name="l585">​</a><a href="Patient">患者 (<code class="language-plaintext highlighter-rouge">Patient</code>)</a></li>
+  <li><a name="l592">​</a><a href="Practitioner">依頼医，読影医，確定医など (<code class="language-plaintext highlighter-rouge">Practitioner</code>)</a></li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpobservationbodymeasurement">身長 (<code class="language-plaintext highlighter-rouge">Observation</code>)</a></li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpobservationbodymeasurement.html">体重 (<code class="language-plaintext highlighter-rouge">Observation</code>)</a></li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpallergyintolerancev400">アレルギー情報 (<code class="language-plaintext highlighter-rouge">AllergyIntorelance</code>)</a></li>
+  <li><a href="http://www.hl7.org/fhir/media.html">キー画像 (<code class="language-plaintext highlighter-rouge">media</code>)</a></li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpobservationlabresult">尿素窒素（BUN）(<code class="language-plaintext highlighter-rouge">Observation</code>)</a></li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpobservationlabresult">クレアチニン（Cre）(<code class="language-plaintext highlighter-rouge">Observation</code>)</a></li>
+  <li>感染症情報 <a href="http://hl7.org/fhir/riskassessment.html"> (<code class="language-plaintext highlighter-rouge">RiskAssessment</code>) </a> あるいは <a href="https://simplifier.net/jp-core-draftv1/jpobservationlabresult"> (<code class="language-plaintext highlighter-rouge">Observation</code>) </a></li>
+</ul>
+
+<p>運用のフローに関連する TASK、Procedure 等のリソース定義についてはここでは触れない。</p>
+
+<h2 id="213324-リソース定義">2.1.3.3.2.4. リソース定義</h2>
+<ul>
+  <li><a href="https://simplifier.net/jp-core-draftv1/JPDiagnosticReportRadiology">リソース定義ページの参照</a></li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/JPDiagnosticReportRadiology/$download?format=json">リソース定義のダウンロード</a></li>
+</ul>
+
+<p>Narrativeなレポート内容はDomainResourceであるtextに保管される。</p>
+
+<p><a name="l676">​</a>Textのリソース構造およびコーティングは<a href="diagnosticreportradiology2#text">以下</a>を参照のこと。</p>
+
+<h3 id="2133241-必須要素">2.1.3.3.2.4.1. 必須要素</h3>
+
+<p>次のデータ項目は必須（SHALL）である。</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">status</code> ：レポートの状態・進捗状況</li>
+  <li><code class="language-plaintext highlighter-rouge">category</code> ： “RAD”をデフォルトとし、特に検査種別を含む部門指定を指定したい場合は”RUS”, “RX”, “CT”, “NMR”, “NMS”, “VUS”, “OUS”, “CUS”などを指定する．</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code> ：レポートの種別（画像診断レポート交換手順ガイドライン「5.1 レポート種別コード」に記載されているLOINCコード “Diagnostic imaging study” を指定）</li>
+  <li><code class="language-plaintext highlighter-rouge">effectiveDateTime</code> ： レポート作成日時</li>
+</ul>
+
+<h3 id="2133242-mustsupport">2.1.3.3.2.4.2. MustSupport</h3>
+
+<p>次のデータは送信システムに存在する場合はサポートされなければならないことを意味する（Must Support）。</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">text</code> : (DiagnosticReport <a href="https://simplifier.net/simplifier.core.r4.resources/domainresource"><code class="language-plaintext highlighter-rouge">DomainResource</code></a>) レポートの<a href="http://www.hl7.org/fhir/narrative.html">narrative</a> dataとして格納する。</li>
+  <li><code class="language-plaintext highlighter-rouge">basedOn</code> ： レポートあるいは画像検査の<code class="language-plaintext highlighter-rouge">ServiceRequest</code></li>
+  <li><code class="language-plaintext highlighter-rouge">subject</code> ： 患者リソース(<code class="language-plaintext highlighter-rouge">Patient</code>)への参照。殆どの場合存在するが、緊急検査等で患者リソースが確定していない場合が想定される</li>
+  <li><code class="language-plaintext highlighter-rouge">issued</code> ： レポート確定日時</li>
+  <li><code class="language-plaintext highlighter-rouge">performer</code> ： <code class="language-plaintext highlighter-rouge">Practitioner</code>でレポートの関係者（作成者、読影者、確定者など）を列挙</li>
+  <li><code class="language-plaintext highlighter-rouge">resultInterpreter</code> ： <code class="language-plaintext highlighter-rouge">Practitioner</code>でレポート確定者を示す</li>
+  <li><code class="language-plaintext highlighter-rouge">imagingStudy</code> ： 診断の対象となる画像</li>
+  <li><code class="language-plaintext highlighter-rouge">link</code> ：キーイメージの参照先</li>
+  <li><code class="language-plaintext highlighter-rouge">conclusion</code> ： 診断の結果、impression</li>
+  <li><code class="language-plaintext highlighter-rouge">presentedForm</code> ：レポート本体（全体のイメージあるいは所見等のテキスト）</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">imagingStudy</code>エレメントはCardinalityが0..1だが、放射線レポートでは画像が必ず存在することから、検査実施後には必須（複数の可能性もあり）である。しかし、検査実施前などのstatusによっては0もあることから、とりあえずMustSupportのままとする。将来的な議論の結果によっては、cardinalityを変更する可能性がある。</p>
+
+<h3 id="2133243-extensions定義">2.1.3.3.2.4.3. Extensions定義</h3>
+
+<p>本プロファイルはextensionを定義しない。</p>
+
+<h3 id="2133244-用語定義">2.1.3.3.2.4.4. 用語定義</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Path</th>
+      <th>定義</th>
+      <th>バインディング強度</th>
+      <th>バリューセット</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.status</code></td>
+      <td>レポートのステータス</td>
+      <td>Required</td>
+      <td><a href="http://hl7.org/fhir/valueset-diagnostic-report-status.html"><code class="language-plaintext highlighter-rouge">DiagnosticReportStatus</code></a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.category</code></td>
+      <td>レポート（所見）を作成した部門</td>
+      <td>Preferred</td>
+      <td><a href="http://hl7.org/fhir/ValueSet/diagnostic-service-sections"><code class="language-plaintext highlighter-rouge">DiagnosticServiceSectionCodes</code></a><br/>“RAD”, “RX”, “CT”, “NMR”, “NMS”, “RUS”, “VUS”, “OUS”, “CUS”などを指定。デフォルトは”RAD”。</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.code</code></td>
+      <td>レポートのフォーマット、種類など</td>
+      <td>Preferred</td>
+      <td><a href="https://loinc.org/18748-4/">Diagnostic imaging study</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.conclusionCode</code></td>
+      <td>診断レポートの結論・要約</td>
+      <td>Example</td>
+      <td><a href="https://icd.who.int/browse10/2019/en">ICD-10</a>, <a href="https://icd.who.int/browse11/l-m/en">ICD-11</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="213325-注意">2.1.3.3.2.5. 注意</h2>
+
+<h3 id="2133251-text">2.1.3.3.2.5.1. Text</h3>
+
+<p><code class="language-plaintext highlighter-rouge">DiagnosticReport</code>のドメインリソースの一つである<code class="language-plaintext highlighter-rouge">text</code>エレメントに見読可能な<a href="http://www.hl7.org/fhir/narrative.html">narrative</a>データとしてレポートの所見を中心とした情報を格納する。依頼情報や患者基本情報などを含んだレポート全体のデータは別途<code class="language-plaintext highlighter-rouge">presentedForm</code>エレメントに保持されるが、ここではPDF等のバイナリが保存される。よってレポート内容の見読性と検索性を担保するために<code class="language-plaintext highlighter-rouge">text</code>エレメントに保存されたデータが利用される。</p>
+
+<p>NarrativeなtextにアクセスするためのDomainResource定義</p>
+
+<p>(<code class="language-plaintext highlighter-rouge">DiagnosticReport</code>のResourceType直下に現れる。text以外のDomainResourceの詳細については<a href="https://www.hl7.org/fhir/domainresource.html">こちら</a>を参照のこと）</p>
+
+<p>例：</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DiagnosticReport"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xxxxxxxxxx"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"versionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"lastUpdated"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2020-10-25T17:00:03.903+00:00"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"source"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xxxxxxxxxxxxxx"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"generated"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"div"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;div xmlns=</span><span class="se">\"</span><span class="s2">http://www.w3.org/1999/xhtml</span><span class="se">\"</span><span class="s2">&gt;&lt;p&gt;胸部造影CT&lt;/p&gt;&lt;p&gt;依頼目的:10月20日の単純写真でひだり肺に異常陰影あり。精査目的。&lt;/p&gt;&lt;p&gt;所見:&lt;/p&gt;&lt;p&gt;心拡大は無く、心嚢液も見られない。&lt;/p&gt;&lt;p&gt;胸部大動脈は蛇行があるも径は正常範囲内。ひだり椎骨動脈が大動脈弓より直接分岐している。大動脈壁に小さな石灰化がみられ動脈硬化性変化が軽度見られる。&lt;/p&gt;&lt;p&gt;ひだり肺上葉に2.2 x 1.5 cm大の空洞性病変を認める(Image 31/110)。壁には充実性成分を含み不整な造影濃度を示す。みぎ肺上葉に気管支拡張を伴う線状影を認めるが、こちらは炎症性瘢痕として矛盾しない。気管には異常を認めず。肺尖部に炎症後変化と思われる胸膜肥厚は見られる。胸水は認めない。&lt;/p&gt;&lt;p&gt;腋窩，縦郭および肺門リンパ節の腫大は認めず。甲状腺は正常範囲。&lt;/p&gt;&lt;p&gt;スキャン範囲内の腹部には異常を認めず。明らかな骨病変も認めない。&lt;/p&gt;&lt;p&gt;インプレッション:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;p&gt;ひだり肺上葉の空洞性病変。肺腺癌を疑う。&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;みぎ肺上葉陳旧性炎症性瘢痕。&lt;p&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"use"</span><span class="p">:</span><span class="w"> </span><span class="s2">"usual"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://www.acme.com/identifiers/patient"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xxxxxxxxxxxxxxx"</span><span class="w">
+  </span><span class="p">}</span><span class="w"> </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"final"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"category"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/v2/0074"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RAD"</span><span class="w">
+    </span><span class="p">}</span><span class="w"> </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w"> </span><span class="p">],</span><span class="w"> 
+  </span><span class="nl">"subject"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient/pat2"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2008-06-17"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issued"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2008-06-18T09:23:00+10:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"performer"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Practitioner/3ad0687e-f477-468c-afd5-fcc2bf897809"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"田中太郎"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"imagingStudy"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CHEST CT DICOM imaging study"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://someserver/some-path"</span><span class="w">
+  </span><span class="err">]</span><span class="p">,</span><span class="w">
+</span><span class="err">　</span><span class="nl">"conclusion"</span><span class="p">:</span><span class="w"> </span><span class="s2">"インプレッション: ひだり肺上葉の空洞性病変。 肺腺癌を疑う。みぎ肺上葉陳旧性炎症性瘢痕。"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"presentedForm"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"contentType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"application/jpg"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ja"</span><span class="p">,</span><span class="w"> 
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="s2">"/9j/4AAQSkZJRgABAgAAZAxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxwrh/9X/xP/Z9tYV8PiQ//2Q=="</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HTML Report"</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2133252-identifier">2.1.3.3.2.5.2. Identifier</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Identifier</code> のデータタイプはオーダー依頼者であるPlacerあるいはオーダーの実施者であるFiller（HL7 Version 2 Messaging Standardにて’Placer’あるいは’Filler’として知られている）によって割り当てられた識別子を区別するために利用される<code class="language-plaintext highlighter-rouge">type</code>エレメントを持っている。<code class="language-plaintext highlighter-rouge">type</code>エレメントは以下の様に利用する。
+<br/></p>
+
+<h4 id="21332521-placerの場合">2.1.3.3.2.5.2.1. Placerの場合</h4>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:[{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="s2">"PLAC"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="s2">"Placer"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="s2">"urn:oid:1.2.3.4.5.6.7"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="s2">"2345234234234"</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<h4 id="21332522-fillerの場合">2.1.3.3.2.5.2.2. Fillerの場合</h4>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:[{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="s2">"FILL"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="s2">"Filler"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="s2">"567890"</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">DiagnosticReport_Radiology</code> リソースでは<code class="language-plaintext highlighter-rouge">type</code>エレメントを明示する際にはオーダ番号やレポート番号が格納される可能性がある点に留意して対応することが重要である。</p>
+
+<h3 id="2133253-時間の指定">2.1.3.3.2.5.3. 時間の指定</h3>
+
+<p>このプロファイルのリソースでは、<code class="language-plaintext highlighter-rouge">effective[x]</code>エレメントにはレポート作成時間を<a href="http://www.hl7.org/fhir/datatypes.html#dateTime">dateTime</a>で格納する。</p>
+
+<h3 id="2133254-関連するobservation">2.1.3.3.2.5.4. 関連するObservation</h3>
+
+<p><code class="language-plaintext highlighter-rouge">DiagnosticReport.result</code>エレメントには関連する検体検査計測値などをしめす<code class="language-plaintext highlighter-rouge">Observation</code>リソースを含むことができる。</p>
+
+<h3 id="2133255-参照画像">2.1.3.3.2.5.5. 参照画像</h3>
+
+<p><code class="language-plaintext highlighter-rouge">ImagingStudy</code>や<code class="language-plaintext highlighter-rouge">media</code>は多少オーバーラップするが、使用される目的が異なる。用途に応じて使い分けること。<code class="language-plaintext highlighter-rouge">DiagnosticReport</code>ではDICOM画像への参照として<code class="language-plaintext highlighter-rouge">ImagingStudy</code>が利用され、キー画像として<code class="language-plaintext highlighter-rouge">media</code>が参照される。</p>
+
+<h3 id="2133256-レポートの内容">2.1.3.3.2.5.6. レポートの内容</h3>
+
+<p>典型的には放射線レポートはnarrativeな構成でのレポートが作成される。<code class="language-plaintext highlighter-rouge">DiagnosticReport_Radiology</code>では標準的なnarrativeリソースの表現としてXHTMLやrich text表現として（典型的にはPDF）が<code class="language-plaintext highlighter-rouge">presentedForm</code>に指定される。</p>
+
+<p>Conclusionやコード化された診断結果は各々がレポートを構成する小さなデータであるが、これらは<code class="language-plaintext highlighter-rouge">presentedForm</code>に保持されるnarrativeなデータ内に含まれると同時に、本リソースのエレメントに複製されなければならない（SHOULD)。</p>
+
+<p>診断レポートの所見などnarrativeなデータは<code class="language-plaintext highlighter-rouge">DiagnosticReport</code>のドメインリソースとして定義されている<code class="language-plaintext highlighter-rouge">text</code>にも保持すること。<code class="language-plaintext highlighter-rouge">presentedForm</code>との内容の重複は許容されている。<code class="language-plaintext highlighter-rouge">presentedForm</code>はbase64のバイナリであるため、<code class="language-plaintext highlighter-rouge">DiagnosticReport</code>の<code class="language-plaintext highlighter-rouge">text</code>が検索性の担保に利用される．また、見読性も同時に保たれる。</p>
+
+<p>診断レポートの分野はAIによる診断補助やレポートの構造化を含め様々な変革がもたらされている。そのため、上記仕様は現時点でのリソース展開の例示であり、将来的に変更される可能性がある。</p>
+
+<h2 id="213326-利用方法">2.1.3.3.2.6. 利用方法</h2>
+
+<h3 id="2133261-interaction一覧">2.1.3.3.2.6.1. Interaction一覧</h3>
+<p><code class="language-plaintext highlighter-rouge">DiagnosticReport</code> リソースのインタラクション一覧の定義はユースケースに依存せず共通であるため、共通情報プロファイルに記載されている。</p>
+
+<p><a name="l1707">​</a><a href="DiagnosticReport#DxReportInteraction">DiagnosticReport共通情報プロファイル#インタラクション一覧</a></p>
+
+<h4 id="21332611-必須検索パラメータ">2.1.3.3.2.6.1.1. 必須検索パラメータ</h4>
+
+<p>次の検索パラメータは必須でサポートされなければならない。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Expression</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">based-on</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td>オーダ情報への参照</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.basedOn</code><br/><br/> (<a href="http://hl7.org/fhir/servicerequest.html"><code class="language-plaintext highlighter-rouge">ServiceRequest</code></a>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>レポート種別</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.category</code> (<a href="http://hl7.org/fhir/valueset-diagnostic-service-sections.html">ValueSet</a>) <br/> “RAD”, “RX”, “CT”, “NMR”, “NMS”, “RUS”, etc.<br/> default = “RAD”</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>レポート全体を示すコード</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.code</code><br/><a href="https://loinc.org/18748-4/">LOINC 18748-4</a></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">conclusion</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>コード化されたレポートの conclusion (interpretation/impression)</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.conclusionCode</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>レポート作成日</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.effectiveDate</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounter</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td>オーダが発行された際の Encounter</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.encounter</code><br/><br/> (<a href="http://www.hl7.org/fhir/encounter.html"><code class="language-plaintext highlighter-rouge">Encounter</code></a>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>レポートの identifier（識別子）</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.identifier</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">issued</code></td>
+      <td><code class="language-plaintext highlighter-rouge">date</code></td>
+      <td>レポート発行日（確定日）</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.issued</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">media</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td>キー画像への参照</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.media.link</code><br/><br/> (<a href="http://www.hl7.org/fhir/media.html"><code class="language-plaintext highlighter-rouge">Media</code></a>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">performer</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td>レポート確定者</td>
+      <td><a name="l1946">​</a><code class="language-plaintext highlighter-rouge">DiagnosticReport.performer</code><br/><br/> (<a href="Practitioner"><code class="language-plaintext highlighter-rouge">Practitioner</code></a>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">result</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td>関連する検査結果 (検体検査結果など)</td>
+      <td><a name="l1971">​</a><code class="language-plaintext highlighter-rouge">DiagnosticReport.result</code><br/><br/> (<a href="jpobservationlabresult"><code class="language-plaintext highlighter-rouge">Observation</code></a>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">results-interpreter</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td>読影者</td>
+      <td><a name="l1996">​</a><code class="language-plaintext highlighter-rouge">DiagnosticReport.resultsInterpreter</code><br/><br/> (<a href="Practitioner"><code class="language-plaintext highlighter-rouge">Practitioner</code></a>)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code></td>
+      <td>レポートの状態</td>
+      <td><code class="language-plaintext highlighter-rouge">DiagnosticReport.status</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td>レポートの対象となる患者</td>
+      <td><a name="l2039">​</a><code class="language-plaintext highlighter-rouge">DiagnosticReport.subject</code><br/><br/>(<a href="Patient"><code class="language-plaintext highlighter-rouge">Patient</code></a>)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="213327-その他参考文献リンク等">2.1.3.3.2.7. その他、参考文献・リンク等</h2>
+
+<p>本プロファイルそのものの定義には影響しないが、レポートの標準化に関し以下の情報が参考となる。<code class="language-plaintext highlighter-rouge">presentedForm</code> に収容するレポートのコンテンツを作成するレポーティングシステムにおいて、標準化に関する参考資料となる。</p>
+
+<ul>
+  <li><a href="https://www.rsna.org/practice-tools/data-tools-and-standards/radreport-reporting-templates">RadReport</a> - 放射線レポートテンプレート</li>
+  <li><a href="https://www.rsna.org/practice-tools/data-tools-and-standards/radlex-radiology-lexicon">RadLex radiology lexicon</a> - 放射線科語彙集</li>
+  <li><a href="https://www.rsna.org/practice-tools/data-tools-and-standards/radelement-common-data-elements">RadElement</a> - 放射線関連共通データエレメント</li>
+  <li><a href="https://www.ihe.net/uploadedFiles/Documents/Radiology/IHE_RAD_Suppl_MRRT.pdf">IHE Radiology Technical Framework Supplement - Management of Radiology Report Templates</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/core/experiments/SearchParameter/jp-core-observation-encounter> a fhir:SearchParameter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "jp-core-observation-encounter"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"jp-core-observation-encounter\" </p></div><p><b>url</b>: <code>http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-encounter</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: JPCoreObservationEncounter</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2021-12-01</p><p><b>publisher</b>: HL7 FHIR 日本実装検討WG</p><p><b>contact</b>: HL7 FHIR 日本実装検討WG: <a href=\"https://jpfhir.jp/\">https://jpfhir.jp/</a></p><p><b>description</b>: ObservationリソースのEncounter(来院・入院)に関する検索を定義します。</p><p><b>code</b>: encounter</p><p><b>base</b>: Observation</p><p><b>type</b>: reference</p><p><b>expression</b>: Observation.encounter</p><p><b>xpath</b>: f:Observation/f:context</p><p><b>xpathUsage</b>: normal</p><p><b>target</b>: Encounter</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, type, identifier</p></div>"
+  ];
+  fhir:SearchParameter.url [ fhir:value "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-observation-encounter"];
+  fhir:SearchParameter.version [ fhir:value "1.0.0"];
+  fhir:SearchParameter.name [ fhir:value "JPCoreObservationEncounter"];
+  fhir:SearchParameter.status [ fhir:value "active"];
+  fhir:SearchParameter.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:SearchParameter.date [ fhir:value "2021-12-01"^^xsd:date];
+  fhir:SearchParameter.publisher [ fhir:value "HL7 FHIR 日本実装検討WG"];
+  fhir:SearchParameter.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 FHIR 日本実装検討WG" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://jpfhir.jp/" ]
+     ]
+  ];
+  fhir:SearchParameter.description [ fhir:value "ObservationリソースのEncounter(来院・入院)に関する検索を定義します。"];
+  fhir:SearchParameter.code [ fhir:value "encounter"];
+  fhir:SearchParameter.base [
+     fhir:value "Observation";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.type [ fhir:value "reference"];
+  fhir:SearchParameter.expression [ fhir:value "Observation.encounter"];
+  fhir:SearchParameter.xpath [ fhir:value "f:Observation/f:context"];
+  fhir:SearchParameter.xpathUsage [ fhir:value "normal"];
+  fhir:SearchParameter.target [
+     fhir:value "Encounter";
+     fhir:index 0
+  ];
+  fhir:SearchParameter.multipleOr [
+     fhir:value "true"^^xsd:boolean;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ];
+  fhir:SearchParameter.multipleAnd [
+     fhir:value "true"^^xsd:boolean;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ];
+  fhir:SearchParameter.modifier [
+     fhir:value "missing";
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ], [
+     fhir:value "type";
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ], [
+     fhir:value "identifier";
+     fhir:index 2;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation" ];
+       fhir:Extension.valueCode [ fhir:value "MAY" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/core/experiments/SearchParameter/jp-core-observation-encounter.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

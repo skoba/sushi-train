@@ -1,0 +1,246 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/core/experiments/MedicationAdministration/GOFSH-GENERATED-ID-0> a fhir:MedicationAdministration;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "GOFSH-GENERATED-ID-0"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"GOFSH-GENERATED-ID-0\" </p></div><p><b>identifier</b>: id: 123456789012345, id: 1, id: 1</p><p><b>status</b>: completed</p><p><b>category</b>: 入院オーダ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0482.html\">orderType</a>#I)</span></p><p><b>medication</b>: <a name=\"1\"> </a></p><blockquote><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"1\" </p></div><p><b>location</b>: 腕 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0550.html\">bodyParts</a>#ARM)</span></p><p><b>locationQualifier</b>: 左 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0495.html\">bodySiteModifier</a>#L)</span></p><p><b>patient</b>: <a href=\"Patient/1\">Patient/1</a></p></blockquote><p><b>subject</b>: <a href=\"Patient/1\">Patient/1</a></p><p><b>effective</b>: 2016-07-01 08:05:21+0900 --&gt; 2016-07-01 01:05:43+0900</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Function</b></td><td><b>Actor</b></td></tr><tr><td>*</td><td>Performer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-med-admin-perform-function.html\">MedicationAdministration Performer Function Codes</a>#performer)</span></td><td><a href=\"Practitioner/1\">Practitioner/1: 看護 花子</a></td></tr></table><p><b>request</b>: <a href=\"MedicationRequest/1\">MedicationRequest/1</a></p><h3>Dosages</h3><table class=\"grid\"><tr><td>-</td><td><b>Extension</b></td><td><b>Site</b></td><td><b>Route</b></td><td><b>Method</b></td><td><b>Dose</b></td><td><b>Rate[x]</b></td></tr><tr><td>*</td><td></td><td> <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td>静脈内 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0162.html\">routeOfAdministration</a>#IV)</span></td><td>点滴静注(末梢) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (99ILL#102)</span></td><td>510 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span></td><td>102 mL<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mL = 'mL')</span>/1 h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code h = 'h')</span></td></tr></table></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Medication;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "1" ];
+     fhir:Medication.ingredient [
+       fhir:index 0;
+       fhir:Medication.ingredient.itemCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.74" ];
+           fhir:Coding.code [ fhir:value "107750602" ];
+           fhir:Coding.display [ fhir:value "ソリタ－Ｔ３号輸液５００ｍＬ" ]
+         ]
+       ];
+       fhir:Medication.ingredient.strength [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "本" ];
+           fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+           fhir:Quantity.code [ fhir:value "HON" ]
+         ];
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "回" ];
+           fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+           fhir:Quantity.code [ fhir:value "KAI" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Medication.ingredient.itemCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.74" ];
+           fhir:Coding.code [ fhir:value "108010001" ];
+           fhir:Coding.display [ fhir:value "アドナ注（静脈用）50mg／10mL" ]
+         ]
+       ];
+       fhir:Medication.ingredient.strength [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "アンプル" ];
+           fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+           fhir:Quantity.code [ fhir:value "AMP" ]
+         ];
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "回" ];
+           fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+           fhir:Quantity.code [ fhir:value "KAI" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:BodyStructure;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "1" ];
+     fhir:BodyStructure.location [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0550" ];
+         fhir:Coding.code [ fhir:value "ARM" ];
+         fhir:Coding.display [ fhir:value "腕" ]
+       ]
+     ];
+     fhir:BodyStructure.locationQualifier [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0495" ];
+         fhir:Coding.code [ fhir:value "L" ];
+         fhir:Coding.display [ fhir:value "左" ]
+       ]
+     ];
+     fhir:BodyStructure.patient [
+       fhir:link <http://jpfhir.jp/core/experiments/Patient/1>;
+       fhir:Reference.reference [ fhir:value "Patient/1" ]
+     ]
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7fhir.jp/fhir/StructureDefinition/JP_MedicationAdminstrationRequestDepartment" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0069" ];
+         fhir:Coding.code [ fhir:value "01" ];
+         fhir:Coding.display [ fhir:value "内科" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://hl7fhir.jp/fhir/StructureDefinition/JP_MedicationAdministrationRequester" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://jpfhir.jp/core/experiments/Practitioner/2>;
+       fhir:Reference.reference [ fhir:value "Practitioner/2" ];
+       fhir:Reference.display [ fhir:value "医師 一郎" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://hl7fhir.jp/fhir/StructureDefinition/JP_MedicationAdministrationRequestAuthoredOn" ];
+     fhir:Extension.valueDateTime [ fhir:value "2016-07-01T00:00:00+09:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://hl7fhir.jp/fhir/StructureDefinition/JP_MedicationAdminstrationLocation" ];
+     fhir:Extension.valueReference [
+       fhir:link <http://jpfhir.jp/core/experiments/Location/1>;
+       fhir:Reference.reference [ fhir:value "Location/1" ];
+       fhir:Reference.display [ fhir:value "09A病棟 021病室 4ベッド" ]
+     ]
+  ];
+  fhir:MedicationAdministration.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://www.example.com/fhir/order-number" ];
+     fhir:Identifier.value [ fhir:value "123456789012345" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.81" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.82" ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ];
+  fhir:MedicationAdministration.status [ fhir:value "completed"];
+  fhir:MedicationAdministration.category [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0482" ];
+       fhir:Coding.code [ fhir:value "I" ];
+       fhir:Coding.display [ fhir:value "入院オーダ" ]
+     ]
+  ];
+  fhir:MedicationAdministration.medicationReference [
+     fhir:Reference.reference [ fhir:value "#1" ]
+  ];
+  fhir:MedicationAdministration.subject [
+     fhir:link <http://jpfhir.jp/core/experiments/Patient/1>;
+     fhir:Reference.reference [ fhir:value "Patient/1" ]
+  ];
+  fhir:MedicationAdministration.effectivePeriod [
+     fhir:Period.start [ fhir:value "2016-07-01T08:05:21+09:00"^^xsd:dateTime ];
+     fhir:Period.end [ fhir:value "2016-07-01T13:05:43+09:00"^^xsd:dateTime ]
+  ];
+  fhir:MedicationAdministration.performer [
+     fhir:index 0;
+     fhir:MedicationAdministration.performer.function [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/med-admin-perform-function" ];
+         fhir:Coding.code [ fhir:value "performer" ];
+         fhir:Coding.display [ fhir:value "Performer" ]
+       ]
+     ];
+     fhir:MedicationAdministration.performer.actor [
+       fhir:link <http://jpfhir.jp/core/experiments/Practitioner/1>;
+       fhir:Reference.reference [ fhir:value "Practitioner/1" ];
+       fhir:Reference.display [ fhir:value "看護 花子" ]
+     ]
+  ];
+  fhir:MedicationAdministration.request [
+     fhir:link <http://jpfhir.jp/core/experiments/MedicationRequest/1>;
+     fhir:Reference.reference [ fhir:value "MedicationRequest/1" ]
+  ];
+  fhir:MedicationAdministration.dosage [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministrationLine" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7fhir.jp/medication/99ILL" ];
+           fhir:Coding.code [ fhir:value "01" ];
+           fhir:Coding.display [ fhir:value "主管" ]
+         ]
+       ]
+     ];
+     fhir:MedicationAdministration.dosage.site [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/bodySite" ];
+         fhir:Extension.valueReference [
+           fhir:Reference.reference [ fhir:value "#1" ];
+           fhir:Reference.display [ fhir:value "左腕" ]
+         ]
+       ]
+     ];
+     fhir:MedicationAdministration.dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0162" ];
+         fhir:Coding.code [ fhir:value "IV" ];
+         fhir:Coding.display [ fhir:value "静脈内" ]
+       ]
+     ];
+     fhir:MedicationAdministration.dosage.method [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7fhir.jp/99ILL" ];
+         fhir:Coding.code [ fhir:value "102" ];
+         fhir:Coding.display [ fhir:value "点滴静注(末梢)" ]
+       ]
+     ];
+     fhir:MedicationAdministration.dosage.dose [
+       fhir:Quantity.value [ fhir:value "510"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mL" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mL" ]
+     ];
+     fhir:MedicationAdministration.dosage.rateRatio [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "102"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "mL" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "mL" ]
+       ];
+       fhir:Ratio.denominator [
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "h" ];
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+         fhir:Quantity.code [ fhir:value "h" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/core/experiments/MedicationAdministration/GOFSH-GENERATED-ID-0.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

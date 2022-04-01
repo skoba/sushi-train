@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "jp-core-work-valueset-ProcedureCodes",
+  "meta": {
+    "versionId": "8",
+    "lastUpdated": "2021-08-17T03:38:15.455+00:00",
+    "source": "#mVE3UPRA1oq1NxrP"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-jp-core-work-codesystem-ProcedureCodes.html\"><code>https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes</code></a></li></ul></div>"
+  },
+  "url": "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-ProcedureCodes",
+  "version": "1.0.0",
+  "name": "ProcedureCodes",
+  "title": "Procedureコード",
+  "status": "draft",
+  "date": "2022-04-01T16:21:14+09:00",
+  "publisher": "HL7 FHIR 日本実装検討WG",
+  "contact": [
+    {
+      "name": "HL7 FHIR 日本実装検討WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://jpfhir.jp/"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes"
+      }
+    ]
+  }
+}

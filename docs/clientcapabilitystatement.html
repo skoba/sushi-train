@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Clientcapabilitystatement - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Clientcapabilitystatement</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Clientcapabilitystatement</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h1 id="252-jp-core-client-clientcapabilitystatements">2.5.2. JP Core Client ClientCapabilityStatements</h1>
+<hr />
+
+<h2 id="2521-概要">2.5.2.1. 概要</h2>
+
+<p>この章ではJP Core Clientの期待される機能について説明する。
+JP Core Serverによってサポートされる FHIR プロファイル・RESTful操作・検索パラメータの完全なリストを定義する。<br />
+JP Core Clientは個別のユースケースや意味的な要請に応じてこれらのリストを通じて必要なデータにアクセスすることができる。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>定義URL</td>
+      <td>http://jpfhir.jp/fhir/core/CapabilityStatement/StructureDefinition/jpcoreclientcapabilitystatement</td>
+    </tr>
+    <tr>
+      <td>バージョン</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>名前</td>
+      <td>JPCoreClientCapabilityStatement</td>
+    </tr>
+    <tr>
+      <td>タイトル</td>
+      <td>JP Core Client Capability Statement</td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>アクティブ（2021-12-01）</td>
+    </tr>
+    <tr>
+      <td>定義</td>
+      <td>JP Core Clientの期待される機能について説明する。JP Core Clientは、ローカルなユースケースやその他の文脈上の要件に基づいて、必要なデータにアクセスするために、このリストから選択することができます。</td>
+    </tr>
+    <tr>
+      <td>公開者</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>ソースリソース</td>
+      <td>https://simplifier.net/jp-core-draftv1/jpcoreclientcapabilitystatement</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="2522-fhir-restful-capabilities">2.5.2.2. FHIR RESTful Capabilities</h2>
+<ul>
+  <li>JP Coreは以下の要件を必須とする(<strong>SHALL</strong>)
+    <ul>
+      <li>FHIR仕様に基づくRESTfulなふるまいの実装</li>
+    </ul>
+  </li>
+  <li>以下のレスポンスクラスを返すこと
+    <ul>
+      <li>(Status 400): invalid parameter</li>
+      <li>(Status 401/4xx): unauthorized request</li>
+      <li>(Status 403): insufficient scope</li>
+      <li>(Status 404): unknown resource</li>
+      <li>(Status 410): deleted resource.</li>
+    </ul>
+  </li>
+  <li>
+    <p>全てのJP Core interactionにおいてjson記述をサポートすること(<strong>SHOULD</strong>)</p>
+  </li>
+  <li>JP Coreは以下の要件を満たすべきである(<strong>SHOULD</strong>)
+    <ul>
+      <li>各インスタンス を、FHIR meta.profile 属性の一部としてサポートされる JP Core profileとして認識すること</li>
+    </ul>
+  </li>
+  <li>JP Coreでは以下の要件を実装しても良い(<strong>MAY</strong>)。
+    <ul>
+      <li>全てのJP Core interactionにおいてXML記述をサポートすること</li>
+    </ul>
+  </li>
+  <li>セキュリティ
+    <ul>
+      <li>See the General Security Considerations section for requirements and recommendations.</li>
+      <li>サーバーはunauthorizedなリクエストに対してはHTTP 401を返さなければならない。(<strong>SHALL</strong>)</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="2523-検索条件サマリ">2.5.2.3. 検索条件サマリ</h2>
+<p>|Resource Type|Supported Profiles|Supported Searches|
+|—|—|—|
+|Patient                   ||[SHALL] identifier<br />[SHOULD] name<br />[SHOULD] birthdate + name<br />[SHOULD] birthdate + gender<br />[SHOULD] birthdate + name + gender<br />[SHOULD] name + phone<br />[SHOULD] name + address + postalcode<br />[MAY] family + given + birthdate + gender + phone + address-postalcode|
+|Coverage                  ||[SHOULD] beneficiary<br />[SHOULD] class-type<br />[SHOULD] class-value<br />[SHOULD] dependent<br />[SHOULD] identifier<br />[SHOULD] patient<br />[SHOULD] payor<br />[SHOULD] policy-holder<br />[SHOULD] status<br />[SHOULD] subscriber<br />[SHOULD] type|
+|Encounter                 ||[SHALL] patient<br />[SHALL] date + patient<br />[SHOULD] identifier<br />[SHOULD] class + patient<br />[SHOULD] patient + type	<br />[SHOULD] patient + status|
+|Location                  ||[SHOULD] name<br />[SHOULD] address<br />[SHOULD] address-city<br />[SHOULD] address-state<br />[SHOULD] address-postalcode|
+|Organization              ||[SHOULD] identifier<br />[SHOULD] name<br />[SHOULD] address|
+|Practitioner              ||[SHALL] identifier<br />[SHALL] name|
+|PractitionerRole          ||[SHALL] specialty<br />[SHALL] practitioner|
+|Medication                | |
+|MedicationRequest         ||[SHALL] identifier<br />[SHOULD] patient<br />[SHOULD] patient + date<br />[SHOULD] patient + authoredon<br />[MAY] date + authoredon + category + code + requester|
+|-                         ||-|
+|MedicationDispense        ||[SHALL] identifier<br />[SHOULD] patient<br />[SHOULD] patient + whenhandedover<br />[MAY] whenhandedover + whenprepared + context + code + performer	|
+|-                         ||-|
+|MedicationAdministration  ||[SHALL] identifier<br />[SHOULD] patient<br />[SHOULD] patient + effective-time<br />[MAY]code|
+|-                         ||-|
+|Observation               ||[SHOULD] subject + code + date + based-on<br />[SHOULD] subject + code + date + value-quantity + based-on<br />[SHOULD] subject + code + date + value-concept + based-on<br />[SHOULD] subject + code + date + value-string + based-on<br />[SHOULD] code + value-quantity + subject<br />[SHOULD] code + value-concept + subject<br />[SHOULD] code + value-string + subject<br />[MAY] patient + category + code + value-quantity<br />[MAY] patient + category + code + value-quantity + date<br />[MAY] patient + category + code + value-quantity + encounter|
+|-                         ||-|
+|-                         ||-|
+|-                         ||-|
+|-                         ||-|
+|-                         ||-|
+|ImagingStudy              ||[SHOULD] subject + modality<br />[SHOULD] subject + bodysite<br />[SHOULD] subject + started<br />[SHOULD] subject + started + modality + bodysite<br />[SHOULD]encounter|
+|DiagnosticReport          ||[SHOULD] subject + category<br />[SHOULD] subject + category + based-on<br />[SHOULD] subject + category + date<br />[MAY]based-on + category + code + conclusion + date + encounter + identifier + issued + media + performer + result + results-interpreter + status + subject|
+|-                         ||-|
+|-                         ||-|
+|AllergyIntolerance        ||[SHALL] patient<br />[SHALL] patient + date<br />[SHOULD] patient + clinicalstatus<br />[SHOULD] patient + verificationstatus<br />[SHOULD] patient + type<br />[SHOULD] patient + category<br />[SHOULD] patient + criticality
+|Condition                 ||[SHALL] patient<br />[SHALL] patient + date<br />[SHOULD] patient + clinicalstatus<br />[SHOULD] patient + verificationstatus<br />[SHOULD] patient + category|
+|Procedure                 ||[SHALL] patient<br />[SHALL] patient + date|</p>
+
+<h2 id="2524-restful-capabilities-by-resourceprofile">2.5.2.4. RESTful Capabilities by Resource/Profile:</h2>
+<p>Capablity Statementリソースはより参照すること。</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

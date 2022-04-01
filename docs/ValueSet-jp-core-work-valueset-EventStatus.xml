@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="jp-core-work-valueset-EventStatus"/>
+  <meta>
+    <versionId value="8"/>
+    <lastUpdated value="2021-08-17T03:37:59.553+00:00"/>
+    <source value="#arhvOhWjZNAcEKNY"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html"><code>https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus</code></a></li></ul></div>
+  </text>
+  <url value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-EventStatus"/>
+  <version value="1.0.0"/>
+  <name value="EventStatus"/>
+  <title value="Procedureの状態"/>
+  <status value="draft"/>
+  <date value="2022-04-01T16:21:14+09:00"/>
+  <publisher value="HL7 FHIR 日本実装検討WG"/>
+  <contact>
+    <name value="HL7 FHIR 日本実装検討WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://jpfhir.jp/"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+    </include>
+  </compose>
+</ValueSet>

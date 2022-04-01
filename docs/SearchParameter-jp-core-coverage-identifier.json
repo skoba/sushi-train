@@ -1,0 +1,129 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "jp-core-coverage-identifier",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"jp-core-coverage-identifier\" </p></div><p><b>url</b>: <code>http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-coverage-identifier</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: JPCoreCoverageIdentifier</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2021-12-01</p><p><b>publisher</b>: HL7 FHIR 日本実装検討WG</p><p><b>contact</b>: HL7 FHIR 日本実装検討WG: <a href=\"https://jpfhir.jp/\">https://jpfhir.jp/</a></p><p><b>description</b>: Coverageリソースのidentifierに関する検索を定義します。</p><p><b>code</b>: identifier</p><p><b>base</b>: Coverage</p><p><b>type</b>: token</p><p><b>expression</b>: Coverage.identifier</p><p><b>xpath</b>: f:Coverage/f:identifier</p><p><b>xpathUsage</b>: normal</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, text, not, in, not-in, below, above, ofType</p></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-coverage-identifier",
+  "version": "1.0.0",
+  "name": "JPCoreCoverageIdentifier",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-12-01",
+  "publisher": "HL7 FHIR 日本実装検討WG",
+  "contact": [
+    {
+      "name": "HL7 FHIR 日本実装検討WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://jpfhir.jp/"
+        }
+      ]
+    }
+  ],
+  "description": "Coverageリソースのidentifierに関する検索を定義します。",
+  "code": "identifier",
+  "base": [
+    "Coverage"
+  ],
+  "type": "token",
+  "expression": "Coverage.identifier",
+  "xpath": "f:Coverage/f:identifier",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "_multipleOr": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode": "MAY"
+      }
+    ]
+  },
+  "multipleAnd": true,
+  "_multipleAnd": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode": "MAY"
+      }
+    ]
+  },
+  "modifier": [
+    "missing",
+    "text",
+    "not",
+    "in",
+    "not-in",
+    "below",
+    "above",
+    "ofType"
+  ],
+  "_modifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    }
+  ]
+}

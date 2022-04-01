@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Coverage - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Coverage</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Coverage</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#2112-jp-core-coverage-保険公費プロファイル" id="markdown-toc-2112-jp-core-coverage-保険公費プロファイル">2.1.1.2. JP Core Coverage （保険・公費）プロファイル</a>    <ul>
+      <li><a href="#21121-概略" id="markdown-toc-21121-概略">2.1.1.2.1. 概略</a>        <ul>
+          <li><a href="#211211-背景および想定シナリオ" id="markdown-toc-211211-背景および想定シナリオ">2.1.1.2.1.1. 背景および想定シナリオ</a></li>
+        </ul>
+      </li>
+      <li><a href="#21122-スコープ" id="markdown-toc-21122-スコープ">2.1.1.2.2. スコープ</a></li>
+      <li><a href="#21123-関連するプロファイル" id="markdown-toc-21123-関連するプロファイル">2.1.1.2.3. 関連するプロファイル</a></li>
+      <li><a href="#21124-リソース定義" id="markdown-toc-21124-リソース定義">2.1.1.2.4. リソース定義</a>        <ul>
+          <li><a href="#211241-必須要素" id="markdown-toc-211241-必須要素">2.1.1.2.4.1. 必須要素</a></li>
+          <li><a href="#211242-extensions定義" id="markdown-toc-211242-extensions定義">2.1.1.2.4.2. Extensions定義</a></li>
+          <li><a href="#211243-用語定義" id="markdown-toc-211243-用語定義">2.1.1.2.4.3. 用語定義</a></li>
+          <li><a href="#211244-制約一覧" id="markdown-toc-211244-制約一覧">2.1.1.2.4.4. 制約一覧</a></li>
+        </ul>
+      </li>
+      <li><a href="#21125-利用方法" id="markdown-toc-21125-利用方法">2.1.1.2.5. 利用方法</a>        <ul>
+          <li><a href="#211251-インタラクション一覧" id="markdown-toc-211251-インタラクション一覧">2.1.1.2.5.1. インタラクション一覧</a></li>
+          <li><a href="#211252-operationおよびsearch-parameter-一覧" id="markdown-toc-211252-operationおよびsearch-parameter-一覧">2.1.1.2.5.2. OperationおよびSearch Parameter 一覧</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="2112-jp-core-coverage-保険公費プロファイル">2.1.1.2. JP Core Coverage （保険・公費）プロファイル</h1>
+
+<h2 id="21121-概略">2.1.1.2.1. 概略</h2>
+<p><br />
+<span style="color:;">医療機関や薬局、介護サービス等の支払いや償還に利用する保険や公費等のこと。保険適用だけでなく自己負担の場合もこのリソースを利用する。</span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>定義URL</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage</td>
+    </tr>
+    <tr>
+      <td>バージョン</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>名前</td>
+      <td>JPCoreCoverageProfile</td>
+    </tr>
+    <tr>
+      <td>タイトル</td>
+      <td>JP Core Coverage Profile</td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>アクティブ（2021-11-24）</td>
+    </tr>
+    <tr>
+      <td>定義</td>
+      <td>このプロファイルはCoverageリソースに対して、保険・公費のデータを送受信するための基礎となる制約と拡張を定めたものである。</td>
+    </tr>
+    <tr>
+      <td>公開者</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>ソースリソース</td>
+      <td>https://simplifier.net/jp-core-draftv1/jpcoverage</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h3 id="211211-背景および想定シナリオ">2.1.1.2.1.1. 背景および想定シナリオ</h3>
+
+<p>本プロファイルは、以下のようなユースケースを想定している。</p>
+
+<ul>
+  <li>病院の電子カルテシステムや医事システム、診療所や調剤薬局のシステム、介護サービスを提供する施設のシステム等において、サービス利用者（患者）の支払いに適用する保険や公費の種類、自己負担割合や自己負担上限額などを管理する</li>
+  <li>サービス利用者や保険者が実際に支払う負担額を管理する</li>
+  <li>サービス利用者や保険者を除く個人又は組織が支払いの全額又は一部に責任を持つ場合の負担額を管理する</li>
+</ul>
+
+<h2 id="21122-スコープ">2.1.1.2.2. スコープ</h2>
+
+<p><span style="color:;"><br />
+Coverageリソースは、医療・介護保険における識別子・記述子を提供することを想定しており、典型的には保険証に記載される情報であり、医療や介護サービスの提供に対する対価として、一部または全ての支払いに使用される可能性があるものである。</span></p>
+
+<p>このリソースは、保険者以外の個人または組織が医療費の一部の支払いに責任を持つ「自己負担」を登録するためにも使用することができる。ここで定義する「自己負担」は、患者の支払いの保証人になることとは別のものであることに留意する。</p>
+
+<p>Coverage リソースは、FHIRワークフローの観点からは「イベント」に該当するリソースである。詳細はWorkflowの項目を参照のこと。<br /><br /></p>
+
+<p><br /></p>
+
+<h2 id="21123-関連するプロファイル">2.1.1.2.3. 関連するプロファイル</h2>
+
+<p>JP Coverage リソースは、以下のリソースから直接参照される。</p>
+
+<ul>
+  <li>Account, Claim, ClaimResponse, CoverageEligibilityRequest, CoverageEligibilityResponse, DeviceRequest, EnrollmentRequest, ExplanationOfBenefit, MedicationRequest, ServiceRequest and Task</li>
+</ul>
+
+<p><br />
+JP Coverage リソースには、直接参照するリソースは存在しない。
+<br /><br /></p>
+
+<h2 id="21124-リソース定義">2.1.1.2.4. リソース定義</h2>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/jpcoverage">リソース定義ページの参照</a></p>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/jpcoverage/$download?format=json">リソース定義のダウンロード</a></p>
+
+<p><br /></p>
+
+<h3 id="211241-必須要素">2.1.1.2.4.1. 必須要素</h3>
+
+<p>Coverage リソースは、次の要素を必ず持たなければならない。</p>
+
+<ul>
+  <li>status ： 「リソースのインスタンスの状態」を示すエレメント。</li>
+  <li>beneficiary : 「サービスを受ける者」を示すエレメント。Patientリソースを参照する。</li>
+  <li>payor ： 「負担者」を示すエレメント。Organaization、Patient、RelatedPersonのいずれかを参照する。</li>
+</ul>
+
+<p><br /><br /></p>
+
+<h3 id="211242-extensions定義">2.1.1.2.4.2. Extensions定義</h3>
+
+<p>JP Core Coverage プロファイルで使用される拡張は次の通りである。</p>
+<ul>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpcoverageinsuredpersonsymbol">JP_Coverage_InsuredPersonSymbol</a>
+    <ul>
+      <li>健康保険における被保険者証記号を示す拡張。</li>
+    </ul>
+  </li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpcoverageinsuredpersonnumber">JP_Coverage_InsuredPersonNumber</a>
+    <ul>
+      <li>健康保険における被保険者証番号を示す拡張。</li>
+    </ul>
+  </li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpcoverageinsuredpersonsubnumber">JP_Coverage_InsuredPersonSubNumber</a>
+    <ul>
+      <li>健康保険における被保険者証番号の枝番を示す拡張。</li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<h3 id="211243-用語定義">2.1.1.2.4.3. 用語定義</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Path</th>
+      <th>定義</th>
+      <th>バインディング強度</th>
+      <th>バリューセット</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coverage.status</td>
+      <td>インスタンスの状態を指定するcode。</td>
+      <td>Required</td>
+      <td><a href="https://www.hl7.org/fhir/valueset-fm-status.html">FinancialResourceStatusCodes</a></td>
+    </tr>
+    <tr>
+      <td>Coverage.type</td>
+      <td>保険種別（国民健康保険、公害医療、労災、地方公費など）を表すCodeableConcept。<br />JAHIS病名情報交換規約、又は電子処方箋CDA記述仕様のコード表を参照することができる。</td>
+      <td>Preferred　</td>
+      <td><a href="https://www.jahis.jp/standard/detail/id=134">JAHIS病名情報データ交換規約・JHSD0001</a> <br /> <a href="https://www.mhlw.go.jp/content/10800000/000342368.pdf">電子処方箋CDA記述仕様・別表11</a></td>
+    </tr>
+    <tr>
+      <td>Coverage.relationship</td>
+      <td>患者と被保険者の関係を表すCodeableConcept。<br />JAHIS病名情報交換規約、又は電子処方箋CDA記述仕様のコード表を参照することができる。</td>
+      <td>Extensible</td>
+      <td><a href="https://www.jahis.jp/standard/detail/id=134">JAHIS病名情報データ交換規約・HL7表0063</a> <br /> <a href="https://www.mhlw.go.jp/content/10800000/000342368.pdf">電子処方箋CDA記述仕様・別表12</a></td>
+    </tr>
+    <tr>
+      <td>Coverage.costToBeneficiary.type</td>
+      <td>患者の自己負担額に関するサービスや負担率、上限額等の種類を指定するCodeableConcept。</td>
+      <td>Extensible</td>
+      <td><a href="https://www.hl7.org/fhir/valueset-coverage-copay-type.html">CoverageCopayTypeCodes</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+<h3 id="211244-制約一覧">2.1.1.2.4.4. 制約一覧</h3>
+
+<p>JP Coverage リソースには、制約は存在しない。
+<br /><br /></p>
+
+<h2 id="21125-利用方法">2.1.1.2.5. 利用方法</h2>
+<p><br /></p>
+
+<h3 id="211251-インタラクション一覧">2.1.1.2.5.1. インタラクション一覧</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>インタラクション</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHALL（必須）</td>
+      <td>search-type、read</td>
+    </tr>
+    <tr>
+      <td>SHOULD（推奨）</td>
+      <td>vread、history-instance</td>
+    </tr>
+    <tr>
+      <td>MAY（利用可能）</td>
+      <td>create、update、patch、delete、history-type</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<h3 id="211252-operationおよびsearch-parameter-一覧">2.1.1.2.5.2. OperationおよびSearch Parameter 一覧</h3>
+
+<p><br /></p>
+
+<h4 id="2112521-search-parameter一覧">2.1.1.2.5.2.1. Search Parameter一覧</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>パラメータ</th>
+      <th>型</th>
+      <th>例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHOULD</td>
+      <td>beneficiary</td>
+      <td>reference</td>
+      <td>GET [base]/Coverage?beneficiary=***</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>class-type</td>
+      <td>token</td>
+      <td>GET [base]/Coverage.class?type=<em>**</em></td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>class-value</td>
+      <td>string</td>
+      <td>GET [base]/Coverage.class?value=***</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>dependent</td>
+      <td>string</td>
+      <td>GET [base]/Coverage?dependent=***</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>identifier</td>
+      <td>token</td>
+      <td>GET [base]/Coverage?identifier=***</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>patient</td>
+      <td>reference</td>
+      <td>GET [base]/Coverage?beneficiary=Patient/***</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>payor</td>
+      <td>reference</td>
+      <td>GET [base]/Coverage?payor=***</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>policy-holder</td>
+      <td>reference</td>
+      <td>GET [base]/Coverage?policy-holder=***</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>status</td>
+      <td>token</td>
+      <td>GET [base]/Coverage?status=***</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>subscriber</td>
+      <td>reference</td>
+      <td>GET [base]/Coverage?subscriber=***</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>type</td>
+      <td>token</td>
+      <td>GET [base]/Coverage?token=***</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="21125211-推奨検索パラメータ">2.1.1.2.5.2.1.1. 推奨検索パラメータ</h5>
+
+<p><span style="color: red;">★★コメント： 説明は記載途中です★★</span></p>
+
+<p>次の検索パラメータをサポートすることが望ましい。</p>
+
+<ol>
+  <li>
+    <p>beneficiary 検索パラメータを使用して、識別子によるCoverageの検索をサポートすることが望ましい（SHOULD）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/Coverage?beneficiary={system|}[code]
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/Coverage?beneficiary=*****
+</span></code></pre></div>    </div>
+
+    <p>指定された識別子に一致するCoverageリソースを含むBundleを検索する。</p>
+  </li>
+  <li>
+    <p>class-type 検索パラメータを使用して、言語コードによるOrganizationの検索をサポートすることが望ましい（SHOULD）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/Coverage.class?type={token}
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/Coverageclass?type=*****
+</span></code></pre></div>    </div>
+  </li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

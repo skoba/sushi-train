@@ -1,0 +1,737 @@
+﻿JP_CORE_EXPERIMENTAL : Validation Results
+=========================================
+
+err = 29, warn = 75, info = 196
+IG Publisher Version: 1.1.114
+Generated Fri Apr 01 16:24:07 JST 2022. FHIR version 4.0.1 for jp.jpfhir.experiments#1.0.0 (canonical = http://jpfhir.jp/core/experiments)
+ Build Errors : 136 / 8 / 0
+ /home/skoba/src/sushi-train/fsh-generated/resources/CapabilityStatement-jp-procedure-capability : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/CodeSystem-jp-core-work-codesystem-EventStatus : 0 / 0 / 2
+ /home/skoba/src/sushi-train/fsh-generated/resources/CodeSystem-jp-core-work-codesystem-ProcedureCodes : 0 / 0 / 2
+ /home/skoba/src/sushi-train/fsh-generated/resources/CodeSystem-jp-core-work-codesystem-observation-physicalExamCodes : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/ImplementationGuide-jp.jpfhir.experiments : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/MedicationAdministration-GOFSH-GENERATED-ID-0 : 13 / 4 / 12
+ /home/skoba/src/sushi-train/fsh-generated/resources/MedicationRequest-91c0caf5-6b57-4c80-b419-9196b23d41f8 : 8 / 3 / 11
+ /home/skoba/src/sushi-train/fsh-generated/resources/MedicationRequest-a97c3c13-ac3c-412a-a9fb-2237a17138b8 : 8 / 3 / 14
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-category : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-clinicalstatus : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-criticality : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-date : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-type : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-verificationstatus : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-condition-category : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-condition-clinicalstatus : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-condition-date : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-condition-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-condition-verificationstatus : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-coverage-beneficiary : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-coverage-identifier : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-category : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-code : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-date : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-servicerequest : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-encounter-class : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-encounter-date : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-encounter-identifier : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-encounter-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-encounter-status : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-encounter-type : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-imagingstudy-bodySite : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-imagingstudy-encounter : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-imagingstudy-modality : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-imagingstudy-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-imagingstudy-started : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-location-address : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-location-address-city : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-location-address-postalcode : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-location-address-state : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-location-name : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationadministration-code : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationadministration-effectivedatetime : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationadministration-identifier : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationadministration-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationdispense-code : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationdispense-encounter : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationdispense-identifier : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationdispense-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationdispense-performer : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationdispense-whenhandedover : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationdispense-whenprepared : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationrequest-authoredon : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationrequest-category : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationrequest-code : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationrequest-date : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationrequest-identifier : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationrequest-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-medicationrequest-requester : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-observation-category : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-observation-code : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-observation-date : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-observation-encounter : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-observation-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-observation-servicerequest : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-observation-value-concept : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-observation-value-quantity : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-organization-address : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-organization-identifier : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-organization-name : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-patient-address-postalcode : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-patient-birthdate : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-patient-family : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-patient-gender : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-patient-given : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-patient-id : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-patient-identifier : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-patient-name : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-patient-phone : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-practitioner-identifier : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-practitioner-name : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-practitionerrole-practitioner : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-practitionerrole-specialty : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-procedure-date : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/SearchParameter-jp-core-procedure-patient : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-AllergyIntolerance : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Condition : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Coverage : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Coverage-InsuredPersonNumber : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Coverage-InsuredPersonSubNumber : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Coverage-InsuredPersonSymbol : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-DiagnosticReport-Common : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-DiagnosticReport-LabResult : 0 / 1 / 21
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-DiagnosticReport-Radiology : 0 / 1 / 3
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Encounter : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-HumanName : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-ImagingStudy-Radiology : 0 / 1 / 25
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Immunization : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Location : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Medication : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Medication-Ingredient-DrugNo : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Medication-IngredientStrength-StrengthType : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Dosage-DosageComment : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Dosage-LineComment : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-DosageMethod-MethodComment : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-DosageRate-RateComment : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-DosageRoute-RouteComment : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-DosageSite-SiteComment : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Injection : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Location : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-RequestAuthoredOn : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-RequestDepartment : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Requester : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-UncategorizedComment : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationDispense : 0 / 1 / 2
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationDispense-Injection : 0 / 1 / 2
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationDispense-Preparation : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationRequest : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DispenseRequest-ExpectedRepeatCount : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DosageInstruction-Device : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DosageInstruction-Line : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DosageInstruction-PeriodOfUse : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DosageInstruction-UsageDuration : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-MedicationRequest-Injection : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Observation-BodyMeasurement : 0 / 1 / 7
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Observation-BodySite-BodySitePosition : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Observation-Common : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Observation-LabResult : 0 / 1 / 91
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Observation-PhysicalExam : 0 / 1 / 11
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Observation-SocialHistory : 0 / 1 / 5
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Observation-VitalSigns : 0 / 1 / 7
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Organization : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Organization-InsuranceOrganizationCategory : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Organization-InsuranceOrganizationNo : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Organization-PrefectureNo : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Patient : 0 / 1 / 3
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Patient-Race : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Practitioner : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-PractitionerRole : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/StructureDefinition-JP-Procedure : 0 / 1 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/ValueSet-jp-core-work-valueset-EventStatus : 0 / 0 / 1
+ /home/skoba/src/sushi-train/fsh-generated/resources/ValueSet-jp-core-work-valueset-ProcedureCodes : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/jp-core-work-valueset-EventStatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/jp-core-work-valueset-ProcedureCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/jp-core-work-codesystem-EventStatus.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/jp-core-work-codesystem-observation-physicalExamCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/jp-core-work-codesystem-ProcedureCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationAdministration/GOFSH-GENERATED-ID-0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /home/skoba/src/sushi-train/docs/BodyStructure-91c0caf5-6b57-4c80-b419-9196b23d41f8_0cdd1de5-d48f-4cf4-9238-2dba48fbbc39.html#/html/body/div/div/div/div/div/div/p/a at Line 162, column 518: The link 'urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4' for "urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/BodyStructure-GOFSH-GENERATED-ID-0_1.html#/html/body/div/div/div/div/div/div/p/a at Line 162, column 483: The link 'Patient/1' for "Patient/1" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/BodyStructure-a97c3c13-ac3c-412a-a9fb-2237a17138b8_2726417c-4d80-4bd3-8175-109d8e26379b.html#/html/body/div/div/div/div/div/div/p/a at Line 162, column 518: The link 'urn:uuid:7bc33f58-121a-4e59-bdd5-96cd7ce4f158' for "urn:uuid:7bc33f58-121a-4e59-bdd5-96cd7ce4f158" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationAdministration-GOFSH-GENERATED-ID-0.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 178, column 1327: The link 'Patient/1' for "Patient/1" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationAdministration-GOFSH-GENERATED-ID-0.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1396: The link 'Patient/1' for "Patient/1" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationAdministration-GOFSH-GENERATED-ID-0.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 178, column 1898: The link 'Practitioner/1' for "Practitioner/1: 看護 花子" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationAdministration-GOFSH-GENERATED-ID-0.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1985: The link 'MedicationRequest/1' for "MedicationRequest/1" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationRequest-91c0caf5-6b57-4c80-b419-9196b23d41f8.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 922: The link 'urn:uuid:91c0caf5-6b57-4c80-b419-9196b23d41f8' for "urn:uuid:91c0caf5-6b57-4c80-b419-9196b23d41f8" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationRequest-91c0caf5-6b57-4c80-b419-9196b23d41f8.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1050: The link 'urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4' for "urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationRequest-91c0caf5-6b57-4c80-b419-9196b23d41f8.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1216: The link 'urn:uuid:b598aedf-28fb-406a-b38e-250d3e92ac60' for "urn:uuid:b598aedf-28fb-406a-b38e-250d3e92ac60" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationRequest-91c0caf5-6b57-4c80-b419-9196b23d41f8.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1346: The link 'urn:uuid:df0ebf6d-e527-49d4-bce2-0885045a7afd' for "urn:uuid:df0ebf6d-e527-49d4-bce2-0885045a7afd" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationRequest-a97c3c13-ac3c-412a-a9fb-2237a17138b8.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 922: The link 'urn:uuid:a97c3c13-ac3c-412a-a9fb-2237a17138b8' for "urn:uuid:a97c3c13-ac3c-412a-a9fb-2237a17138b8" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationRequest-a97c3c13-ac3c-412a-a9fb-2237a17138b8.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1050: The link 'urn:uuid:7bc33f58-121a-4e59-bdd5-96cd7ce4f158' for "urn:uuid:7bc33f58-121a-4e59-bdd5-96cd7ce4f158" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationRequest-a97c3c13-ac3c-412a-a9fb-2237a17138b8.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1216: The link 'urn:uuid:70c503af-b04b-4104-8c18-1bf97766927c' for "urn:uuid:70c503af-b04b-4104-8c18-1bf97766927c" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/MedicationRequest-a97c3c13-ac3c-412a-a9fb-2237a17138b8.html#/html/body/div/div/div/div/div/div/p/a at Line 178, column 1346: The link 'urn:uuid:02222cfc-81c0-4a45-a8bd-50b814f885ae' for "urn:uuid:02222cfc-81c0-4a45-a8bd-50b814f885ae" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/cardinality.html#/html/body/div/div/div/div/div/p/a at Line 138, column 95: The link 'Handling of non-existent data' for "1.3. データが存在しない場合の扱い" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportcommon.html#/html/body/div/div/div/div/div/ul/li/a at Line 244, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportcommon.html#/html/body/div/div/div/div/div/ul/li/a at Line 250, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportcommon.html#/html/body/div/div/div/div/div/ul/li/a at Line 254, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportlabresult.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 194, column 21: The link 'DiagnosticReport#Common2' for "DiagnosticReport" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportlabresult.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportlabresult.html#/html/body/div/div/div/div/div/ul/li/a at Line 263, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportlabresult.html#/html/body/div/div/div/div/div/p/a at Line 337, column 5: The link 'DiagnosticReport#DxReportInteraction' for "DiagnosticReport共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 202, column 21: The link 'DiagnosticReport#Common2' for "DiagnosticReport" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/p/a at Line 219, column 14: The link 'DiagnosticReport#Common2' for "DiagnosticReportリソース" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 257, column 8: The link 'Patient' for "Patient" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 259, column 8: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 260, column 8: The link 'Observation' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 262, column 8: The link 'jpimagingstudy' for "ImagingStudy" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 269, column 8: The link 'Patient' for "患者 (Patient)" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 270, column 8: The link 'Practitioner' for "依頼医，読影医，確定医など (Practitioner)" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/p/a at Line 290, column 26: The link 'diagnosticreportradiology2#text' for "以下" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/p/a at Line 491, column 5: The link 'DiagnosticReport#DxReportInteraction' for "DiagnosticReport共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 565, column 110: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 571, column 107: The link 'jpobservationlabresult' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 577, column 119: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/diagnosticreportradiology.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 589, column 107: The link 'Patient' for "Patient" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/imagingstudyradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 256, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/imagingstudyradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 259, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/imagingstudyradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 260, column 8: The link 'Location' for "Location" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/imagingstudyradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 261, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/imagingstudyradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 263, column 8: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/imagingstudyradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 264, column 8: The link 'DiagnosticReportRadiology' for "DiagnosticReport" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/imagingstudyradiology.html#/html/body/div/div/div/div/div/ul/li/a at Line 265, column 8: The link 'Observation' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/a at Line 199, column 16: The link 'GeneralGuidance.guide.html' for "1.1. 総合ガイダンス" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/a at Line 200, column 16: The link 'Cardinality.guide.html' for "1.2. CardinaryとMust Supportの組み合わせ" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/a at Line 201, column 16: The link 'Handlingofnon-existentdata.guide.html' for "1.3. 欠損値の扱い" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/a at Line 202, column 16: The link 'CharacterEncoding.guide.html' for "1.4. 文字コード" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/a at Line 203, column 16: The link 'Search.guide.html' for "1.5. 検索" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 218, column 20: The link 'Patient.guide.html' for "2.1.1.1. JP Core Patient （患者）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 219, column 20: The link 'Coverage.guide.html' for "2.1.1.2. JP Core Coverage （保険・公費）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 220, column 20: The link 'Encounter.guide.html' for "2.1.1.3. JP Core Encounter （来院・入院）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 221, column 20: The link 'Location.guide.html' for "2.1.1.4. JP Core Location （所在場所）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 222, column 20: The link 'Organization.guide.html' for "2.1.1.5. JP Core Organization （組織）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 223, column 20: The link 'Practitioner.guide.html' for "2.1.1.6. JP Core Practitioner （医療従事者）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 224, column 20: The link 'PractitionerRole.guide.html' for "2.1.1.7. JP Core PractitionerRole （医療従事者役割)プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 229, column 20: The link 'Medication.guide.html' for "2.1.2.1. JP Core Medication （薬剤）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 230, column 20: The link 'MedicationRequest.guide.html.guide.html' for "2.1.2.2. JP Core MedicationRequest （内服・外用薬剤処方）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 231, column 20: The link 'MedicationRequest2.guide.html' for "2.1.2.3. JP Core MedicationRequest Injection （注射薬剤処方）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 232, column 20: The link 'MedicationDispense.guide.html' for "2.1.2.4. JP Core MedicationDispense （内服・外用薬剤処方調剤・払い出し記録）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 233, column 20: The link 'MedicationDispense2.guide.html' for "2.1.2.5. JP Core MedicationDispense Injection （注射薬剤処方調剤・払い出し記録）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 234, column 20: The link 'MedicationAdministration.guide.html' for "2.1.2.6. JP Core MedicationAdministration （内服・外用薬剤投与実施情報）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 235, column 20: The link 'MedicationAdministration2.guide.html' for "2.1.2.7. JP Core MedicationAdministration Injection （注射薬剤投与実施情報）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 242, column 24: The link 'ObservationCommon.guide.html' for "2.1.3.1.0. JP Core Observation Common （共通）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 243, column 24: The link 'ObservationLabResult.guide.html' for "2.1.3.1.1. JP Core Observation LabResult （検体検査結果）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 244, column 24: The link 'ObservationVitalSigns.guide.html' for "2.1.3.1.2. JP Core Observation VitalSigns （バイタルサイン）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 245, column 24: The link 'ObservationBodyMeasurement.guide.html' for "2.1.3.1.3. JP Core Observation BodyMeasurement （身体計測）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 246, column 24: The link 'ObservationPhysicalExam.guide.html' for "2.1.3.1.4. JP Core Observation PhysicalExam （身体所見）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 247, column 24: The link 'ObservationSocialHistory.guide.html' for "2.1.3.1.5. JP Core Observation SocialHistory （生活背景）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 252, column 24: The link 'ImagingStudyRadiology.guide.html' for "2.1.3.2.1. JP Core ImagingStudy Radiology（放射線検査）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 257, column 24: The link 'DiagnosticReportCommon.guide.html' for "2.1.3.3.0. JP Core DiagnosticReport Common （共通）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 258, column 24: The link 'DiagnosticReportLabResult.guide.html' for "2.1.3.3.1. JP Core DiagnosticReport LabResult （検体検査レポート）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 259, column 24: The link 'DiagnosticReportRadiology2.guide.html' for "2.1.3.3.2. JP Core DiagnosticReport Radiology （放射線検査レポート）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 266, column 20: The link 'Allergy.guide.html' for "2.1.4.1. JP Core AllergyIntolerance （アレルギー・不耐症）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 267, column 20: The link 'Condition.guide.html' for "2.1.4.2. JP Core Condition （状態）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/a at Line 268, column 20: The link 'Procedure.guide.html' for "2.1.4.3. JP Core Procedure （処置）プロファイル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ol/li/ul/li/ul/li/ul/li/a at Line 270, column 24: The link 'Extensions.guide.html' for "2.2. Extensions （拡張）" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 280, column 12: The link 'OperationsAndSearchParameters.guide.html' for "2.3. Operations and Search Parameters （操作および検索パラメータ）" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 281, column 12: The link 'Terminology.guide.html' for "2.4. Terminology （用語集）" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 284, column 16: The link 'ServerCapabilityStatement.guide.html' for "2.5.1. JP Core Server Capability Statement" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/ul/li/ul/li/a at Line 285, column 16: The link 'ClientCapabilityStatement.guide.html' for "2.5.2. JP Core Client Capability Statement" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/index.html#/html/body/div/div/div/div/div/ul/li/a at Line 290, column 8: The link 'Security.guide.html' for "3. Security （セキュリティ）" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/medicationrequest.html#/html/body/div/div/div/div/div/p/a at Line 1137, column 5: The link 'templatejsonsample' for "JSONサンプル" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationbodymeasurement.html#/html/body/div/div/div/div/div/ul/li/a at Line 193, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationbodymeasurement.html#/html/body/div/div/div/div/div/ul/li/a at Line 197, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationbodymeasurement.html#/html/body/div/div/div/div/div/ul/li/a at Line 198, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationbodymeasurement.html#/html/body/div/div/div/div/div/ul/li/a at Line 202, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationbodymeasurement.html#/html/body/div/div/div/div/div/ul/li/a at Line 208, column 8: The link 'ObservationBodyMeasurement' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationbodymeasurement.html#/html/body/div/div/div/div/div/ul/li/a at Line 209, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationbodymeasurement.html#/html/body/div/div/div/div/div/p/a at Line 290, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationbodymeasurement.html#/html/body/div/div/div/div/div/p/a at Line 300, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationbodymeasurement.html#/html/body/div/div/div/div/div/p/a at Line 306, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationcommon.html#/html/body/div/div/div/div/div/ul/li/a at Line 252, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationcommon.html#/html/body/div/div/div/div/div/ul/li/a at Line 256, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationcommon.html#/html/body/div/div/div/div/div/ul/li/a at Line 257, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationcommon.html#/html/body/div/div/div/div/div/ul/li/a at Line 261, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationcommon.html#/html/body/div/div/div/div/div/ul/li/a at Line 267, column 8: The link 'Observation' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationcommon.html#/html/body/div/div/div/div/div/ul/li/a at Line 268, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationlabresult.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 193, column 21: The link 'Observation#Common2' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationlabresult.html#/html/body/div/div/div/div/div/ul/li/a at Line 246, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationlabresult.html#/html/body/div/div/div/div/div/ul/li/a at Line 250, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationlabresult.html#/html/body/div/div/div/div/div/ul/li/a at Line 251, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationlabresult.html#/html/body/div/div/div/div/div/ul/li/a at Line 255, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationlabresult.html#/html/body/div/div/div/div/div/ul/li/a at Line 261, column 8: The link 'ObservationLabResult' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationlabresult.html#/html/body/div/div/div/div/div/ul/li/a at Line 262, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationlabresult.html#/html/body/div/div/div/div/div/p/a at Line 355, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationlabresult.html#/html/body/div/div/div/div/div/p/a at Line 537, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/ul/li/a at Line 242, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/ul/li/a at Line 243, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/ul/li/a at Line 247, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/ul/li/a at Line 253, column 8: The link 'ObservationPhysicalExam' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/ul/li/a at Line 254, column 8: The link 'ObservationProcedure' for "Procedure" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/ul/li/a at Line 265, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/ul/li/a at Line 266, column 8: The link 'Patient' for "Patient" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/ul/li/a at Line 267, column 8: The link 'Practitioner' for "Practitioner" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/p/a at Line 366, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/p/a at Line 376, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationphysicalexam.html#/html/body/div/div/div/div/div/p/a at Line 382, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationsocialhistory.html#/html/body/div/div/div/div/div/ul/li/a at Line 203, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationsocialhistory.html#/html/body/div/div/div/div/div/ul/li/a at Line 207, column 8: The link '/DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationsocialhistory.html#/html/body/div/div/div/div/div/ul/li/a at Line 208, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationsocialhistory.html#/html/body/div/div/div/div/div/ul/li/a at Line 212, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationsocialhistory.html#/html/body/div/div/div/div/div/ul/li/a at Line 218, column 8: The link 'ObservationSocialHistory' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationsocialhistory.html#/html/body/div/div/div/div/div/ul/li/a at Line 219, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationvitalsigns.html#/html/body/div/div/div/div/div/ul/li/a at Line 193, column 8: The link 'Condition' for "Condition" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationvitalsigns.html#/html/body/div/div/div/div/div/ul/li/a at Line 197, column 8: The link 'DiagnosticReport' for "DiagnosticReport" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationvitalsigns.html#/html/body/div/div/div/div/div/ul/li/a at Line 198, column 8: The link 'Encounter' for "Encounter" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationvitalsigns.html#/html/body/div/div/div/div/div/ul/li/a at Line 202, column 8: The link 'ImagingStudy2' for "ImagingStudy" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationvitalsigns.html#/html/body/div/div/div/div/div/ul/li/a at Line 208, column 8: The link 'ObservationVitalSigns' for "Observation" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationvitalsigns.html#/html/body/div/div/div/div/div/ul/li/a at Line 209, column 8: The link 'Procedure' for "Procedure" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationvitalsigns.html#/html/body/div/div/div/div/div/p/a at Line 281, column 5: The link 'Observation#ObsInteraction' for "Observation共通情報プロファイル#インタラクション一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationvitalsigns.html#/html/body/div/div/div/div/div/p/a at Line 291, column 5: The link 'Observation#ObsSearch' for "Observation共通情報プロファイル#Search Parameter一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/observationvitalsigns.html#/html/body/div/div/div/div/div/p/a at Line 297, column 5: The link 'Observation#ObsOperation' for "Observation共通情報プロファイル#Operation一覧" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/patient.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 385, column 9: The link '"http://hl7.org/fhir/R4/extension-iso21090-en-representation.html"' for "NameRepresentationUse" cannot be resolved
+ERROR: /home/skoba/src/sushi-train/docs/practitioner.html#/html/body/div/div/div/div/div/ul/li/p/a at Line 353, column 9: The link '"http://hl7.org/fhir/R4/extension-iso21090-en-representation.html"' for "NameRepresentationUse" cannot be resolved
+== fsh-generated/resources/CapabilityStatement-jp-procedure-capability.json ==
+== fsh-generated/resources/CodeSystem-jp-core-work-codesystem-EventStatus.json ==
+INFORMATION: CodeSystem/jp-core-work-codesystem-EventStatus: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/CodeSystem-jp-core-work-codesystem-ProcedureCodes.json ==
+INFORMATION: CodeSystem/jp-core-work-codesystem-ProcedureCodes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+== fsh-generated/resources/CodeSystem-jp-core-work-codesystem-observation-physicalExamCodes.json ==
+== fsh-generated/resources/ImplementationGuide-jp.jpfhir.experiments.json ==
+== fsh-generated/resources/MedicationAdministration-GOFSH-GENERATED-ID-0.json ==
+INFORMATION: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.contained[0].ofType(Medication).ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.74' is unknown so the code cannot be validated
+INFORMATION: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.contained[0].ofType(Medication).ingredient[0].strength.numerator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+INFORMATION: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.contained[0].ofType(Medication).ingredient[0].strength.denominator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+INFORMATION: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.contained[0].ofType(Medication).ingredient[1].item.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.74' is unknown so the code cannot be validated
+INFORMATION: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.contained[0].ofType(Medication).ingredient[1].strength.numerator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+INFORMATION: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.contained[0].ofType(Medication).ingredient[1].strength.denominator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+WARNING: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.contained[1].ofType(BodyStructure).location.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0550#ARM should be one of 'Arm' instead of '腕' for 'http://terminology.hl7.org/CodeSystem/v2-0550#ARM'
+WARNING: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.contained[1].ofType(BodyStructure).locationQualifier[0].coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0495#L should be one of 'Left, links' instead of '左' for 'http://terminology.hl7.org/CodeSystem/v2-0495#L'
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.contained[1].ofType(BodyStructure).patient: Unable to resolve resource 'Patient/1'
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.extension[0]: The extension http://hl7fhir.jp/fhir/StructureDefinition/JP_MedicationAdminstrationRequestDepartment is unknown, and not allowed here
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.extension[0].value.ofType(CodeableConcept).coding[0]: Unknown Code http://terminology.hl7.org/CodeSystem/v2-0069#01 in http://terminology.hl7.org/CodeSystem/v2-0069 for 'http://terminology.hl7.org/CodeSystem/v2-0069#01'
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.extension[1]: The extension http://hl7fhir.jp/fhir/StructureDefinition/JP_MedicationAdministrationRequester is unknown, and not allowed here
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.extension[1].value.ofType(Reference): Unable to resolve resource 'Practitioner/2'
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.extension[2]: The extension http://hl7fhir.jp/fhir/StructureDefinition/JP_MedicationAdministrationRequestAuthoredOn is unknown, and not allowed here
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.extension[3]: The extension http://hl7fhir.jp/fhir/StructureDefinition/JP_MedicationAdminstrationLocation is unknown, and not allowed here
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.extension[3].value.ofType(Reference): Unable to resolve resource 'Location/1'
+INFORMATION: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.category: None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category), and a coding is recommended to come from this value set) (codes = http://terminology.hl7.org/CodeSystem/v2-0482#I)
+WARNING: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.category.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0482#I should be one of 'Inpatient Order' instead of '入院オーダ' for 'http://terminology.hl7.org/CodeSystem/v2-0482#I'
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.subject: Unable to resolve resource 'Patient/1'
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.performer[0].actor: Unable to resolve resource 'Practitioner/1'
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.request: Unable to resolve resource 'MedicationRequest/1'
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.dosage.extension[0]: The extension http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministrationLine is unknown, and not allowed here
+INFORMATION: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.dosage.extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7fhir.jp/medication/99ILL' is unknown so the code cannot be validated
+ERROR: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.dosage.site.extension[0].value.ofType(Reference): Invalid Resource target type. Found Medication, but expected one of ([BodyStructure])
+WARNING: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.dosage.route.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0162#IV should be one of 'Intravenous, Intravenös' instead of '静脈内' for 'http://terminology.hl7.org/CodeSystem/v2-0162#IV'
+INFORMATION: MedicationAdministration/GOFSH-GENERATED-ID-0: MedicationAdministration.dosage.method.coding[0]: Code System URI 'http://hl7fhir.jp/99ILL' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationRequest-91c0caf5-6b57-4c80-b419-9196b23d41f8.json ==
+ERROR: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: 91c0caf5-6b57-4c80-b419-9196b23d41f8,0cdd1de5-d48f-4cf4-9238-2dba48fbbc39))
+INFORMATION: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.contained[0].ofType(Medication).ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.74' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.contained[0].ofType(Medication).ingredient[0].strength.numerator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.contained[0].ofType(Medication).ingredient[0].strength.denominator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+WARNING: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.contained[1].ofType(BodyStructure).location.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0550#ARM should be one of 'Arm' instead of '腕' for 'http://terminology.hl7.org/CodeSystem/v2-0550#ARM'
+WARNING: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.contained[1].ofType(BodyStructure).locationQualifier[0].coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0495#L should be one of 'Left, links' instead of '左' for 'http://terminology.hl7.org/CodeSystem/v2-0495#L'
+ERROR: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.contained[1].ofType(BodyStructure).patient: Unable to resolve resource 'urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4'
+WARNING: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.category[0].coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0482#I should be one of 'Inpatient Order' instead of '入院患者オーダ' for 'http://terminology.hl7.org/CodeSystem/v2-0482#I'
+INFORMATION: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.category[1].coding[0]: Code System URI 'http://hl7fhir.jp/medication/MR9PCategory' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.category[2].coding[0]: Code System URI 'http://hl7fhir.jp/medication/JHSI0001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.medication.ofType(Reference): Unable to resolve resource 'urn:uuid:91c0caf5-6b57-4c80-b419-9196b23d41f8'
+ERROR: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.subject: Unable to resolve resource 'urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4'
+ERROR: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.requester: Unable to resolve resource 'urn:uuid:b598aedf-28fb-406a-b38e-250d3e92ac60'
+ERROR: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.insurance[0]: Unable to resolve resource 'urn:uuid:df0ebf6d-e527-49d4-bce2-0885045a7afd'
+ERROR: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestDevice is unknown, and not allowed here
+INFORMATION: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.dosageInstruction[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7fhir.jp/medication/99ILL' is unknown so the code cannot be validated
+ERROR: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.dosageInstruction[0].site.extension[0].value.ofType(Reference): Unable to resolve resource 'urn:uuid:0cdd1de5-d48f-4cf4-9238-2dba48fbbc39'
+INFORMATION: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.35' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.34' is unknown so the code cannot be validated
+== fsh-generated/resources/MedicationRequest-a97c3c13-ac3c-412a-a9fb-2237a17138b8.json ==
+ERROR: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest: dom-3: 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' 'If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource' ( (unmatched: a97c3c13-ac3c-412a-a9fb-2237a17138b8,2726417c-4d80-4bd3-8175-109d8e26379b))
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.contained[0].ofType(Medication).ingredient[0].item.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.74' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.contained[0].ofType(Medication).ingredient[0].strength.numerator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.contained[0].ofType(Medication).ingredient[0].strength.denominator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.contained[0].ofType(Medication).ingredient[1].item.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.74' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.contained[0].ofType(Medication).ingredient[1].strength.numerator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.contained[0].ofType(Medication).ingredient[1].strength.denominator: Code System URI 'urn:oid:1.2.392.100495.20.2.101' is unknown so the code cannot be validated
+WARNING: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.contained[1].ofType(BodyStructure).location.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0550#ARM should be one of 'Arm' instead of '腕' for 'http://terminology.hl7.org/CodeSystem/v2-0550#ARM'
+WARNING: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.contained[1].ofType(BodyStructure).locationQualifier[0].coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0495#L should be one of 'Left, links' instead of '左' for 'http://terminology.hl7.org/CodeSystem/v2-0495#L'
+ERROR: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.contained[1].ofType(BodyStructure).patient: Unable to resolve resource 'urn:uuid:7bc33f58-121a-4e59-bdd5-96cd7ce4f158'
+WARNING: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.category[0].coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/v2-0482#I should be one of 'Inpatient Order' instead of '入院患者オーダ' for 'http://terminology.hl7.org/CodeSystem/v2-0482#I'
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.category[1].coding[0]: Code System URI 'http://hl7fhir.jp/medication/MR9PCategory' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.category[2].coding[0]: Code System URI 'http://hl7fhir.jp/medication/JHSI0001' is unknown so the code cannot be validated
+ERROR: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.medication.ofType(Reference): Unable to resolve resource 'urn:uuid:a97c3c13-ac3c-412a-a9fb-2237a17138b8'
+ERROR: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.subject: Unable to resolve resource 'urn:uuid:7bc33f58-121a-4e59-bdd5-96cd7ce4f158'
+ERROR: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.requester: Unable to resolve resource 'urn:uuid:70c503af-b04b-4104-8c18-1bf97766927c'
+ERROR: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.insurance[0]: Unable to resolve resource 'urn:uuid:02222cfc-81c0-4a45-a8bd-50b814f885ae'
+ERROR: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.dosageInstruction[0].extension[0]: The extension http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestLine is unknown, and not allowed here
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.dosageInstruction[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://hl7fhir.jp/medication/99ILL' is unknown so the code cannot be validated
+ERROR: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.dosageInstruction[0].site.extension[0].value.ofType(Reference): Unable to resolve resource 'urn:uuid:2726417c-4d80-4bd3-8175-109d8e26379b'
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.dosageInstruction[0].route.coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.35' is unknown so the code cannot be validated
+INFORMATION: MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8: MedicationRequest.dosageInstruction[0].method.coding[0]: Code System URI 'urn:oid:1.2.392.100495.20.2.34' is unknown so the code cannot be validated
+== fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-category.json ==
+== fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-clinicalstatus.json ==
+== fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-criticality.json ==
+== fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-date.json ==
+== fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-patient.json ==
+== fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-type.json ==
+== fsh-generated/resources/SearchParameter-jp-core-allergyintolerance-verificationstatus.json ==
+== fsh-generated/resources/SearchParameter-jp-core-condition-category.json ==
+== fsh-generated/resources/SearchParameter-jp-core-condition-clinicalstatus.json ==
+== fsh-generated/resources/SearchParameter-jp-core-condition-date.json ==
+== fsh-generated/resources/SearchParameter-jp-core-condition-patient.json ==
+== fsh-generated/resources/SearchParameter-jp-core-condition-verificationstatus.json ==
+== fsh-generated/resources/SearchParameter-jp-core-coverage-beneficiary.json ==
+== fsh-generated/resources/SearchParameter-jp-core-coverage-identifier.json ==
+== fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-category.json ==
+== fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-code.json ==
+== fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-date.json ==
+== fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-patient.json ==
+== fsh-generated/resources/SearchParameter-jp-core-diagnosticreport-servicerequest.json ==
+== fsh-generated/resources/SearchParameter-jp-core-encounter-class.json ==
+== fsh-generated/resources/SearchParameter-jp-core-encounter-date.json ==
+== fsh-generated/resources/SearchParameter-jp-core-encounter-identifier.json ==
+== fsh-generated/resources/SearchParameter-jp-core-encounter-patient.json ==
+== fsh-generated/resources/SearchParameter-jp-core-encounter-status.json ==
+== fsh-generated/resources/SearchParameter-jp-core-encounter-type.json ==
+== fsh-generated/resources/SearchParameter-jp-core-imagingstudy-bodySite.json ==
+== fsh-generated/resources/SearchParameter-jp-core-imagingstudy-encounter.json ==
+== fsh-generated/resources/SearchParameter-jp-core-imagingstudy-modality.json ==
+== fsh-generated/resources/SearchParameter-jp-core-imagingstudy-patient.json ==
+== fsh-generated/resources/SearchParameter-jp-core-imagingstudy-started.json ==
+== fsh-generated/resources/SearchParameter-jp-core-location-address.json ==
+== fsh-generated/resources/SearchParameter-jp-core-location-address-city.json ==
+== fsh-generated/resources/SearchParameter-jp-core-location-address-postalcode.json ==
+== fsh-generated/resources/SearchParameter-jp-core-location-address-state.json ==
+== fsh-generated/resources/SearchParameter-jp-core-location-name.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationadministration-code.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationadministration-effectivedatetime.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationadministration-identifier.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationadministration-patient.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationdispense-code.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationdispense-encounter.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationdispense-identifier.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationdispense-patient.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationdispense-performer.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationdispense-whenhandedover.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationdispense-whenprepared.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationrequest-authoredon.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationrequest-category.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationrequest-code.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationrequest-date.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationrequest-identifier.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationrequest-patient.json ==
+== fsh-generated/resources/SearchParameter-jp-core-medicationrequest-requester.json ==
+== fsh-generated/resources/SearchParameter-jp-core-observation-category.json ==
+== fsh-generated/resources/SearchParameter-jp-core-observation-code.json ==
+== fsh-generated/resources/SearchParameter-jp-core-observation-date.json ==
+== fsh-generated/resources/SearchParameter-jp-core-observation-encounter.json ==
+== fsh-generated/resources/SearchParameter-jp-core-observation-patient.json ==
+== fsh-generated/resources/SearchParameter-jp-core-observation-servicerequest.json ==
+== fsh-generated/resources/SearchParameter-jp-core-observation-value-concept.json ==
+== fsh-generated/resources/SearchParameter-jp-core-observation-value-quantity.json ==
+== fsh-generated/resources/SearchParameter-jp-core-organization-address.json ==
+== fsh-generated/resources/SearchParameter-jp-core-organization-identifier.json ==
+== fsh-generated/resources/SearchParameter-jp-core-organization-name.json ==
+== fsh-generated/resources/SearchParameter-jp-core-patient-address-postalcode.json ==
+== fsh-generated/resources/SearchParameter-jp-core-patient-birthdate.json ==
+== fsh-generated/resources/SearchParameter-jp-core-patient-family.json ==
+== fsh-generated/resources/SearchParameter-jp-core-patient-gender.json ==
+== fsh-generated/resources/SearchParameter-jp-core-patient-given.json ==
+== fsh-generated/resources/SearchParameter-jp-core-patient-id.json ==
+== fsh-generated/resources/SearchParameter-jp-core-patient-identifier.json ==
+== fsh-generated/resources/SearchParameter-jp-core-patient-name.json ==
+== fsh-generated/resources/SearchParameter-jp-core-patient-phone.json ==
+== fsh-generated/resources/SearchParameter-jp-core-practitioner-identifier.json ==
+== fsh-generated/resources/SearchParameter-jp-core-practitioner-name.json ==
+== fsh-generated/resources/SearchParameter-jp-core-practitionerrole-practitioner.json ==
+== fsh-generated/resources/SearchParameter-jp-core-practitionerrole-specialty.json ==
+== fsh-generated/resources/SearchParameter-jp-core-procedure-date.json ==
+== fsh-generated/resources/SearchParameter-jp-core-procedure-patient.json ==
+== fsh-generated/resources/StructureDefinition-JP-AllergyIntolerance.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_AllergyIntolerance'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Condition.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Condition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Coverage.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Coverage'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Coverage-InsuredPersonNumber.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonNumber'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-Coverage-InsuredPersonSubNumber.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSubNumber'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-Coverage-InsuredPersonSymbol.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Coverage_InsuredPersonSymbol'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-DiagnosticReport-Common.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Common'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-DiagnosticReport-LabResult.json ==
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[9].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[11].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[13].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[15].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[23].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[27].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[28].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[29].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[30].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.snapshot.element[31].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[1].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[3].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[5].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[7].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[15].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[16].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[17].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[18].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[19].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-LabResult: StructureDefinition.differential.element[20].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_LabResult'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-DiagnosticReport-Radiology.json ==
+INFORMATION: StructureDefinition/JP-DiagnosticReport-Radiology: StructureDefinition.snapshot.element[13].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-DiagnosticReport-Radiology: StructureDefinition.differential.element[5].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_DiagnosticReport_Radiology'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Encounter.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-HumanName.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_HumanName'): The Implementation Guide contains no examples for this data type profile
+== fsh-generated/resources/StructureDefinition-JP-ImagingStudy-Radiology.json ==
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[9].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[10].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[11].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[12].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[34].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[40].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[42].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[47].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[52].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[53].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[54].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.snapshot.element[55].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[1].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[2].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[3].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[4].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[23].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[29].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[31].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[32].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[34].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[35].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[36].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-ImagingStudy-Radiology: StructureDefinition.differential.element[37].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Immunization.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Immunization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Location.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Location'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Medication.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Medication-Ingredient-DrugNo.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_Ingredient_DrugNo'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-Medication-IngredientStrength-StrengthType.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Medication_IngredientStrength_StrengthType'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Dosage-DosageComment.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_DosageComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Dosage-LineComment.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_LineComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-DosageMethod-MethodComment.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageMethod_MethodComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-DosageRate-RateComment.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageRate_RateComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-DosageRoute-RouteComment.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageRoute_RouteComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-DosageSite-SiteComment.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_DosageSite_SiteComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Injection.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration_Injection'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Location.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Location'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-RequestAuthoredOn.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestAuthoredOn'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-RequestDepartment.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestDepartment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-Requester.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Requester'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationAdministration-UncategorizedComment.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_UncategorizedComment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationDispense.json ==
+INFORMATION: StructureDefinition/JP-MedicationDispense: StructureDefinition.snapshot.element[47].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-MedicationDispense-Injection.json ==
+INFORMATION: StructureDefinition/JP-MedicationDispense-Injection: StructureDefinition.snapshot.element[47].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense_Injection'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-MedicationDispense-Preparation.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationRequest.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DispenseRequest-ExpectedRepeatCount.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DispenseRequest-InstructionForDispense.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DosageInstruction-Device.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Device'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DosageInstruction-Line.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DosageInstruction-PeriodOfUse.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationRequest-DosageInstruction-UsageDuration.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-MedicationRequest-Injection.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_Injection'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Observation-BodyMeasurement.json ==
+INFORMATION: StructureDefinition/JP-Observation-BodyMeasurement: StructureDefinition.snapshot.element[13].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-BodyMeasurement: StructureDefinition.snapshot.element[14].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-BodyMeasurement: StructureDefinition.snapshot.element[18].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-BodyMeasurement: StructureDefinition.differential.element[1].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-BodyMeasurement: StructureDefinition.differential.element[2].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-BodyMeasurement: StructureDefinition.differential.element[5].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_BodyMeasurement'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Observation-BodySite-BodySitePosition.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Observation_BodySite_BodySitePosition'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-Observation-Common.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Observation-LabResult.json ==
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[9].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[18].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[19].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[20].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[21].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[24].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[26].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[29].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[32].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[33].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[34].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[35].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[36].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[37].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[38].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[39].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[40].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[41].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[42].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[43].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[44].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[45].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[46].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[47].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[50].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[51].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[52].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[53].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[54].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[55].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[56].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[57].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[61].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[62].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[63].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[64].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[65].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[66].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[67].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[68].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[69].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[73].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[74].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[76].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.snapshot.element[77].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[1].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[5].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[6].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[7].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[8].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[9].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[10].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[11].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[12].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[13].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[14].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[15].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[16].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[17].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[18].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[19].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[20].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[21].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[22].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[23].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[24].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[25].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[26].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[27].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[28].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[29].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[30].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[31].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[32].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[33].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[34].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[35].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[36].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[37].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[38].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[39].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[40].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[41].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[42].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[43].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[44].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[45].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[46].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[47].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-LabResult: StructureDefinition.differential.element[48].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Observation-PhysicalExam.json ==
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.snapshot.element[14].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.snapshot.element[18].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.snapshot.element[25].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.snapshot.element[31].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.snapshot.element[50].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.differential.element[2].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.differential.element[5].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.differential.element[7].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.differential.element[9].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-PhysicalExam: StructureDefinition.differential.element[13].fixed.ofType(CodeableConcept).coding[0]: Code System URI 'http://jpfhir.jp/fhir/Common/CodeSystem/observation-physicalExam' is unknown so the code cannot be validated
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_PhysicalExam'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Observation-SocialHistory.json ==
+INFORMATION: StructureDefinition/JP-Observation-SocialHistory: StructureDefinition.snapshot.element[14].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-SocialHistory: StructureDefinition.snapshot.element[18].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-SocialHistory: StructureDefinition.differential.element[2].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-SocialHistory: StructureDefinition.differential.element[4].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_SocialHistory'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Observation-VitalSigns.json ==
+INFORMATION: StructureDefinition/JP-Observation-VitalSigns: StructureDefinition.snapshot.element[13].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-VitalSigns: StructureDefinition.snapshot.element[14].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-VitalSigns: StructureDefinition.snapshot.element[18].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-VitalSigns: StructureDefinition.differential.element[1].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-VitalSigns: StructureDefinition.differential.element[2].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Observation-VitalSigns: StructureDefinition.differential.element[5].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_VitalSigns'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Organization.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Organization-InsuranceOrganizationCategory.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-Organization-InsuranceOrganizationNo.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-Organization-PrefectureNo.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-Patient.json ==
+INFORMATION: StructureDefinition/JP-Patient: StructureDefinition.snapshot.element[41].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/JP-Patient: StructureDefinition.differential.element[26].comment: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Patient-Race.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Patient_Race'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-JP-Practitioner.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-PractitionerRole.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_PractitionerRole'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-JP-Procedure.json ==
+WARNING: StructureDefinition.where(url = 'http://jpfhir.jp/fhir/core/StructureDefinition/JP_Procedure'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-jp-core-work-valueset-EventStatus.json ==
+== fsh-generated/resources/ValueSet-jp-core-work-valueset-ProcedureCodes.json ==

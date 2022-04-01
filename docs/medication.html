@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Medication - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"21"}
+    h3,h4,h5,h6{--heading-prefix:"21"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Medication</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Medication</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#2121-medicationリソース薬剤リスト" id="markdown-toc-2121-medicationリソース薬剤リスト">2.1.2.1. Medicationリソース（薬剤リスト）</a>    <ul>
+      <li><a href="#21211-概略" id="markdown-toc-21211-概略">2.1.2.1.1. 概略</a>        <ul>
+          <li><a href="#212111-背景および想定シナリオ" id="markdown-toc-212111-背景および想定シナリオ">2.1.2.1.1.1. 背景および想定シナリオ</a></li>
+          <li><a href="#212112-スコープ" id="markdown-toc-212112-スコープ">2.1.2.1.1.2. スコープ</a></li>
+        </ul>
+      </li>
+      <li><a href="#21212-関連するプロファイル" id="markdown-toc-21212-関連するプロファイル">2.1.2.1.2. 関連するプロファイル</a></li>
+      <li><a href="#21213-リソース定義" id="markdown-toc-21213-リソース定義">2.1.2.1.3. リソース定義</a>        <ul>
+          <li><a href="#212131-必須要素" id="markdown-toc-212131-必須要素">2.1.2.1.3.1. 必須要素</a></li>
+          <li><a href="#212132-extensions定義" id="markdown-toc-212132-extensions定義">2.1.2.1.3.2. Extensions定義</a></li>
+          <li><a href="#212133-用語定義" id="markdown-toc-212133-用語定義">2.1.2.1.3.3. 用語定義</a></li>
+          <li><a href="#212134-制約一覧" id="markdown-toc-212134-制約一覧">2.1.2.1.3.4. 制約一覧</a></li>
+          <li><a href="#212135-項目の追加" id="markdown-toc-212135-項目の追加">2.1.2.1.3.5. 項目の追加</a></li>
+        </ul>
+      </li>
+      <li><a href="#21214-利用方法" id="markdown-toc-21214-利用方法">2.1.2.1.4. 利用方法</a>        <ul>
+          <li><a href="#212141-サンプル" id="markdown-toc-212141-サンプル">2.1.2.1.4.1. サンプル</a></li>
+          <li><a href="#212142-各種コメントの記述方法" id="markdown-toc-212142-各種コメントの記述方法">2.1.2.1.4.2. 各種コメントの記述方法</a></li>
+        </ul>
+      </li>
+      <li><a href="#21215-その他参考文献リンク等" id="markdown-toc-21215-その他参考文献リンク等">2.1.2.1.5. その他、参考文献・リンク等</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="2121-medicationリソース薬剤リスト">2.1.2.1. Medicationリソース（薬剤リスト）</h1>
+
+<h2 id="21211-概略">2.1.2.1.1. 概略</h2>
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>定義URL</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication</td>
+    </tr>
+    <tr>
+      <td>バージョン</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>名前</td>
+      <td>JPCoreMedication</td>
+    </tr>
+    <tr>
+      <td>タイトル</td>
+      <td>JP Core Medication Profile</td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>アクティブ（2021-10-21）</td>
+    </tr>
+    <tr>
+      <td>定義</td>
+      <td>Medication リソース</td>
+    </tr>
+    <tr>
+      <td>公開者</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>ソースリソース</td>
+      <td>https://simplifier.net/jp-core-draftv1/jpmedication</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p>このプロファイルは薬剤のリストを表現する。注射ではしばしば複数の薬剤が混注して用いられ、不可分であることからMedicationリソースを利用して処方を表現することとした。
+主に注射薬剤処方の一部としてMedicationResource, MedicationDispense, MedicationAdministrationリソースと組み合わせて利用する。薬剤リストに使用する用語集は諸外国と日本では異なっており、日本国内で規格を運用するためにExtensionの追加や用語集の追加・変更を行った。現在、日本での注射関連規格として利用されているJAHIS 注射データ交換規約 Ver 2.1CおよびSS-MIX2 Ver.1.2gを参考にした。</p>
+
+<h3 id="212111-背景および想定シナリオ">2.1.2.1.1.1. 背景および想定シナリオ</h3>
+<p>本プロファイルは、以下のようなユースケースを想定している。</p>
+
+<ul>
+  <li>電子カルテから特定の患者で使用された注射オーダに含まれる薬剤情報を構成する</li>
+  <li>退院時サマリや診療情報提供書において注射の投薬情報の一部として記述する</li>
+  <li>各種検査レポートや診断レポートにおいて注射の投薬情報の一部として記述する</li>
+  <li>SS-MIX2のOMP-02(注射オーダ)メッセージやJAHIS注射データ交換規約に準拠した注射オーダメッセージの一部としてJSONに変換する</li>
+</ul>
+
+<h3 id="212112-スコープ">2.1.2.1.1.2. スコープ</h3>
+<h4 id="2121121-対象">2.1.2.1.1.2.1. 対象</h4>
+<p>このプロファイルの対象は注射、注入で使われる薬剤リストを電子的に連携するためのメッセージを記述することである。</p>
+
+<h4 id="2121122-対象としないこと">2.1.2.1.1.2.2. 対象としないこと</h4>
+<p>このプロファイルは注射、注入の薬剤で使用される薬剤リストに関するものであり、内服、外用の薬剤については対象としない。</p>
+
+<p>また、このリソースは単独で用いられることはない。</p>
+
+<h2 id="21212-関連するプロファイル">2.1.2.1.2. 関連するプロファイル</h2>
+<p>JP Medicationリソースは、以下のリソースから直接参照される。</p>
+
+<ul>
+  <li>JP Core MedicationRequestリソース</li>
+  <li>JP Core MedicationDispenseリソース</li>
+  <li>JP Core MedicationAdministrationリソース</li>
+</ul>
+
+<p>JP Medicationリソースが参照するリソースはない。</p>
+
+<h2 id="21213-リソース定義">2.1.2.1.3. リソース定義</h2>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/JPMedication">リソース定義ページの参照</a></p>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/JPMedication/$download?format=json">リソース定義のダウンロード</a></p>
+
+<h3 id="212131-必須要素">2.1.2.1.3.1. 必須要素</h3>
+<p>次のデータ項目は必須（データが存在しなければならない）、あるいは、データが送信システムに存在する場合はサポートされなければならないことを意味する。（Must Support）。</p>
+
+<p>MedicationRequest リソースは、次の要素を持たなければならない。</p>
+<ul>
+  <li>status : ステータスは必須であり、JP Coreでは”active”に固定される。</li>
+  <li>ingredient.itemCodeableConcept : 医薬品の識別情報であり、JP Coreでは必須である。</li>
+  <li>ingredient.strength : 医薬品の投与量であり、JP Coreでは必須である。</li>
+</ul>
+
+<p>Medicationリソースでは、次の要素をサポートしなければならない。</p>
+<ul>
+  <li>ingredient.itemCodeableConcept : 医薬品の識別情報</li>
+  <li>ingredient.strength : 医薬品の投与量</li>
+</ul>
+
+<h3 id="212132-extensions定義">2.1.2.1.3.2. Extensions定義</h3>
+<p>Medication リソースで使用される拡張は次の通りである。</p>
+
+<h4 id="2121321-jp-medication-独自で追加されたextension">2.1.2.1.3.2.1. JP Medication 独自で追加されたExtension</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>拡張</th>
+      <th>説明</th>
+      <th>URL</th>
+      <th>値の型</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RP内薬剤番号</td>
+      <td>RP内の薬剤の連番を格納する拡張</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication_Ingredient_DrugNo</td>
+      <td>integer</td>
+    </tr>
+    <tr>
+      <td>力価区分</td>
+      <td>投与量が製剤単位か成分単位かを格納する拡張</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_Medication_atIngredientStrength_StrengthType</td>
+      <td>CodeableConcept</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="2121322-既存のextensionの利用">2.1.2.1.3.2.2. 既存のExtensionの利用</h4>
+
+<p>既存のExtensionで利用するものはない。</p>
+
+<h3 id="212133-用語定義">2.1.2.1.3.3. 用語定義</h3>
+<p>HL7 FHIRの基底規格では、薬剤コードをはじめとして、剤形などでSNOMED CTが使われているが、日本ではライセンスの問題もあり普及していない。代替としてJAHIS注射データ交換規約やSS-MIX2で使われている用語集を採用した。</p>
+
+<p>HL7 ver 2系では用語集を識別するコーディングシステム名(以下、「CS名」）は文字列であったが、FHIRではURIを指定する必要があるため、それぞれにURIを割り当てた。以下に使用する用語集のCS名とURI表記を列記する。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>分類</th>
+      <th>CS名</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>医薬品</td>
+      <td>HOT7</td>
+      <td>urn:oid:1.2.392.200119.4.403.2</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>HOT9</td>
+      <td>urn:oid:1.2.392.200119.4.403.1</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>HOT13</td>
+      <td>urn:oid:1.2.392.200119.4.402.1</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>YJコード</td>
+      <td>urn:oid:1.2.392.100495.20.1.73</td>
+    </tr>
+    <tr>
+      <td>剤形</td>
+      <td>MERIT-9(剤形)</td>
+      <td>http://jpfhir.jp/ePrescription/CodeSystem/merit9-form</td>
+    </tr>
+    <tr>
+      <td>薬品単位</td>
+      <td>MERIT-9(単位）</td>
+      <td>urn:oid:1.2.392.100495.20.2.101</td>
+    </tr>
+    <tr>
+      <td>力価区分</td>
+      <td>電子処方箋HL7 FHIR仕様(力価区分)</td>
+      <td>urn:oid:1.2.392.100495.20.2.22</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Medicationの各要素のバインディングは以下の通りである。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Path</th>
+      <th>定義</th>
+      <th>バインディング強度</th>
+      <th>バリューセット</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Medication.ingredient.itemCodeableConcept</td>
+      <td>医薬品の識別情報</td>
+      <td>prefered</td>
+      <td>HOT7,HOT9,HOT13,YJコード</td>
+    </tr>
+    <tr>
+      <td>Medication.ingredient.strength.numerator.code</td>
+      <td>成分量単位</td>
+      <td>prefered</td>
+      <td>MERIT-9(単位)</td>
+    </tr>
+    <tr>
+      <td>Medication.ingredient.strength.denominator.code</td>
+      <td>１回</td>
+      <td>prefered</td>
+      <td>MERIT-9(単位)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="212134-制約一覧">2.1.2.1.3.4. 制約一覧</h3>
+<p>Medication リソースは、以下の制約を満たさなければならない。</p>
+<ul>
+  <li>status : JP Coreでは”active”に固定される。</li>
+</ul>
+
+<p>Medicationリソースは、以下の制約を満たさなければならない。</p>
+<ul>
+  <li>ingredient.strength.denominator.value : “1”に固定される。</li>
+  <li>ingredient.strength.denominator.unit : “回”に固定される。</li>
+  <li>ingredient.strength.denominator.system : “urn:oid:1.2.392.100495.20.2.101”に固定される。</li>
+  <li>ingredient.strength.denominator.code : “KAI”に固定される。</li>
+</ul>
+
+<h3 id="212135-項目の追加">2.1.2.1.3.5. 項目の追加</h3>
+<p>日本国内の電子カルテシステムでの注射オーダの運用に合わせ、以下の項目を追加した。</p>
+
+<ul>
+  <li>薬剤番号（拡張「JP_MedicationDrugNo」を使用）</li>
+  <li>⼒価区分の追加（拡張「JP_MedicationStrengthType」を使用）</li>
+</ul>
+
+<h2 id="21214-利用方法">2.1.2.1.4. 利用方法</h2>
+
+<p>Medication リソースは単体として用いられないため、検索などはMedicationRequestなどの一部として行われる。</p>
+
+<h3 id="212141-サンプル">2.1.2.1.4.1. サンプル</h3>
+
+<p><a href="https://simplifier.net/guide/jpfhirjp/MedicationRequest2">MedicationRequest(注射)</a>や<a href="https://simplifier.net/guide/jpfhirjp/MedicationDispense2">MedicationDispense(注射)</a>、<a href="https://simplifier.net/guide/jpfhirjp/MedicationAdministration2">MedicationAdministration(注射)</a>を参照すること。</p>
+
+<h3 id="212142-各種コメントの記述方法">2.1.2.1.4.2. 各種コメントの記述方法</h3>
+
+<p>Medicationリソースを参照する上位のリソースに記述される。</p>
+
+<h2 id="21215-その他参考文献リンク等">2.1.2.1.5. その他、参考文献・リンク等</h2>
+<ol>
+  <li>HL7, FHIR MedicationRequest Resource, http://hl7.org/fhir/medicationrequest.html</li>
+  <li>HL7, FHIR Medication Resource, http://hl7.org/fhir/medication.html</li>
+  <li>HL7, FHIR BodyStructure Resource, http://hl7.org/fhir/bodystructure.html</li>
+  <li>保健医療福祉情報システム工業会, JAHIS 注射データ交換規約 Ver.2.1C, https://www.jahis.jp/standard/detail/id=590</li>
+  <li>日本医療情報学会MERIT-9研究会, 医療情報交換規約運用指針、MERIT-9 処方オーダver 1.0, http://merit-9.mi.hama-med.ac.jp/jahis/SHOHOU.pdf</li>
+  <li>保健医療福祉情報システム工業会, JAHISデータ交換規約（共通編）Ver.1.2, https://www.jahis.jp/standard/detail/id=725</li>
+  <li>保健医療福祉情報システム工業会, JAHIS注射データ交換規約Ver.2.1C, https://www.jahis.jp/standard/detail/id=590</li>
+  <li>Mike Henderson, 日本HL7協会監修、「HL7メッセージ交換」、第2版、インナービジョン社、2013年</li>
+  <li>一般社団法人医療情報システム開発センター, 医薬品HOT コードマスター, http://www2.medis.or.jp/hcode/</li>
+  <li>日本医療情報学会、SS-MIX2仕様書・ガイドライン, http://www.jami.jp/jamistd/ssmix2.php</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

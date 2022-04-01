@@ -1,0 +1,2092 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="jp.jpfhir.experiments"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>JP_CORE_EXPERIMENTAL</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/core/experiments/ImplementationGuide/jp.jpfhir.experiments</pre><div><p>JP Core Implementation Guide/profileをCI/CDで生成するための実験用リポジトリ</p>
+</div></div>
+  </text>
+  <url value="http://jpfhir.jp/core/experiments/ImplementationGuide/jp.jpfhir.experiments"/>
+  <version value="1.0.0"/>
+  <name value="JP_CORE_EXPERIMENTAL"/>
+  <title value="FHIR JP Core CI/CD実験"/>
+  <status value="draft"/>
+  <date value="2022-04-01T16:21:14+09:00"/>
+  <publisher value="HL7 FHIR 日本実装検討WG"/>
+  <contact>
+    <name value="HL7 FHIR 日本実装検討WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://jpfhir.jp/"/>
+    </telecom>
+  </contact>
+  <description value="JP Core Implementation Guide/profileをCI/CDで生成するための実験用リポジトリ"/>
+  <packageId value="jp.jpfhir.experiments"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2022+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="docs"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://jpfhir.jp/core/experiments/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-AllergyIntolerance"/>
+      </reference>
+      <name value="JP_AllergyIntolerance"/>
+      <description value="本プロファイルはAllergyIntoleranceリソースに対して、患者のアレルギーや不耐症に関するデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Condition"/>
+      </reference>
+      <name value="JP_Condition"/>
+      <description value="本プロファイルはConditionリソースに対して、患者の健康状態に関するデータを送受信するための共通の制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Coverage"/>
+      </reference>
+      <name value="JP_Coverage"/>
+      <description value="このプロファイルはCoverageリソースに対して、保険・公費のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-DiagnosticReport-Common"/>
+      </reference>
+      <name value="JP_DiagnosticReport_Common"/>
+      <description value="このプロファイルはDiagnosticReportリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-DiagnosticReport-LabResult"/>
+      </reference>
+      <name value="JP_DiagnosticReport_LabResult"/>
+      <description value="このプロファイルはDiagnosticReportリソースに対して、検体検査結果のデータを送受信するための制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-DiagnosticReport-Radiology"/>
+      </reference>
+      <name value="JP_DiagnosticReport_Radiology"/>
+      <description value="このプロファイルはDiagnosticReportリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Encounter"/>
+      </reference>
+      <name value="JP_Encounter"/>
+      <description value="このプロファイルはEncounterリソースに対して、来院/入院情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-HumanName"/>
+      </reference>
+      <name value="JP_HumanName"/>
+      <description value="このプロファイルはHumanName DataTypeに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-ImagingStudy-Radiology"/>
+      </reference>
+      <name value="JP_ImagingStudy_Radiology"/>
+      <description value="このプロファイルはImagingStudyリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Immunization"/>
+      </reference>
+      <name value="JP_Immunization"/>
+      <description value="このプロファイルはImmunizationリソースに対して日本での運用を視野に入れて制約を定めたたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Location"/>
+      </reference>
+      <name value="JP_Location"/>
+      <description value="このプロファイルはLocationリソースに対して、所在場所のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Medication"/>
+      </reference>
+      <name value="JP_Medication"/>
+      <description value="このプロファイルはMedicationリソースに対して、主に薬剤データを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration"/>
+      </reference>
+      <name value="JP_MedicationAdministration"/>
+      <description value="このプロファイルはMedicationAdministrationリソースに対して、内服・外用薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-Injection"/>
+      </reference>
+      <name value="JP_MedicationAdministration_Injection"/>
+      <description value="このプロファイルはMedicationAdministrationリソースに対して、注射薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationDispense"/>
+      </reference>
+      <name value="JP_MedicationDispense"/>
+      <description value="このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationDispense-Injection"/>
+      </reference>
+      <name value="JP_MedicationDispense_Injection"/>
+      <description value="このプロファイルはMedicationDispenseリソースに対して、注射薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationRequest"/>
+      </reference>
+      <name value="JP_MedicationRequest"/>
+      <description value="このプロファイルはMedicationRequestリソースに対して、内服・外用薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationRequest-Injection"/>
+      </reference>
+      <name value="JP_MedicationRequest_Injection"/>
+      <description value="このプロファイルはMedicationRequestリソースに対して、注射薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Observation-BodyMeasurement"/>
+      </reference>
+      <name value="JP_Observation_BodyMeasurement"/>
+      <description value="このプロファイルはObservationリソースに対して、身体計測のデータを送受信するための制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Observation-Common"/>
+      </reference>
+      <name value="JP_Observation_Common"/>
+      <description value="このプロファイルはObservationリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Observation-LabResult"/>
+      </reference>
+      <name value="JP_Observation_LabResult"/>
+      <description value="このプロファイルはObservationリソースに対して、検体検査結果のデータを送受信するための制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Observation-PhysicalExam"/>
+      </reference>
+      <name value="JP_Observation_PhysicalExam"/>
+      <description value="このプロファイルはObservationリソースに対して、身体所見のデータを送受信するための制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Observation-SocialHistory"/>
+      </reference>
+      <name value="JP_Observation_SocialHistory"/>
+      <description value="このプロファイルはObservationリソースに対して、生活背景のデータを送受信するための制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Observation-VitalSigns"/>
+      </reference>
+      <name value="JP_Observation_VitalSigns"/>
+      <description value="このプロファイルはObservationリソースに対して、バイタルサインのデータを送受信するための制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Organization"/>
+      </reference>
+      <name value="JP_Organization"/>
+      <description value="このプロファイルはOrganizationリソースに対して、組織情報のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Patient"/>
+      </reference>
+      <name value="JP_Patient"/>
+      <description value="このプロファイルはPatientリソースに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Practitioner"/>
+      </reference>
+      <name value="JP_Practitioner"/>
+      <description value="このプロファイルはPractitionerリソースに対して、医療従事者のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-PractitionerRole"/>
+      </reference>
+      <name value="JP_PractitionerRole"/>
+      <description value="このプロファイルはPractitionerRoleリソースに対して、医療従事者役割のデータを送受信するための基礎となる制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Procedure"/>
+      </reference>
+      <name value="JP_Procedure"/>
+      <description value="このプロファイルはProcedureリソースに対して、患者に対する医療的な処置のデータを送受信するための共通の制約と拡張を定めたものである。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Coverage-InsuredPersonNumber"/>
+      </reference>
+      <name value="JP_Coverage_InsuredPersonNumber"/>
+      <description value="健康保険における被保険者証番号を示す拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Coverage-InsuredPersonSubNumber"/>
+      </reference>
+      <name value="JP_Coverage_InsuredPersonSubNumber"/>
+      <description value="健康保険における被保険者証番号の枝番を示す拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Coverage-InsuredPersonSymbol"/>
+      </reference>
+      <name value="JP_Coverage_InsuredPersonSymbol"/>
+      <description value="健康保険における被保険者証記号を示す拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-DosageMethod-MethodComment"/>
+      </reference>
+      <name value="JP_MedicationAdministration_DosageMethod_MethodComment"/>
+      <description value="手技コメントを格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-DosageRate-RateComment"/>
+      </reference>
+      <name value="JP_MedicationAdministration_DosageRate_RateComment"/>
+      <description value="投与速度コメントを格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-DosageRoute-RouteComment"/>
+      </reference>
+      <name value="JP_MedicationAdministration_DosageRoute_RouteComment"/>
+      <description value="投与経路コメントを格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-DosageSite-SiteComment"/>
+      </reference>
+      <name value="JP_MedicationAdministration_DosageSite_SiteComment"/>
+      <description value="投与部位コメントを格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-Dosage-DosageComment"/>
+      </reference>
+      <name value="JP_MedicationAdministration_Dosage_DosageComment"/>
+      <description value="用法コメントを格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-Dosage-LineComment"/>
+      </reference>
+      <name value="JP_MedicationAdministration_atDosage_LineComment"/>
+      <description value="ラインコメントを格納する"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-Location"/>
+      </reference>
+      <name value="JP_MedicationAdministration_Location"/>
+      <description value="実施場所を格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-RequestAuthoredOn"/>
+      </reference>
+      <name value="JP_MedicationAdministration_RequestAuthoredOn"/>
+      <description value="依頼日時を格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-RequestDepartment"/>
+      </reference>
+      <name value="JP_MedicationAdministration_RequestDepartment"/>
+      <description value="依頼科を格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-Requester"/>
+      </reference>
+      <name value="JP_MedicationAdministration_Requester"/>
+      <description value="依頼医を格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationAdministration-UncategorizedComment"/>
+      </reference>
+      <name value="JP_MedicationAdministration_UncategorizedComment"/>
+      <description value="未分類コメントを格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationDispense-Preparation"/>
+      </reference>
+      <name value="JP_MedicationDispense_Preparation"/>
+      <description value="薬剤単位の調剤結果"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationRequest-DispenseRequest-ExpectedRepeatCount"/>
+      </reference>
+      <name value="JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount"/>
+      <description value="頓用回数"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationRequest-DispenseRequest-InstructionForDispense"/>
+      </reference>
+      <name value="JP_MedicationRequest_DispenseRequest_InstructionForDispense"/>
+      <description value="調剤指示。薬剤単位の調剤指示を表現するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationRequest-DosageInstruction-Device"/>
+      </reference>
+      <name value="JP_MedicationRequest_DosageInstruction_Device"/>
+      <description value="投与装置を格納する拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationRequest-DosageInstruction-Line"/>
+      </reference>
+      <name value="JP_MedicationRequest_DosageInstruction_Line"/>
+      <description value="指示ラインを格納するための拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationRequest-DosageInstruction-PeriodOfUse"/>
+      </reference>
+      <name value="JP_MedicationRequest_DosageInstruction_PeriodOfUse"/>
+      <description value="投与開始日を格納する拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-MedicationRequest-DosageInstruction-UsageDuration"/>
+      </reference>
+      <name value="JP_MedicationRequest_DosageInstruction_UsageDuration"/>
+      <description value="隔⽇投与など、服⽤開始⽇から終了⽇までの⽇数と実投与⽇数が異なる場合に、実投与⽇数を明⽰したい場合に使⽤する拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Medication-IngredientStrength-StrengthType"/>
+      </reference>
+      <name value="JP_Medication_IngredientStrength_StrengthType"/>
+      <description value="投与量が製剤単位か成分単位かを格納する拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Medication-Ingredient-DrugNo"/>
+      </reference>
+      <name value="JP_Medication_Ingredient_DrugNo"/>
+      <description value="投与量が製剤単位か成分単位かを格納する拡張"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Observation-BodySite-BodySitePosition"/>
+      </reference>
+      <name value="JP_Observation_BodySite_BodySitePosition"/>
+      <description value="部位（bodySite）の左右の区別を表現する際に使用する"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Organization-InsuranceOrganizationCategory"/>
+      </reference>
+      <name value="JP_Organization_InsuranceOrganizationCategory"/>
+      <description value="点数表コード１桁（医科１、歯科３）表現するためのExtension。 &#xA;JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Organization-InsuranceOrganizationNo"/>
+      </reference>
+      <name value="JP_Organization_InsuranceOrganizationNo"/>
+      <description value="保険医療機関番号７桁を表現するためのExtension。&#xA;JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Organization-PrefectureNo"/>
+      </reference>
+      <name value="JP_Organization_PrefectureNo"/>
+      <description value="都道府県番号２桁を表現するためのExtension。&#xA;JP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/JP-Patient-Race"/>
+      </reference>
+      <name value="JP_Patient_Race"/>
+      <description value="人種(Race)に関する情報を格納するためのExtension。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jp-core-work-valueset-EventStatus"/>
+      </reference>
+      <name value="Procedureの状態"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/jp-core-work-valueset-ProcedureCodes"/>
+      </reference>
+      <name value="Procedureコード"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/jp-core-work-codesystem-EventStatus"/>
+      </reference>
+      <name value="Procedureの状態"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/jp-core-work-codesystem-observation-physicalExamCodes"/>
+      </reference>
+      <name value="ObservationPhysicalExamCodes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/jp-core-work-codesystem-ProcedureCodes"/>
+      </reference>
+      <name value="Procedureコード"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8"/>
+      </reference>
+      <name value="91c0caf5-6b57-4c80-b419-9196b23d41f8"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/GOFSH-GENERATED-ID-0"/>
+      </reference>
+      <name value="GOFSH-GENERATED-ID-0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8"/>
+      </reference>
+      <name value="a97c3c13-ac3c-412a-a9fb-2237a17138b8"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-allergyintolerance-category"/>
+      </reference>
+      <name value="jp-core-allergyintolerance-category"/>
+      <description value="AllergyIntoleranceリソースのCategory(カテゴリ)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-allergyintolerance-clinicalstatus"/>
+      </reference>
+      <name value="jp-core-allergyintolerance-clinicalstatus"/>
+      <description value="AllergyIntoleranceリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-allergyintolerance-criticality"/>
+      </reference>
+      <name value="jp-core-allergyintolerance-criticality"/>
+      <description value="AllergyIntoleranceリソースのcriticalityに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-allergyintolerance-date"/>
+      </reference>
+      <name value="jp-core-allergyintolerance-date"/>
+      <description value="AllergyIntoleranceリソースのrecordedDate(記載日付)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-allergyintolerance-patient"/>
+      </reference>
+      <name value="jp-core-allergyintolerance-patient"/>
+      <description value="AllergyIntoleranceリソースのPatient(患者)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-allergyintolerance-type"/>
+      </reference>
+      <name value="jp-core-allergyintolerance-type"/>
+      <description value="AllergyIntoleranceリソースのtypeに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-allergyintolerance-verificationstatus"/>
+      </reference>
+      <name value="jp-core-allergyintolerance-verificationstatus"/>
+      <description value="AllergyIntoleranceリソースのverificationStatusに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-condition-category"/>
+      </reference>
+      <name value="jp-core-condition-category"/>
+      <description value="ConditionリソースのCategory(カテゴリ)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-condition-clinicalstatus"/>
+      </reference>
+      <name value="jp-core-condition-clinicalstatus"/>
+      <description value="ConditionリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-condition-date"/>
+      </reference>
+      <name value="jp-core-condition-date"/>
+      <description value="ConditionリソースのrecordedDate(記載日付)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-condition-patient"/>
+      </reference>
+      <name value="jp-core-condition-patient"/>
+      <description value="ConditionリソースのPatient(患者)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-condition-verificationstatus"/>
+      </reference>
+      <name value="jp-core-condition-verificationstatus"/>
+      <description value="ConditionリソースのverificationStatusに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-coverage-beneficiary"/>
+      </reference>
+      <name value="jp-core-coverage-beneficiary"/>
+      <description value="Coverageリソースのbeneficiaryに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-coverage-identifier"/>
+      </reference>
+      <name value="jp-core-coverage-identifier"/>
+      <description value="Coverageリソースのidentifierに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-diagnosticreport-category"/>
+      </reference>
+      <name value="jp-core-diagnosticreport-category"/>
+      <description value="DiagnosticReportリソースのCategory(カテゴリ)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-diagnosticreport-code"/>
+      </reference>
+      <name value="jp-core-diagnosticreport-code"/>
+      <description value="DiagnosticReportリソースのCode(レポート文書コード)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-diagnosticreport-date"/>
+      </reference>
+      <name value="jp-core-diagnosticreport-date"/>
+      <description value="DiagnosticReportリソースのDate(文書日付)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-diagnosticreport-patient"/>
+      </reference>
+      <name value="jp-core-diagnosticreport-patient"/>
+      <description value="DiagnosticReportリソースのPatient(患者)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-diagnosticreport-servicerequest"/>
+      </reference>
+      <name value="jp-core-diagnosticreport-servicerequest"/>
+      <description value="DiagnosticReportリソースのservicerequest(検査依頼診療科)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-encounter-class"/>
+      </reference>
+      <name value="jp-core-encounter-class"/>
+      <description value="Encounterリソースのclassに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-encounter-date"/>
+      </reference>
+      <name value="jp-core-encounter-date"/>
+      <description value="Encounterリソースのdateに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-encounter-identifier"/>
+      </reference>
+      <name value="jp-core-encounter-identifier"/>
+      <description value="Encounterリソースのidentifierに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-encounter-patient"/>
+      </reference>
+      <name value="jp-core-encounter-patient"/>
+      <description value="Encouterリソースのpatientに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-encounter-status"/>
+      </reference>
+      <name value="jp-core-encounter-status"/>
+      <description value="Encouterリソースのstatusに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-encounter-type"/>
+      </reference>
+      <name value="jp-core-encounter-type"/>
+      <description value="Encounterリソースのtypeに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-imagingstudy-bodySite"/>
+      </reference>
+      <name value="jp-core-imagingstudy-bodySite"/>
+      <description value="ImagingStudyリソースのBodySite(部位)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-imagingstudy-encounter"/>
+      </reference>
+      <name value="jp-core-imagingstudy-encounter"/>
+      <description value="ImagingStudyリソースのEncounter(来院・入院)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-imagingstudy-modality"/>
+      </reference>
+      <name value="jp-core-imagingstudy-modality"/>
+      <description value="ImagingStudyリソースのmodality(カテゴリ)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-imagingstudy-patient"/>
+      </reference>
+      <name value="jp-core-imagingstudy-patient"/>
+      <description value="ImagingStudyリソースのPatient(患者)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-imagingstudy-started"/>
+      </reference>
+      <name value="jp-core-imagingstudy-started"/>
+      <description value="ImagingStudyリソースのstarted(検査開始日時)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-location-address"/>
+      </reference>
+      <name value="jp-core-location-address"/>
+      <description value="Locationリソースのaddressに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-location-address-city"/>
+      </reference>
+      <name value="jp-core-location-address-city"/>
+      <description value="Locationリソースのaddress-cityに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-location-address-postalcode"/>
+      </reference>
+      <name value="jp-core-location-address-postalcode"/>
+      <description value="Locationリソースのaddress-postalcodeに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-location-address-state"/>
+      </reference>
+      <name value="jp-core-location-address-state"/>
+      <description value="Locationリソースのaddress-stateに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-location-name"/>
+      </reference>
+      <name value="jp-core-location-name"/>
+      <description value="Locationリソースのname(名称)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationadministration-code"/>
+      </reference>
+      <name value="jp-core-medicationadministration-code"/>
+      <description value="MedicationAdministrationリソースのCode(薬品コード)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationadministration-effectivedatetime"/>
+      </reference>
+      <name value="jp-core-medicationadministration-effectivedatetime"/>
+      <description value="MedicationAdministrationのEffectiveDatetime(投与実施日時)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationadministration-identifier"/>
+      </reference>
+      <name value="jp-core-medicationadministration-identifier"/>
+      <description value="MedicationAdministrationリソースのIdentifierに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationadministration-patient"/>
+      </reference>
+      <name value="jp-core-medicationadministration-patient"/>
+      <description value="MedicationAdministrationリソースのpatient(患者)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationdispense-code"/>
+      </reference>
+      <name value="jp-core-medicationdispense-code"/>
+      <description value="MedicationDispenseリソースのCode(薬品コード)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationdispense-encounter"/>
+      </reference>
+      <name value="jp-core-medicationdispense-encounter"/>
+      <description value="MedicationDispenseリソースのEncounter(来院・入院)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationdispense-identifier"/>
+      </reference>
+      <name value="jp-core-medicationdispense-identifier"/>
+      <description value="MedicationDispenseリソースのidentifierに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationdispense-patient"/>
+      </reference>
+      <name value="jp-core-medicationdispense-patient"/>
+      <description value="MedicationDispenseリソースのpatient(患者)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationdispense-performer"/>
+      </reference>
+      <name value="jp-core-medicationdispense-performer"/>
+      <description value="MedicationDispenseリソースのperformerに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationdispense-whenhandedover"/>
+      </reference>
+      <name value="jp-core-medicationdispense-whenhandedover"/>
+      <description value="MedicationDispenseリソースのWhenHandedOver(払い出し日時)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationdispense-whenprepared"/>
+      </reference>
+      <name value="jp-core-medicationdispense-whenprepared"/>
+      <description value="MedicationDispenseリソースのWhenPrepared(準備管理用日時)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationrequest-authoredon"/>
+      </reference>
+      <name value="jp-core-medicationrequest-authoredon"/>
+      <description value="MedicationRequestリソースのAuthoredOn(処方指示日時)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationrequest-category"/>
+      </reference>
+      <name value="jp-core-medicationrequest-category"/>
+      <description value="MedicationRequestリソースのCategoryに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationrequest-code"/>
+      </reference>
+      <name value="jp-core-medicationrequest-code"/>
+      <description value="MedicationRequestリソースのCode(薬品コード)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationrequest-date"/>
+      </reference>
+      <name value="jp-core-medicationrequest-date"/>
+      <description value="MedicationRequestリソースのDate(服用開始日)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationrequest-identifier"/>
+      </reference>
+      <name value="jp-core-medicationrequest-identifier"/>
+      <description value="MedicationRequestリソースのidentifierに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationrequest-patient"/>
+      </reference>
+      <name value="jp-core-medicationrequest-patient"/>
+      <description value="MedicationRequestリソースのpatient(患者)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-medicationrequest-requester"/>
+      </reference>
+      <name value="jp-core-medicationrequest-requester"/>
+      <description value="MedicationRequestリソースのrequesterに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-observation-category"/>
+      </reference>
+      <name value="jp-core-observation-category"/>
+      <description value="ObservationリソースのCategory(カテゴリ)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-observation-code"/>
+      </reference>
+      <name value="jp-core-observation-code"/>
+      <description value="ObservationリソースのCode(検査項目コード)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-observation-date"/>
+      </reference>
+      <name value="jp-core-observation-date"/>
+      <description value="Observationリソースの日付(検査（採取）日)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-observation-encounter"/>
+      </reference>
+      <name value="jp-core-observation-encounter"/>
+      <description value="ObservationリソースのEncounter(来院・入院)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-observation-patient"/>
+      </reference>
+      <name value="jp-core-observation-patient"/>
+      <description value="ObservationリソースのPatient(患者)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-observation-servicerequest"/>
+      </reference>
+      <name value="jp-core-observation-servicerequest"/>
+      <description value="Observationリソースのservicerequest(検査依頼診療科)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-observation-value-concept"/>
+      </reference>
+      <name value="jp-core-observation-value-concept"/>
+      <description value="Observationリソースのvalue-concept(検査項目コード)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-observation-value-quantity"/>
+      </reference>
+      <name value="jp-core-observation-value-quantity"/>
+      <description value="Observationリソースの日付(検査（採取）日)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-organization-address"/>
+      </reference>
+      <name value="jp-core-organization-address"/>
+      <description value="organizationリソースのaddressに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-organization-identifier"/>
+      </reference>
+      <name value="jp-core-organization-identifier"/>
+      <description value="Organizationリソースのidentifierに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-organization-name"/>
+      </reference>
+      <name value="jp-core-organization-name"/>
+      <description value="organizationリソースのnameに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-patient-address-postalcode"/>
+      </reference>
+      <name value="jp-core-patient-address-postalcode"/>
+      <description value="Patientリソースのaddress-postal(郵便番号)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-patient-birthdate"/>
+      </reference>
+      <name value="jp-core-patient-birthdate"/>
+      <description value="Patientリソースのbirthdate(生年月日)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-patient-family"/>
+      </reference>
+      <name value="jp-core-patient-family"/>
+      <description value="Patientリソースのfamily(姓)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-patient-gender"/>
+      </reference>
+      <name value="jp-core-patient-gender"/>
+      <description value="Patientリソースのgender(性別)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-patient-given"/>
+      </reference>
+      <name value="jp-core-patient-given"/>
+      <description value="Patientリソースにのgiven(名)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-patient-id"/>
+      </reference>
+      <name value="jp-core-patient-id"/>
+      <description value="Patientリソースのidに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-patient-identifier"/>
+      </reference>
+      <name value="jp-core-patient-identifier"/>
+      <description value="Patientリソースのidentifierに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-patient-name"/>
+      </reference>
+      <name value="jp-core-patient-name"/>
+      <description value="Patientリソースのname(名前全体)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-patient-phone"/>
+      </reference>
+      <name value="jp-core-patient-phone"/>
+      <description value="Patientリソースのphone(電話番号)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-practitioner-identifier"/>
+      </reference>
+      <name value="jp-core-practitioner-identifier"/>
+      <description value="practitionerリソースのidentifierに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-practitioner-name"/>
+      </reference>
+      <name value="jp-core-practitioner-name"/>
+      <description value="practitionerリソースのnameに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-practitionerrole-practitioner"/>
+      </reference>
+      <name value="jp-core-practitionerrole-practitioner"/>
+      <description value="practitionerroleリソースのpractitionerに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-practitionerrole-specialty"/>
+      </reference>
+      <name value="jp-core-practitionerrole-specialty"/>
+      <description value="practitionerroleリソースのspecialtyに関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-procedure-date"/>
+      </reference>
+      <name value="jp-core-procedure-date"/>
+      <description value="ProcedureリソースのoccurrenceDateTime(実施日時)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="SearchParameter"/>
+      </extension>
+      <reference>
+        <reference value="SearchParameter/jp-core-procedure-patient"/>
+      </reference>
+      <name value="jp-core-procedure-patient"/>
+      <description value="ProcedureリソースのPatient(患者)に関する検索を定義します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/jp-procedure-capability"/>
+      </reference>
+      <name value="jp-procedure-capability"/>
+      <description value="ここでは、問い合わせ方法について記載します。"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="allergy.html"/>
+        <title value="Allergy"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="cardinality.html"/>
+        <title value="Cardinality"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="characterencoding.html"/>
+        <title value="Characterencoding"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="clientcapabilitystatement.html"/>
+        <title value="Clientcapabilitystatement"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="codesystem.html"/>
+        <title value="Codesystem"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="condition.html"/>
+        <title value="Condition"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="coverage.html"/>
+        <title value="Coverage"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="diagnosticreportcommon.html"/>
+        <title value="Diagnosticreportcommon"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="diagnosticreportdentistxx.html"/>
+        <title value="Diagnosticreportdentistxx"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="diagnosticreportlabresult.html"/>
+        <title value="Diagnosticreportlabresult"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="diagnosticreportmicrobiology.html"/>
+        <title value="Diagnosticreportmicrobiology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="diagnosticreportpathology.html"/>
+        <title value="Diagnosticreportpathology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="diagnosticreportradiology.html"/>
+        <title value="Diagnosticreportradiology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="encounter.html"/>
+        <title value="Encounter"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="extensions.html"/>
+        <title value="Extensions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="generalguidance.html"/>
+        <title value="Generalguidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="handlingofnon-existentdata.html"/>
+        <title value="Handlingofnon Existentdata"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="imagingstudyradiology.html"/>
+        <title value="Imagingstudyradiology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="location.html"/>
+        <title value="Location"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medication.html"/>
+        <title value="Medication"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medicationadministration.html"/>
+        <title value="Medicationadministration"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medicationadministration-injection.html"/>
+        <title value="Medicationadministration Injection"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medicationdispense.html"/>
+        <title value="Medicationdispense"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medicationdispense-injecttion.html"/>
+        <title value="Medicationdispense Injecttion"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medicationrequest.html"/>
+        <title value="Medicationrequest"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="medicationrequest-injection.html"/>
+        <title value="Medicationrequest Injection"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationbodymeasurement.html"/>
+        <title value="Observationbodymeasurement"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationcommon.html"/>
+        <title value="Observationcommon"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationdentistxx.html"/>
+        <title value="Observationdentistxx"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationlabresult.html"/>
+        <title value="Observationlabresult"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationmicrobiology.html"/>
+        <title value="Observationmicrobiology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationpathology.html"/>
+        <title value="Observationpathology"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationphysicalexam.html"/>
+        <title value="Observationphysicalexam"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationradiologyfindings.html"/>
+        <title value="Observationradiologyfindings"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationsocialhistory.html"/>
+        <title value="Observationsocialhistory"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="observationvitalsigns.html"/>
+        <title value="Observationvitalsigns"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="operationsandsearchparameters.html"/>
+        <title value="Operationsandsearchparameters"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="organization.html"/>
+        <title value="Organization"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="patient.html"/>
+        <title value="Patient"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="practitioner.html"/>
+        <title value="Practitioner"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="practitionerrole.html"/>
+        <title value="Practitionerrole"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="procedure.html"/>
+        <title value="Procedure"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="search.html"/>
+        <title value="Search"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="security.html"/>
+        <title value="Security"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="servercapabilitystatement.html"/>
+        <title value="Servercapabilitystatement"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="valueset.html"/>
+        <title value="Valueset"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

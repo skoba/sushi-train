@@ -1,0 +1,2650 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "jp.jpfhir.experiments",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>JP_CORE_EXPERIMENTAL</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/core/experiments/ImplementationGuide/jp.jpfhir.experiments</pre><div><p>JP Core Implementation Guide/profileをCI/CDで生成するための実験用リポジトリ</p>\n</div></div>"
+  },
+  "url": "http://jpfhir.jp/core/experiments/ImplementationGuide/jp.jpfhir.experiments",
+  "version": "1.0.0",
+  "name": "JP_CORE_EXPERIMENTAL",
+  "title": "FHIR JP Core CI/CD実験",
+  "status": "draft",
+  "date": "2022-04-01T16:21:14+09:00",
+  "publisher": "HL7 FHIR 日本実装検討WG",
+  "contact": [
+    {
+      "name": "HL7 FHIR 日本実装検討WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://jpfhir.jp/"
+        }
+      ]
+    }
+  ],
+  "description": "JP Core Implementation Guide/profileをCI/CDで生成するための実験用リポジトリ",
+  "packageId": "jp.jpfhir.experiments",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "copyrightyear"
+          },
+          {
+            "url": "value",
+            "valueString": "2022+"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "releaselabel"
+          },
+          {
+            "url": "value",
+            "valueString": "ci-build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "docs"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/pages"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-suppressed-warnings"
+          },
+          {
+            "url": "value",
+            "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "http://jpfhir.jp/core/experiments/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-html"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-md"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page-md.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-context"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-copyright"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-license"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "fmm-definition"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/versions.html#maturity"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "propagate-status"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-AllergyIntolerance"
+        },
+        "name": "JP_AllergyIntolerance",
+        "description": "本プロファイルはAllergyIntoleranceリソースに対して、患者のアレルギーや不耐症に関するデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Condition"
+        },
+        "name": "JP_Condition",
+        "description": "本プロファイルはConditionリソースに対して、患者の健康状態に関するデータを送受信するための共通の制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Coverage"
+        },
+        "name": "JP_Coverage",
+        "description": "このプロファイルはCoverageリソースに対して、保険・公費のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-DiagnosticReport-Common"
+        },
+        "name": "JP_DiagnosticReport_Common",
+        "description": "このプロファイルはDiagnosticReportリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-DiagnosticReport-LabResult"
+        },
+        "name": "JP_DiagnosticReport_LabResult",
+        "description": "このプロファイルはDiagnosticReportリソースに対して、検体検査結果のデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-DiagnosticReport-Radiology"
+        },
+        "name": "JP_DiagnosticReport_Radiology",
+        "description": "このプロファイルはDiagnosticReportリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Encounter"
+        },
+        "name": "JP_Encounter",
+        "description": "このプロファイルはEncounterリソースに対して、来院/入院情報のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:complex-type"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-HumanName"
+        },
+        "name": "JP_HumanName",
+        "description": "このプロファイルはHumanName DataTypeに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-ImagingStudy-Radiology"
+        },
+        "name": "JP_ImagingStudy_Radiology",
+        "description": "このプロファイルはImagingStudyリソースに対して、放射線検査のデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Immunization"
+        },
+        "name": "JP_Immunization",
+        "description": "このプロファイルはImmunizationリソースに対して日本での運用を視野に入れて制約を定めたたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Location"
+        },
+        "name": "JP_Location",
+        "description": "このプロファイルはLocationリソースに対して、所在場所のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Medication"
+        },
+        "name": "JP_Medication",
+        "description": "このプロファイルはMedicationリソースに対して、主に薬剤データを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration"
+        },
+        "name": "JP_MedicationAdministration",
+        "description": "このプロファイルはMedicationAdministrationリソースに対して、内服・外用薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-Injection"
+        },
+        "name": "JP_MedicationAdministration_Injection",
+        "description": "このプロファイルはMedicationAdministrationリソースに対して、注射薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationDispense"
+        },
+        "name": "JP_MedicationDispense",
+        "description": "このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationDispense-Injection"
+        },
+        "name": "JP_MedicationDispense_Injection",
+        "description": "このプロファイルはMedicationDispenseリソースに対して、注射薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationRequest"
+        },
+        "name": "JP_MedicationRequest",
+        "description": "このプロファイルはMedicationRequestリソースに対して、内服・外用薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationRequest-Injection"
+        },
+        "name": "JP_MedicationRequest_Injection",
+        "description": "このプロファイルはMedicationRequestリソースに対して、注射薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Observation-BodyMeasurement"
+        },
+        "name": "JP_Observation_BodyMeasurement",
+        "description": "このプロファイルはObservationリソースに対して、身体計測のデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Observation-Common"
+        },
+        "name": "JP_Observation_Common",
+        "description": "このプロファイルはObservationリソースに対して、データを送受信するための共通の制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Observation-LabResult"
+        },
+        "name": "JP_Observation_LabResult",
+        "description": "このプロファイルはObservationリソースに対して、検体検査結果のデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Observation-PhysicalExam"
+        },
+        "name": "JP_Observation_PhysicalExam",
+        "description": "このプロファイルはObservationリソースに対して、身体所見のデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Observation-SocialHistory"
+        },
+        "name": "JP_Observation_SocialHistory",
+        "description": "このプロファイルはObservationリソースに対して、生活背景のデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Observation-VitalSigns"
+        },
+        "name": "JP_Observation_VitalSigns",
+        "description": "このプロファイルはObservationリソースに対して、バイタルサインのデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Organization"
+        },
+        "name": "JP_Organization",
+        "description": "このプロファイルはOrganizationリソースに対して、組織情報のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Patient"
+        },
+        "name": "JP_Patient",
+        "description": "このプロファイルはPatientリソースに対して、患者のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Practitioner"
+        },
+        "name": "JP_Practitioner",
+        "description": "このプロファイルはPractitionerリソースに対して、医療従事者のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-PractitionerRole"
+        },
+        "name": "JP_PractitionerRole",
+        "description": "このプロファイルはPractitionerRoleリソースに対して、医療従事者役割のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Procedure"
+        },
+        "name": "JP_Procedure",
+        "description": "このプロファイルはProcedureリソースに対して、患者に対する医療的な処置のデータを送受信するための共通の制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Coverage-InsuredPersonNumber"
+        },
+        "name": "JP_Coverage_InsuredPersonNumber",
+        "description": "健康保険における被保険者証番号を示す拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Coverage-InsuredPersonSubNumber"
+        },
+        "name": "JP_Coverage_InsuredPersonSubNumber",
+        "description": "健康保険における被保険者証番号の枝番を示す拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Coverage-InsuredPersonSymbol"
+        },
+        "name": "JP_Coverage_InsuredPersonSymbol",
+        "description": "健康保険における被保険者証記号を示す拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-DosageMethod-MethodComment"
+        },
+        "name": "JP_MedicationAdministration_DosageMethod_MethodComment",
+        "description": "手技コメントを格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-DosageRate-RateComment"
+        },
+        "name": "JP_MedicationAdministration_DosageRate_RateComment",
+        "description": "投与速度コメントを格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-DosageRoute-RouteComment"
+        },
+        "name": "JP_MedicationAdministration_DosageRoute_RouteComment",
+        "description": "投与経路コメントを格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-DosageSite-SiteComment"
+        },
+        "name": "JP_MedicationAdministration_DosageSite_SiteComment",
+        "description": "投与部位コメントを格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-Dosage-DosageComment"
+        },
+        "name": "JP_MedicationAdministration_Dosage_DosageComment",
+        "description": "用法コメントを格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-Dosage-LineComment"
+        },
+        "name": "JP_MedicationAdministration_atDosage_LineComment",
+        "description": "ラインコメントを格納する",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-Location"
+        },
+        "name": "JP_MedicationAdministration_Location",
+        "description": "実施場所を格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-RequestAuthoredOn"
+        },
+        "name": "JP_MedicationAdministration_RequestAuthoredOn",
+        "description": "依頼日時を格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-RequestDepartment"
+        },
+        "name": "JP_MedicationAdministration_RequestDepartment",
+        "description": "依頼科を格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-Requester"
+        },
+        "name": "JP_MedicationAdministration_Requester",
+        "description": "依頼医を格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationAdministration-UncategorizedComment"
+        },
+        "name": "JP_MedicationAdministration_UncategorizedComment",
+        "description": "未分類コメントを格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationDispense-Preparation"
+        },
+        "name": "JP_MedicationDispense_Preparation",
+        "description": "薬剤単位の調剤結果",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationRequest-DispenseRequest-ExpectedRepeatCount"
+        },
+        "name": "JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount",
+        "description": "頓用回数",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationRequest-DispenseRequest-InstructionForDispense"
+        },
+        "name": "JP_MedicationRequest_DispenseRequest_InstructionForDispense",
+        "description": "調剤指示。薬剤単位の調剤指示を表現するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationRequest-DosageInstruction-Device"
+        },
+        "name": "JP_MedicationRequest_DosageInstruction_Device",
+        "description": "投与装置を格納する拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationRequest-DosageInstruction-Line"
+        },
+        "name": "JP_MedicationRequest_DosageInstruction_Line",
+        "description": "指示ラインを格納するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationRequest-DosageInstruction-PeriodOfUse"
+        },
+        "name": "JP_MedicationRequest_DosageInstruction_PeriodOfUse",
+        "description": "投与開始日を格納する拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationRequest-DosageInstruction-UsageDuration"
+        },
+        "name": "JP_MedicationRequest_DosageInstruction_UsageDuration",
+        "description": "隔⽇投与など、服⽤開始⽇から終了⽇までの⽇数と実投与⽇数が異なる場合に、実投与⽇数を明⽰したい場合に使⽤する拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Medication-IngredientStrength-StrengthType"
+        },
+        "name": "JP_Medication_IngredientStrength_StrengthType",
+        "description": "投与量が製剤単位か成分単位かを格納する拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Medication-Ingredient-DrugNo"
+        },
+        "name": "JP_Medication_Ingredient_DrugNo",
+        "description": "投与量が製剤単位か成分単位かを格納する拡張",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Observation-BodySite-BodySitePosition"
+        },
+        "name": "JP_Observation_BodySite_BodySitePosition",
+        "description": "部位（bodySite）の左右の区別を表現する際に使用する",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Organization-InsuranceOrganizationCategory"
+        },
+        "name": "JP_Organization_InsuranceOrganizationCategory",
+        "description": "点数表コード１桁（医科１、歯科３）表現するためのExtension。 \nJP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Organization-InsuranceOrganizationNo"
+        },
+        "name": "JP_Organization_InsuranceOrganizationNo",
+        "description": "保険医療機関番号７桁を表現するためのExtension。\nJP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Organization-PrefectureNo"
+        },
+        "name": "JP_Organization_PrefectureNo",
+        "description": "都道府県番号２桁を表現するためのExtension。\nJP Core Organizationプロファイルで利用されることを想定しているが、他のリソースでも利用可能である。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/JP-Patient-Race"
+        },
+        "name": "JP_Patient_Race",
+        "description": "人種(Race)に関する情報を格納するためのExtension。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/jp-core-work-valueset-EventStatus"
+        },
+        "name": "Procedureの状態",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/jp-core-work-valueset-ProcedureCodes"
+        },
+        "name": "Procedureコード",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/jp-core-work-codesystem-EventStatus"
+        },
+        "name": "Procedureの状態",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/jp-core-work-codesystem-observation-physicalExamCodes"
+        },
+        "name": "ObservationPhysicalExamCodes",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/jp-core-work-codesystem-ProcedureCodes"
+        },
+        "name": "Procedureコード",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8"
+        },
+        "name": "91c0caf5-6b57-4c80-b419-9196b23d41f8",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationAdministration"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationAdministration/GOFSH-GENERATED-ID-0"
+        },
+        "name": "GOFSH-GENERATED-ID-0",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MedicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "MedicationRequest/a97c3c13-ac3c-412a-a9fb-2237a17138b8"
+        },
+        "name": "a97c3c13-ac3c-412a-a9fb-2237a17138b8",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-allergyintolerance-category"
+        },
+        "name": "jp-core-allergyintolerance-category",
+        "description": "AllergyIntoleranceリソースのCategory(カテゴリ)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-allergyintolerance-clinicalstatus"
+        },
+        "name": "jp-core-allergyintolerance-clinicalstatus",
+        "description": "AllergyIntoleranceリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-allergyintolerance-criticality"
+        },
+        "name": "jp-core-allergyintolerance-criticality",
+        "description": "AllergyIntoleranceリソースのcriticalityに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-allergyintolerance-date"
+        },
+        "name": "jp-core-allergyintolerance-date",
+        "description": "AllergyIntoleranceリソースのrecordedDate(記載日付)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-allergyintolerance-patient"
+        },
+        "name": "jp-core-allergyintolerance-patient",
+        "description": "AllergyIntoleranceリソースのPatient(患者)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-allergyintolerance-type"
+        },
+        "name": "jp-core-allergyintolerance-type",
+        "description": "AllergyIntoleranceリソースのtypeに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-allergyintolerance-verificationstatus"
+        },
+        "name": "jp-core-allergyintolerance-verificationstatus",
+        "description": "AllergyIntoleranceリソースのverificationStatusに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-condition-category"
+        },
+        "name": "jp-core-condition-category",
+        "description": "ConditionリソースのCategory(カテゴリ)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-condition-clinicalstatus"
+        },
+        "name": "jp-core-condition-clinicalstatus",
+        "description": "ConditionリソースのclinicalStatus(アレルギー・不耐性の臨床的なステータス)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-condition-date"
+        },
+        "name": "jp-core-condition-date",
+        "description": "ConditionリソースのrecordedDate(記載日付)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-condition-patient"
+        },
+        "name": "jp-core-condition-patient",
+        "description": "ConditionリソースのPatient(患者)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-condition-verificationstatus"
+        },
+        "name": "jp-core-condition-verificationstatus",
+        "description": "ConditionリソースのverificationStatusに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-coverage-beneficiary"
+        },
+        "name": "jp-core-coverage-beneficiary",
+        "description": "Coverageリソースのbeneficiaryに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-coverage-identifier"
+        },
+        "name": "jp-core-coverage-identifier",
+        "description": "Coverageリソースのidentifierに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-diagnosticreport-category"
+        },
+        "name": "jp-core-diagnosticreport-category",
+        "description": "DiagnosticReportリソースのCategory(カテゴリ)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-diagnosticreport-code"
+        },
+        "name": "jp-core-diagnosticreport-code",
+        "description": "DiagnosticReportリソースのCode(レポート文書コード)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-diagnosticreport-date"
+        },
+        "name": "jp-core-diagnosticreport-date",
+        "description": "DiagnosticReportリソースのDate(文書日付)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-diagnosticreport-patient"
+        },
+        "name": "jp-core-diagnosticreport-patient",
+        "description": "DiagnosticReportリソースのPatient(患者)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-diagnosticreport-servicerequest"
+        },
+        "name": "jp-core-diagnosticreport-servicerequest",
+        "description": "DiagnosticReportリソースのservicerequest(検査依頼診療科)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-encounter-class"
+        },
+        "name": "jp-core-encounter-class",
+        "description": "Encounterリソースのclassに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-encounter-date"
+        },
+        "name": "jp-core-encounter-date",
+        "description": "Encounterリソースのdateに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-encounter-identifier"
+        },
+        "name": "jp-core-encounter-identifier",
+        "description": "Encounterリソースのidentifierに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-encounter-patient"
+        },
+        "name": "jp-core-encounter-patient",
+        "description": "Encouterリソースのpatientに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-encounter-status"
+        },
+        "name": "jp-core-encounter-status",
+        "description": "Encouterリソースのstatusに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-encounter-type"
+        },
+        "name": "jp-core-encounter-type",
+        "description": "Encounterリソースのtypeに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-imagingstudy-bodySite"
+        },
+        "name": "jp-core-imagingstudy-bodySite",
+        "description": "ImagingStudyリソースのBodySite(部位)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-imagingstudy-encounter"
+        },
+        "name": "jp-core-imagingstudy-encounter",
+        "description": "ImagingStudyリソースのEncounter(来院・入院)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-imagingstudy-modality"
+        },
+        "name": "jp-core-imagingstudy-modality",
+        "description": "ImagingStudyリソースのmodality(カテゴリ)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-imagingstudy-patient"
+        },
+        "name": "jp-core-imagingstudy-patient",
+        "description": "ImagingStudyリソースのPatient(患者)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-imagingstudy-started"
+        },
+        "name": "jp-core-imagingstudy-started",
+        "description": "ImagingStudyリソースのstarted(検査開始日時)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-location-address"
+        },
+        "name": "jp-core-location-address",
+        "description": "Locationリソースのaddressに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-location-address-city"
+        },
+        "name": "jp-core-location-address-city",
+        "description": "Locationリソースのaddress-cityに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-location-address-postalcode"
+        },
+        "name": "jp-core-location-address-postalcode",
+        "description": "Locationリソースのaddress-postalcodeに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-location-address-state"
+        },
+        "name": "jp-core-location-address-state",
+        "description": "Locationリソースのaddress-stateに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-location-name"
+        },
+        "name": "jp-core-location-name",
+        "description": "Locationリソースのname(名称)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationadministration-code"
+        },
+        "name": "jp-core-medicationadministration-code",
+        "description": "MedicationAdministrationリソースのCode(薬品コード)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationadministration-effectivedatetime"
+        },
+        "name": "jp-core-medicationadministration-effectivedatetime",
+        "description": "MedicationAdministrationのEffectiveDatetime(投与実施日時)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationadministration-identifier"
+        },
+        "name": "jp-core-medicationadministration-identifier",
+        "description": "MedicationAdministrationリソースのIdentifierに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationadministration-patient"
+        },
+        "name": "jp-core-medicationadministration-patient",
+        "description": "MedicationAdministrationリソースのpatient(患者)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationdispense-code"
+        },
+        "name": "jp-core-medicationdispense-code",
+        "description": "MedicationDispenseリソースのCode(薬品コード)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationdispense-encounter"
+        },
+        "name": "jp-core-medicationdispense-encounter",
+        "description": "MedicationDispenseリソースのEncounter(来院・入院)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationdispense-identifier"
+        },
+        "name": "jp-core-medicationdispense-identifier",
+        "description": "MedicationDispenseリソースのidentifierに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationdispense-patient"
+        },
+        "name": "jp-core-medicationdispense-patient",
+        "description": "MedicationDispenseリソースのpatient(患者)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationdispense-performer"
+        },
+        "name": "jp-core-medicationdispense-performer",
+        "description": "MedicationDispenseリソースのperformerに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationdispense-whenhandedover"
+        },
+        "name": "jp-core-medicationdispense-whenhandedover",
+        "description": "MedicationDispenseリソースのWhenHandedOver(払い出し日時)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationdispense-whenprepared"
+        },
+        "name": "jp-core-medicationdispense-whenprepared",
+        "description": "MedicationDispenseリソースのWhenPrepared(準備管理用日時)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationrequest-authoredon"
+        },
+        "name": "jp-core-medicationrequest-authoredon",
+        "description": "MedicationRequestリソースのAuthoredOn(処方指示日時)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationrequest-category"
+        },
+        "name": "jp-core-medicationrequest-category",
+        "description": "MedicationRequestリソースのCategoryに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationrequest-code"
+        },
+        "name": "jp-core-medicationrequest-code",
+        "description": "MedicationRequestリソースのCode(薬品コード)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationrequest-date"
+        },
+        "name": "jp-core-medicationrequest-date",
+        "description": "MedicationRequestリソースのDate(服用開始日)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationrequest-identifier"
+        },
+        "name": "jp-core-medicationrequest-identifier",
+        "description": "MedicationRequestリソースのidentifierに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationrequest-patient"
+        },
+        "name": "jp-core-medicationrequest-patient",
+        "description": "MedicationRequestリソースのpatient(患者)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-medicationrequest-requester"
+        },
+        "name": "jp-core-medicationrequest-requester",
+        "description": "MedicationRequestリソースのrequesterに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-observation-category"
+        },
+        "name": "jp-core-observation-category",
+        "description": "ObservationリソースのCategory(カテゴリ)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-observation-code"
+        },
+        "name": "jp-core-observation-code",
+        "description": "ObservationリソースのCode(検査項目コード)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-observation-date"
+        },
+        "name": "jp-core-observation-date",
+        "description": "Observationリソースの日付(検査（採取）日)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-observation-encounter"
+        },
+        "name": "jp-core-observation-encounter",
+        "description": "ObservationリソースのEncounter(来院・入院)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-observation-patient"
+        },
+        "name": "jp-core-observation-patient",
+        "description": "ObservationリソースのPatient(患者)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-observation-servicerequest"
+        },
+        "name": "jp-core-observation-servicerequest",
+        "description": "Observationリソースのservicerequest(検査依頼診療科)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-observation-value-concept"
+        },
+        "name": "jp-core-observation-value-concept",
+        "description": "Observationリソースのvalue-concept(検査項目コード)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-observation-value-quantity"
+        },
+        "name": "jp-core-observation-value-quantity",
+        "description": "Observationリソースの日付(検査（採取）日)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-organization-address"
+        },
+        "name": "jp-core-organization-address",
+        "description": "organizationリソースのaddressに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-organization-identifier"
+        },
+        "name": "jp-core-organization-identifier",
+        "description": "Organizationリソースのidentifierに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-organization-name"
+        },
+        "name": "jp-core-organization-name",
+        "description": "organizationリソースのnameに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-patient-address-postalcode"
+        },
+        "name": "jp-core-patient-address-postalcode",
+        "description": "Patientリソースのaddress-postal(郵便番号)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-patient-birthdate"
+        },
+        "name": "jp-core-patient-birthdate",
+        "description": "Patientリソースのbirthdate(生年月日)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-patient-family"
+        },
+        "name": "jp-core-patient-family",
+        "description": "Patientリソースのfamily(姓)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-patient-gender"
+        },
+        "name": "jp-core-patient-gender",
+        "description": "Patientリソースのgender(性別)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-patient-given"
+        },
+        "name": "jp-core-patient-given",
+        "description": "Patientリソースにのgiven(名)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-patient-id"
+        },
+        "name": "jp-core-patient-id",
+        "description": "Patientリソースのidに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-patient-identifier"
+        },
+        "name": "jp-core-patient-identifier",
+        "description": "Patientリソースのidentifierに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-patient-name"
+        },
+        "name": "jp-core-patient-name",
+        "description": "Patientリソースのname(名前全体)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-patient-phone"
+        },
+        "name": "jp-core-patient-phone",
+        "description": "Patientリソースのphone(電話番号)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-practitioner-identifier"
+        },
+        "name": "jp-core-practitioner-identifier",
+        "description": "practitionerリソースのidentifierに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-practitioner-name"
+        },
+        "name": "jp-core-practitioner-name",
+        "description": "practitionerリソースのnameに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-practitionerrole-practitioner"
+        },
+        "name": "jp-core-practitionerrole-practitioner",
+        "description": "practitionerroleリソースのpractitionerに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-practitionerrole-specialty"
+        },
+        "name": "jp-core-practitionerrole-specialty",
+        "description": "practitionerroleリソースのspecialtyに関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-procedure-date"
+        },
+        "name": "jp-core-procedure-date",
+        "description": "ProcedureリソースのoccurrenceDateTime(実施日時)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "SearchParameter"
+          }
+        ],
+        "reference": {
+          "reference": "SearchParameter/jp-core-procedure-patient"
+        },
+        "name": "jp-core-procedure-patient",
+        "description": "ProcedureリソースのPatient(患者)に関する検索を定義します。",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/jp-procedure-capability"
+        },
+        "name": "jp-procedure-capability",
+        "description": "ここでは、問い合わせ方法について記載します。",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "allergy.html",
+          "title": "Allergy",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "cardinality.html",
+          "title": "Cardinality",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "characterencoding.html",
+          "title": "Characterencoding",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "clientcapabilitystatement.html",
+          "title": "Clientcapabilitystatement",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "codesystem.html",
+          "title": "Codesystem",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "condition.html",
+          "title": "Condition",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "coverage.html",
+          "title": "Coverage",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "diagnosticreportcommon.html",
+          "title": "Diagnosticreportcommon",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "diagnosticreportdentistxx.html",
+          "title": "Diagnosticreportdentistxx",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "diagnosticreportlabresult.html",
+          "title": "Diagnosticreportlabresult",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "diagnosticreportmicrobiology.html",
+          "title": "Diagnosticreportmicrobiology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "diagnosticreportpathology.html",
+          "title": "Diagnosticreportpathology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "diagnosticreportradiology.html",
+          "title": "Diagnosticreportradiology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "encounter.html",
+          "title": "Encounter",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "generalguidance.html",
+          "title": "Generalguidance",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "handlingofnon-existentdata.html",
+          "title": "Handlingofnon Existentdata",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "imagingstudyradiology.html",
+          "title": "Imagingstudyradiology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "location.html",
+          "title": "Location",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "medication.html",
+          "title": "Medication",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "medicationadministration.html",
+          "title": "Medicationadministration",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "medicationadministration-injection.html",
+          "title": "Medicationadministration Injection",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "medicationdispense.html",
+          "title": "Medicationdispense",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "medicationdispense-injecttion.html",
+          "title": "Medicationdispense Injecttion",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "medicationrequest.html",
+          "title": "Medicationrequest",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "medicationrequest-injection.html",
+          "title": "Medicationrequest Injection",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationbodymeasurement.html",
+          "title": "Observationbodymeasurement",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationcommon.html",
+          "title": "Observationcommon",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationdentistxx.html",
+          "title": "Observationdentistxx",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationlabresult.html",
+          "title": "Observationlabresult",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationmicrobiology.html",
+          "title": "Observationmicrobiology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationpathology.html",
+          "title": "Observationpathology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationphysicalexam.html",
+          "title": "Observationphysicalexam",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationradiologyfindings.html",
+          "title": "Observationradiologyfindings",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationsocialhistory.html",
+          "title": "Observationsocialhistory",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "observationvitalsigns.html",
+          "title": "Observationvitalsigns",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "operationsandsearchparameters.html",
+          "title": "Operationsandsearchparameters",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "organization.html",
+          "title": "Organization",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "patient.html",
+          "title": "Patient",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "practitioner.html",
+          "title": "Practitioner",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "practitionerrole.html",
+          "title": "Practitionerrole",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "procedure.html",
+          "title": "Procedure",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "search.html",
+          "title": "Search",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "security.html",
+          "title": "Security",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "servercapabilitystatement.html",
+          "title": "Servercapabilitystatement",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "valueset.html",
+          "title": "Valueset",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "path-resource",
+        "value": "input/capabilities"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/examples"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/extensions"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/models"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/operations"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/profiles"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "template/config"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/images"
+      },
+      {
+        "code": "path-tx-cache",
+        "value": "input-cache/txcache"
+      }
+    ]
+  }
+}

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Handlingofnon Existentdata - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"18"}
+    h3,h4,h5,h6{--heading-prefix:"18"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Handlingofnon Existentdata</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Handlingofnon Existentdata</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#13-欠損値データが存在しない場合の扱い" id="markdown-toc-13-欠損値データが存在しない場合の扱い">1.3. 欠損値（データが存在しない場合）の扱い</a>    <ul>
+      <li><a href="#131-クライアントrequster" id="markdown-toc-131-クライアントrequster">1.3.1. クライアント(Requster)</a>        <ul>
+          <li><a href="#1311-must-supportおよびcardinalityが１以上が付与された要素を含むリソースを受信した場合エラーを発生させたりアプリケーションを失敗させることなくそれらの値を処理することができなければならない-shall" id="markdown-toc-1311-must-supportおよびcardinalityが１以上が付与された要素を含むリソースを受信した場合エラーを発生させたりアプリケーションを失敗させることなくそれらの値を処理することができなければならない-shall">1.3.1.1. Must SupportおよびCardinalityが１以上が付与された要素を含むリソースを受信した場合、エラーを発生させたりアプリケーションを失敗させることなく、それらの値を処理することができなければならない <strong>(SHALL)</strong>。</a></li>
+          <li><a href="#1312-実装ガイドに準拠する要求者は欠損データであることを宣言した-must-supportおよびcardinalityが１以上の-データ要素を含むリソースインスタンスを処理できなければならない-shall" id="markdown-toc-1312-実装ガイドに準拠する要求者は欠損データであることを宣言した-must-supportおよびcardinalityが１以上の-データ要素を含むリソースインスタンスを処理できなければならない-shall">1.3.1.2. 実装ガイドに準拠する要求者は、欠損データであることを宣言した Must SupportおよびCardinalityが１以上の データ要素を含むリソースインスタンスを処理できなければならない <strong>(SHALL)</strong>。</a></li>
+        </ul>
+      </li>
+      <li><a href="#132-サーバresponder" id="markdown-toc-132-サーバresponder">1.3.2. サーバ(Responder)</a>        <ul>
+          <li><a href="#1321-must-supportおよびcardinalityが１以上の-要素の値を保持している場合" id="markdown-toc-1321-must-supportおよびcardinalityが１以上の-要素の値を保持している場合">1.3.2.1. Must SupportおよびCardinalityが１以上の 要素の値を保持している場合</a></li>
+          <li><a href="#1322-must-supportおよびcardinalityが１以上の-要素の値を保持していない場合" id="markdown-toc-1322-must-supportおよびcardinalityが１以上の-要素の値を保持していない場合">1.3.2.2. Must SupportおよびCardinalityが１以上の 要素の値を保持していない場合</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="13-欠損値データが存在しない場合の扱い">1.3. 欠損値（データが存在しない場合）の扱い</h1>
+<hr />
+<p>FHIR®では<a href="https://www.hl7.org/fhir/json.html#2.6.2">JSON</a>および<a href="https://www.hl7.org/fhir/xml.html">XML</a>いずれにおいてもオブジェクトは空ではならない。リソース内にエレメントが存在している場合、そのエレメントはそのタイプに応じた何らかのプロパティか1つ以上の拡張を持つ必要がある（<a href="https://www.hl7.org/fhir/json.html#:~:text=Objects%20are%20never%20empty">2.6.2 JSON Representation of Resources</a>, <a href="https://www.hl7.org/fhir/xml.html#:~:text=FHIR%20elements%20are%20never%20empty">2.6.1 XML Representation of Resources</a>）。string型の値は空文字列であってはならず、そのプロパティが存在するのであれば、1字以上の文字を含む必要がある（<a href="https://www.hl7.org/fhir/datatypes.html#:~:text=strings%20SHOULD%20always%20contain%20non-whitespace">2.24.0.1 Primitive Types</a>）。</p>
+
+<p>データがない場合に、<a href="https://www.hl7.org/fhir/extension-data-absent-reason.html">Data Absent Reason拡張</a>を用いて、データが欠損している理由を表すことができる。</p>
+
+<p>JP Core の検索要求するクライアント(Requester)およびサーバ(Responder)は以下の要求を満たすこと <strong>(SHALL)</strong></p>
+<h2 id="131-クライアントrequster">1.3.1. クライアント(Requster)</h2>
+<hr />
+<h3 id="1311-must-supportおよびcardinalityが１以上が付与された要素を含むリソースを受信した場合エラーを発生させたりアプリケーションを失敗させることなくそれらの値を処理することができなければならない-shall">1.3.1.1. Must SupportおよびCardinalityが１以上が付与された要素を含むリソースを受信した場合、エラーを発生させたりアプリケーションを失敗させることなく、それらの値を処理することができなければならない <strong>(SHALL)</strong>。</h3>
+
+<p><strong>例)</strong>
+Readインタラクションの応答として、Must SupportおよびCardinalityが１以上の 要素であるPatient.maritalStatus を含むPatient リソースを受信した場合、
+要求者はその値をエラーなく処理しなければならない。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> {
+    "resourceType" : "Patient",
+    ...
+    "maritalStatus"　:　{
+        "coding": [{
+            "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+            "code": "M",
+            "display": "Married"
+        }]
+    },
+    ...
+}, 
+</code></pre></div></div>
+
+<h3 id="1312-実装ガイドに準拠する要求者は欠損データであることを宣言した-must-supportおよびcardinalityが１以上の-データ要素を含むリソースインスタンスを処理できなければならない-shall">1.3.1.2. 実装ガイドに準拠する要求者は、欠損データであることを宣言した Must SupportおよびCardinalityが１以上の データ要素を含むリソースインスタンスを処理できなければならない <strong>(SHALL)</strong>。</h3>
+<p><strong>例)</strong>
+Patient.birthDateの値に欠損情報が付与されているリソースを、要求者は処理できなければならない。なお、birthDateはdate型というprimitive typeであり、そのextensionは”_“を先頭につけたプロパティに対して設定される(<a href="https://www.hl7.org/fhir/json.html#primitive">2.6.2.3 JSON representation of primitive elements</a>)。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "resourceType " : "Patient",
+    ...
+    "_birthDate ": {
+        "extension" : [{
+            "url " : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "unknown"
+        }]
+    },
+    ...
+} 
+</code></pre></div></div>
+
+<h2 id="132-サーバresponder">1.3.2. サーバ(Responder)</h2>
+<hr />
+<h3 id="1321-must-supportおよびcardinalityが１以上の-要素の値を保持している場合">1.3.2.1. Must SupportおよびCardinalityが１以上の 要素の値を保持している場合</h3>
+<p>JP Core 実装ガイドに準拠する応答者は、Must SupportおよびCardinalityが１以上のが付与された要素について、当該要素の値を保持している場合には、要求された検索結果のリソースのデータ要素として含めることができなければならない。 <strong>(SHALL)</strong></p>
+
+<h3 id="1322-must-supportおよびcardinalityが１以上の-要素の値を保持していない場合">1.3.2.2. Must SupportおよびCardinalityが１以上の 要素の値を保持していない場合</h3>
+<p>Must SupportおよびCardinalityが１以上の要素がオプショナルな要素の場合Responderは、そのデータ要素の項目を省略してもよい。 <strong>(MAY)</strong></p>
+
+<p><strong>例)</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Patient.telecomが欠損している場合…telecom要素は含まなくてよい
+{
+    "resourceType" : "Patient",
+    ...
+    "name" : [{"family" : "Yamada", "given" : [ "Taro" ] }],
+    "gender" : "male",
+    ...
+}
+</code></pre></div></div>
+
+<h4 id="13221-must-supportおよびcardinalityが１以上の-要素が必須要素の場合">1.3.2.2.1. Must SupportおよびCardinalityが１以上の 要素が必須要素の場合</h4>
+<p>JP Core実装ガイドの応答者は、リソースに含めるべき必須 MustSupport要素の値を保持していない場合は、次のように、データの欠損理由を指定しなければならない。 <strong>(SHALL)</strong> もし、そのデータの欠損理由を応答者が正確に把握していない状況では、その値を含めてはならない。 <strong>(SHALL NOT)</strong></p>
+
+<h5 id="132211-非コード化要素の場合">1.3.2.2.1.1. 非コード化要素の場合</h5>
+<p>非コード化値の場合： Data Absent Reason拡張を使用して、欠損理由を送
+信できなければならない。 <strong>(SHALL)</strong></p>
+
+<p><strong>例)</strong>
+患者の生年月日が不明なため、Patient.birthDateに値を保持していない場合（Patient.birthDateが必須 MustSupport）、Data Absent Reason 拡張を使用して、欠損理由（＝不明）を示す。なお、birthDateはdate型というprimitive typeであり、そのextensionは”_“を先頭につけたプロパティに対して設定される(<a href="https://www.hl7.org/fhir/json.html#primitive">2.6.2.3 JSON representation of primitive elements</a>)。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "resourceType " : "Patient",
+    ...
+    "_birthDate ": {
+        "extension" : [{
+            "url " : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode" : "unknown"
+        }]
+    },
+    ...
+} 
+</code></pre></div></div>
+<h5 id="132212-コード化データ要素の場合">1.3.2.2.1.2. コード化データ要素の場合</h5>
+<h6 id="1322121-そのコード化要素がcodeableconceptデータ型でバインディング強度がexample-preferred-extensible-のいずれかの場合">1.3.2.2.1.2.1. そのコード化要素が、CodeableConceptデータ型で、バインディング強度が、example, preferred, extensible のいずれかの場合</h6>
+
+<h6 id="1322122-コード化値の代替となる文字情報を持っている場合は文字データのみを使用する">1.3.2.2.1.2.2. コード化値の代替となる文字情報を持っている場合は、文字データのみを使用する</h6>
+
+<p><strong>例)</strong>
+ Patient.maritalStatus が必須要素の場合で、Patient.maritalStatus のコード値はわからないが、「既婚」という文字情報は持っている場合、CodeableConcept の text を使用する。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "resourceType" : "Patient",
+    ...
+    "maritalStatus": {
+        "text" : "既婚"
+    },
+    ...
+}
+</code></pre></div></div>
+
+<h6 id="1322123-コード化値の代替となる文字情報を持っていない場合はバリューセットの中に例外値を表現するコードがある場合その値を使用する">1.3.2.2.1.2.3. コード化値の代替となる文字情報を持っていない場合はバリューセットの中に、例外値を表現するコードがある場合その値を使用する</h6>
+
+<p><strong>例)</strong>バリューセットに含まれる例外値を表現するコードを使用（ValueSet marital-statusには、不明な状態を表すコード[UNK]を含んでいるため、UNKを使用する）</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "resourceType" : "Patient",
+    ...
+    "maritalStatus": {
+        "coding": [{
+            "system":"http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "code": "UNK",
+            "display": "unknown"
+        }]
+    },
+    …
+}
+</code></pre></div></div>
+
+<h6 id="1322124-バリューセットの中に例外値を表現するコードが無い場合dataabsentreasonコード体系から適切な概念コードを使用する">1.3.2.2.1.2.4. バリューセットの中に、例外値を表現するコードが無い場合[DataAbsentReason]コード体系から、適切な概念コードを使用する。</h6>
+<p><strong>例)</strong> Patient.communication.language が必須MustSupport要素で、その値が、患者に確認していないため不明の場合、Data Absent Reason拡張より「not-asked」を使用する。※Patient.communication.language は現状のJP Core Patientプロファイル案では必須ではないため、例示のためのみに使用した。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "resourceType" : "Patient",
+    ...
+    "communication": [{
+        "language":{
+            "extension": [{
+                    "url " : "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+                    "valueCode" : "not-asked",
+                    "display": "Not asked"
+            }]
+        }
+    }],
+    ...
+}
+</code></pre></div></div>
+
+<h6 id="1322125-そのコード化要素がcodeableconceptデータ型またはcode-データ型でバインディング強度が-required-の場合そのバリューセット内に含まれる例外値を表すコードを使用する">1.3.2.2.1.2.5. そのコード化要素が、CodeableConceptデータ型、または、code データ型で、バインディング強度が required の場合そのバリューセット内に含まれる例外値を表すコードを使用する。</h6>
+<p><strong>例)</strong> Patient.gender が必須 MustSupport要素の場合で、その値が不明の場合、 バリューセットAdministrativeGender に含まれる例外値を表すコード「unknown」を使用する。※Patient.genderは現状のJP Core Patientプロファイル案では必須ではないため、例示のために使用した。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "resourceType" : "Patient",
+    ...
+    "gender": "unknown",
+    …
+}
+</code></pre></div></div>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

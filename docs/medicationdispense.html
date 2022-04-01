@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Medicationdispense - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"24"}
+    h3,h4,h5,h6{--heading-prefix:"24"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Medicationdispense</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Medicationdispense</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#2124-jp-core-medicationdispense内服外用薬剤処方調剤払い出し記録プロファイル" id="markdown-toc-2124-jp-core-medicationdispense内服外用薬剤処方調剤払い出し記録プロファイル">2.1.2.4. JP Core MedicationDispense（内服・外用薬剤処方調剤・払い出し記録）プロファイル</a>    <ul>
+      <li><a href="#21241-概略" id="markdown-toc-21241-概略">2.1.2.4.1. 概略</a>        <ul>
+          <li><a href="#212411-背景および想定シナリオ" id="markdown-toc-212411-背景および想定シナリオ">2.1.2.4.1.1. 背景および想定シナリオ</a></li>
+          <li><a href="#212412-スコープ" id="markdown-toc-212412-スコープ">2.1.2.4.1.2. スコープ</a></li>
+        </ul>
+      </li>
+      <li><a href="#21242-関連するプロファイル" id="markdown-toc-21242-関連するプロファイル">2.1.2.4.2. 関連するプロファイル</a></li>
+      <li><a href="#21243-リソース定義" id="markdown-toc-21243-リソース定義">2.1.2.4.3. リソース定義</a>        <ul>
+          <li><a href="#212431-必須要素" id="markdown-toc-212431-必須要素">2.1.2.4.3.1. 必須要素</a></li>
+          <li><a href="#212432-extensions定義" id="markdown-toc-212432-extensions定義">2.1.2.4.3.2. Extensions定義</a></li>
+          <li><a href="#212433-用語定義" id="markdown-toc-212433-用語定義">2.1.2.4.3.3. 用語定義</a></li>
+          <li><a href="#212434-制約一覧" id="markdown-toc-212434-制約一覧">2.1.2.4.3.4. 制約一覧</a></li>
+          <li><a href="#212435-項目の追加" id="markdown-toc-212435-項目の追加">2.1.2.4.3.5. 項目の追加</a></li>
+        </ul>
+      </li>
+      <li><a href="#21244-利用方法" id="markdown-toc-21244-利用方法">2.1.2.4.4. 利用方法</a>        <ul>
+          <li><a href="#212441-interaction一覧" id="markdown-toc-212441-interaction一覧">2.1.2.4.4.1. Interaction一覧</a></li>
+          <li><a href="#212442-サンプル" id="markdown-toc-212442-サンプル">2.1.2.4.4.2. サンプル</a></li>
+        </ul>
+      </li>
+      <li><a href="#21245-注意事項" id="markdown-toc-21245-注意事項">2.1.2.4.5. 注意事項</a>        <ul>
+          <li><a href="#212451-記述の単位について" id="markdown-toc-212451-記述の単位について">2.1.2.4.5.1. 記述の単位について</a></li>
+          <li><a href="#212452-調剤量の記述方法" id="markdown-toc-212452-調剤量の記述方法">2.1.2.4.5.2. 調剤量の記述方法</a></li>
+          <li><a href="#212453-力価区分の記述方法" id="markdown-toc-212453-力価区分の記述方法">2.1.2.4.5.3. 力価区分の記述方法</a></li>
+          <li><a href="#212454-代替医薬品への変更内容の記述方法" id="markdown-toc-212454-代替医薬品への変更内容の記述方法">2.1.2.4.5.4. 代替医薬品への変更内容の記述方法</a></li>
+          <li><a href="#212455-払い出し先" id="markdown-toc-212455-払い出し先">2.1.2.4.5.5. 払い出し先</a></li>
+          <li><a href="#212456-払い出し日時" id="markdown-toc-212456-払い出し日時">2.1.2.4.5.6. 払い出し日時</a></li>
+          <li><a href="#212457-調剤日時" id="markdown-toc-212457-調剤日時">2.1.2.4.5.7. 調剤日時</a></li>
+          <li><a href="#212458-調剤実施者" id="markdown-toc-212458-調剤実施者">2.1.2.4.5.8. 調剤実施者</a></li>
+          <li><a href="#212459-調剤結果の記述方法" id="markdown-toc-212459-調剤結果の記述方法">2.1.2.4.5.9. 調剤結果の記述方法</a></li>
+          <li><a href="#2124510-疑義照会の内容" id="markdown-toc-2124510-疑義照会の内容">2.1.2.4.5.10. 疑義照会の内容</a></li>
+          <li><a href="#2124511-調剤時の特記事項コメントなど" id="markdown-toc-2124511-調剤時の特記事項コメントなど">2.1.2.4.5.11. 調剤時の特記事項（コメントなど）</a></li>
+          <li><a href="#2124512-薬剤処方の各種指示情報の記述方法について" id="markdown-toc-2124512-薬剤処方の各種指示情報の記述方法について">2.1.2.4.5.12. 薬剤処方の各種指示情報の記述方法について</a></li>
+        </ul>
+      </li>
+      <li><a href="#21246-その他参考文献リンク等" id="markdown-toc-21246-その他参考文献リンク等">2.1.2.4.6. その他、参考文献・リンク等</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="2124-jp-core-medicationdispense内服外用薬剤処方調剤払い出し記録プロファイル">2.1.2.4. JP Core MedicationDispense（内服・外用薬剤処方調剤・払い出し記録）プロファイル</h1>
+
+<h2 id="21241-概略">2.1.2.4.1. 概略</h2>
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>定義URL</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDispense</td>
+    </tr>
+    <tr>
+      <td>バージョン</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>名前</td>
+      <td>JPCoreMedicationDispenseProfile</td>
+    </tr>
+    <tr>
+      <td>タイトル</td>
+      <td>JP Core MedicationDispense Profile</td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>アクティブ（2021-08-26）</td>
+    </tr>
+    <tr>
+      <td>定義</td>
+      <td>このプロファイルはMedicationDispenseリソースに対して、内服・外用薬剤処方調剤・払い出し記録のデータを送受信するための基礎となる制約と拡張を定めたものである。</td>
+    </tr>
+    <tr>
+      <td>公開者</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>ソースリソース</td>
+      <td>https://simplifier.net/jp-core-draftv1/jpmedicationdispense</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p>このプロファイルは内服、外用の薬剤処方の調剤情報をMedicationDispenseリソースを使用して表現する。薬剤処方は指示する項目、使用する用語集、プロセスなどにおいて諸外国と日本では異なっており、日本国内で規格を運用するためにExtensionの追加や用語集の追加・変更を行った。現在、日本での処方関連規格として利用されているJAHIS 処方データ交換規約 Ver 3.0C、JAHIS電子版お薬手帳データフォーマット仕様書Ver.2.4を参考にした。
+以下、このプロファイルのMedicationDispenseリソースを「JP Core MedicationDispenseリソース」と呼ぶ。</p>
+
+<p>薬剤処方のFHIR仕様に関しては、先行事例として令和２年度厚⽣労働科学特別研究事業「診療情報提供書, 電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」研究班で策定された「電子処方箋HL7 FHIR記述仕様書案」（https://std.jpfhir.jp/ ）があるが、その中で院外処方以外でも利用できる仕様については可能な限り取り入れるようにした。ただし、拡張のURLは新たにJP Coreの命名規則に基づいて命名している。</p>
+
+<h3 id="212411-背景および想定シナリオ">2.1.2.4.1.1. 背景および想定シナリオ</h3>
+<p>このプロファイルは、以下のようなユースケースを想定している。</p>
+
+<ul>
+  <li>医療機関内の薬剤部門システムや調剤薬局のシステムから特定の患者の処方調剤情報を検索する</li>
+  <li>電子処方箋において院外処方箋の調剤情報を記述する</li>
+</ul>
+
+<h3 id="212412-スコープ">2.1.2.4.1.2. スコープ</h3>
+<h4 id="2124121-対象">2.1.2.4.1.2.1. 対象</h4>
+<p>このプロファイルの対象は内服、外用の一般的な薬剤処方の調剤情報を電子的に連携するためのメッセージを記述することである。</p>
+
+<h4 id="2124122-対象としないこと">2.1.2.4.1.2.2. 対象としないこと</h4>
+<p>このプロファイルは内服、外用の薬剤に関するものであり、注射薬剤については対象としない。注射薬剤は、指示の仕方や指示する項目が内服、外用とは大きく異なるため、別のプロファイルとして記述することとする。</p>
+
+<p>また、このプロファイルのMedicationDispenseリソースは薬剤の調剤に関するものであり、指示（オーダー）、内服確認や実施記録は対象としない。それぞれ、MedicationRequest, MedicationAdministrationが対応するリソースである。</p>
+
+<h2 id="21242-関連するプロファイル">2.1.2.4.2. 関連するプロファイル</h2>
+<p>JP Core MedicationDispenseリソースは、以下のリソースから直接参照される。</p>
+
+<ul>
+  <li>JP Core Observationリソース</li>
+</ul>
+
+<p>JP Core MedicationDispenseリソースは、以下のリソースを直接参照する。</p>
+
+<ul>
+  <li>JP Core Patientリソース</li>
+  <li>JP Core Encounterリソース</li>
+  <li>JP Core Practitionerリソース</li>
+  <li>JP Core PractitionerRoleリソース</li>
+  <li>JP Core Organizationリソース</li>
+  <li>JP Core Coverageリソース</li>
+  <li>JP Core MedicationRequestリソース</li>
+  <li>JP Core Medicationリソース</li>
+</ul>
+
+<h2 id="21243-リソース定義">2.1.2.4.3. リソース定義</h2>
+<p><a href="https://simplifier.net/jp-core-draftv1/JPMedicationDispense">リソース定義ページの参照</a></p>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/JPMedicationDispense/$download?format=json">リソース定義のダウンロード</a></p>
+
+<h3 id="212431-必須要素">2.1.2.4.3.1. 必須要素</h3>
+<p>次のデータ項目は必須（データが存在しなければならない）、あるいは、データが送信システムに存在する場合はサポートされなければならないことを意味する。（Must Support）。</p>
+
+<p>JP Core MedicationDispense リソースは、次の要素を持たなければならない。</p>
+<ul>
+  <li>status : ステータスは必須である。</li>
+  <li>medicationCodeableConcept : 医薬品の識別情報は必須であり、medicationCodeableConcept.coding.system, medicationCodeableConcept.coding.code, medicationCodeableConcept.coding.display が必ず存在しなければならない。</li>
+  <li>subject :患者の参照情報は必須であり、subject.reference ないし subject.identifier が必ず存在しなければならない。</li>
+  <li>whenHandedOver : 払い出し日時であり、JP Coreでは必須である。</li>
+  <li>quantity : 調剤量は必須であり、quantity.value, quantity.unit, quantity.system, quantity.code が必ず存在しなければならない</li>
+  <li>dosageInstruction.text : フリーテキストの用法指示であり、JP Coreでは必須である。</li>
+  <li>dosageInstruction.timing : 服⽤タイミングを記録し、JP Coreでは必須である。dosageInstruction.timing.code.coding.code, dosageInstruction.timing.code.coding.system が必ず存在しなければならない。</li>
+</ul>
+
+<p>JP Core MedicationDispenseリソースは、次の要素をサポートしなければならない。</p>
+<ul>
+  <li>medicationCodeableConcept : 医薬品の識別情報</li>
+  <li>subject :患者の参照情報</li>
+  <li>whenHandedOver : 払い出し日時</li>
+  <li>quantity : 調剤量</li>
+  <li>dosageInstruction.timing : 服⽤タイミング</li>
+</ul>
+
+<h3 id="212432-extensions定義">2.1.2.4.3.2. Extensions定義</h3>
+<p>JP Core MedicationDispense リソースで使用される拡張は次の通りである。</p>
+
+<h4 id="2124321-jp-core-medicationdispense独自で追加されたextension">2.1.2.4.3.2.1. JP Core MedicationDispense独自で追加されたExtension</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>拡張</th>
+      <th>説明</th>
+      <th>URL</th>
+      <th>値の型</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>調剤結果</td>
+      <td>薬剤単位の調剤結果</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation</td>
+      <td>CodeableConcept</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="2124322-既存のextensionの利用">2.1.2.4.3.2.2. 既存のExtensionの利用</h4>
+
+<p>JP Core MedicationDispense リソースでは、JP Core MedicationRequestプロファイルで定義された以下の拡張を使用する。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>拡張</th>
+      <th>説明</th>
+      <th>URL</th>
+      <th>値の型</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>服用開始日</td>
+      <td>服用開始日を格納する拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse</td>
+      <td>Period</td>
+    </tr>
+    <tr>
+      <td>実服用日数</td>
+      <td>実服用日数を格納する拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration</td>
+      <td>Duration</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="212433-用語定義">2.1.2.4.3.3. 用語定義</h3>
+<p>HL7 FHIRの基底規格では、薬剤コードをはじめとして、剤形などでSNOMED CTが使われているが、日本ではライセンスの問題もあり普及していない。代替としてJAHIS処方データ交換規約やSS-MIX2で使われている用語集を採用した。</p>
+
+<p>HL7 V2系では用語集を識別するコーディングシステム名(以下、「CS名」）は文字列であったが、FHIRではURIを指定する必要があるため、それぞれにURIを割り当てた。以下に使用する用語集のCS名とURI表記を列記する。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>分類</th>
+      <th>CS名</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>医薬品</td>
+      <td>HOT7</td>
+      <td>urn:oid:1.2.392.200119.4.403.2</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>HOT9</td>
+      <td>urn:oid:1.2.392.200119.4.403.1</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>HOT13</td>
+      <td>urn:oid:1.2.392.200119.4.402.1</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>YJコード</td>
+      <td>urn:oid:1.2.392.100495.20.1.73</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>⼀般処⽅名マスター</td>
+      <td>urn:oid:1.2.392.100495.20.1.81</td>
+    </tr>
+    <tr>
+      <td>剤形</td>
+      <td>MERIT-9(剤形)</td>
+      <td>http://jpfhir.jp/ePrescription/CodeSystem/merit9-form</td>
+    </tr>
+    <tr>
+      <td>薬品単位</td>
+      <td>MERIT-9(単位）</td>
+      <td>urn:oid:1.2.392.100495.20.2.101</td>
+    </tr>
+    <tr>
+      <td>力価区分</td>
+      <td>電子処方箋HL7 FHIR仕様(力価区分)</td>
+      <td>urn:oid:1.2.392.100495.20.2.22</td>
+    </tr>
+    <tr>
+      <td>用法</td>
+      <td>JAMI処方・注射オーダ標準用法規格(用法コード)</td>
+      <td>urn:oid:1.2.392.200250.2.2.20.20</td>
+    </tr>
+    <tr>
+      <td>用法</td>
+      <td>JAMI処方・注射オーダ標準用法規格(補足用法コード)</td>
+      <td>urn:oid:1.2.392.200250.2.2.20.22</td>
+    </tr>
+    <tr>
+      <td>部位</td>
+      <td>JAMI処方・注射オーダ標準用法規格(部位コード)</td>
+      <td>urn:oid:1.2.392.200250.2.2.20.32</td>
+    </tr>
+    <tr>
+      <td>投与方法</td>
+      <td>JAMI処方・注射オーダ標準用法規格(基本用法区分)</td>
+      <td>urn:oid:1.2.392.200250.2.2.20.30</td>
+    </tr>
+    <tr>
+      <td>投与経路</td>
+      <td>HL7 V2(使用者定義表0162)</td>
+      <td>http://terminology.hl7.org/CodeSystem/v2-0162</td>
+    </tr>
+    <tr>
+      <td>入外区分</td>
+      <td>HL7V2(HL7表0482)</td>
+      <td>http://terminology.hl7.org/CodeSystem/v2-0482</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>JP Core MedicationDispenseリソースの各要素のバインディングは以下の通りである。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Path</th>
+      <th>定義</th>
+      <th>バインディング強度</th>
+      <th>バリューセット</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MedicationDispense.status</td>
+      <td>オーダーの現在の状態を示すコード</td>
+      <td>required</td>
+      <td>http://hl7.org/fhir/ValueSet/MedicationDispense-status</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.medicationCodeableConcept</td>
+      <td>医薬品の識別情報</td>
+      <td>prefered</td>
+      <td>HOT7,HOT9,HOT13,YJコード,一般処方名マスター</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.dosageInstruction.additionalInstruction</td>
+      <td>補足用法</td>
+      <td>prefered</td>
+      <td>JAMI処方・注射オーダ標準用法規格(補足用法コード)</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.dosageInstruction.timing.code</td>
+      <td>用法コード</td>
+      <td>prefered</td>
+      <td>JAMI処方・注射オーダ標準用法規格(用法コード)</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.dosageInstruction.site</td>
+      <td>投与部位</td>
+      <td>prefered</td>
+      <td>JAMI処方・注射オーダ標準用法規格(外用部位コード)</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.dosageInstruction.route</td>
+      <td>投与経路</td>
+      <td>prefered</td>
+      <td>HL7 V2(HL7表0162)</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.dosageInstruction.method</td>
+      <td>投与方法</td>
+      <td>prefered</td>
+      <td>JAMI処方・注射オーダ標準用法規格(用法詳細区分)</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.dosageInstruction.doseAndRate.doseQuantity.code</td>
+      <td>１回量単位</td>
+      <td>prefered</td>
+      <td>MERIT-9(単位)</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.dosageInstruction.doseAndRate.doseRatio.numerator.code</td>
+      <td>１日量単位</td>
+      <td>prefered</td>
+      <td>MERIT-9(単位)</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.dosageInstruction.doseAndRate.doseRatio.denominator.code</td>
+      <td>１日</td>
+      <td>required</td>
+      <td>UCUM(http://hl7.org/fhir/ValueSet/ucum-units)</td>
+    </tr>
+    <tr>
+      <td>MedicationDispense.quantity.code</td>
+      <td>調剤量単位</td>
+      <td>prefered</td>
+      <td>MERIT-9(単位)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="212434-制約一覧">2.1.2.4.3.4. 制約一覧</h3>
+<p>JP Core MedicationDispense リソースは、以下の制約を満たさなければならない。</p>
+<ul>
+  <li>dosageInstruction.doseAndRage.doseRatio.denominator.value : １日量を記述する場合”1”に固定される。</li>
+  <li>dosageInstruction.doseAndRage.doseRatio.denominator.unit : １日量を記述する場合”日”に固定される。</li>
+  <li>dosageInstruction.doseAndRage.doseRatio.denominator.system : １日量を記述する場合”http://unitsofmeasure.org”に固定される。</li>
+  <li>dosageInstruction.doseAndRage.doseRatio.denominator.code : １日量を記述する場合”d”に固定される。</li>
+</ul>
+
+<h3 id="212435-項目の追加">2.1.2.4.3.5. 項目の追加</h3>
+<p>療養担当則23条では、「保険医は、処方箋を交付する場合には、様式第二号若しくは第二号の二又はこれらに準ずる様式の処方箋に必要な事項を記載しなければならない。」とされており、外来処方、院内処方の区分を明示していない。
+したがって、個別のユースケースにおいては一部を省略されることも前提の上で、規格としてはこれに準拠すべきと考え、様式に収載されている以下の項目を追加した。</p>
+
+<ul>
+  <li>服用開始日の追加（拡張「JP_MedicationRequest_DosageInstruction_PeriodOfUse」を使用）</li>
+  <li>実服用日数の追加（拡張「JP_MedicationRequest_DosageInstruction_UsageDuration」を使用）</li>
+  <li>調剤結果の追加（拡張「JP_MedicationDispense_Preparation」を使用）</li>
+  <li>一日量処方への対応（doseInstruction.doseAndRate.rateRatioを使用）</li>
+  <li>RP番号、薬剤番号の追加（identifierを使用）</li>
+  <li>⼒価区分の追加（dosageInstruction.doseAndRate.typeを使用）</li>
+</ul>
+
+<h2 id="21244-利用方法">2.1.2.4.4. 利用方法</h2>
+
+<h3 id="212441-interaction一覧">2.1.2.4.4.1. Interaction一覧</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>インタラクション</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHALL（必須）</td>
+      <td>search-type、read</td>
+    </tr>
+    <tr>
+      <td>SHOULD（推奨）</td>
+      <td>vread、history-instance</td>
+    </tr>
+    <tr>
+      <td>MAY（利用可能）</td>
+      <td>create、update、patch、delete、history-type</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="2124411-search-parameter一覧">2.1.2.4.4.1.1. Search Parameter一覧</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>パラメータ</th>
+      <th>型</th>
+      <th>例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHALL</td>
+      <td>identifier</td>
+      <td>token</td>
+      <td>GET [base]/MedicationDispense?identifier=http://myhospital.com/fhir/medication|1234567890</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>patient</td>
+      <td>reference</td>
+      <td>GET [base]/MedicationDispense?patient=123456</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>patient,whenhandedover</td>
+      <td>referenece,date</td>
+      <td>GET [base]/MedicationDispense?patient=123456&amp;whenhandedover=eq2013-01-14</td>
+    </tr>
+    <tr>
+      <td>MAY</td>
+      <td>whenhandedover,whenprepared,context,code,performer</td>
+      <td>date,date,token,token,token</td>
+      <td>GET [base]/MedicationDispense?code=urn:oid:1.2.392.100495.20.2.74|105271807</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="21244111-必須検索パラメータ">2.1.2.4.4.1.1.1. 必須検索パラメータ</h5>
+
+<p>次の検索パラメータは必須でサポートされなければならない。</p>
+
+<ol>
+  <li>
+    <p>identifier 検索パラメータを使用して、オーダーIDなどの識別子によるMedicationReuqestの検索をサポートしなければならない（SHALL）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationDispense?identifier={system|}[code]
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationDispense?identifier=http://myhospital.com/fhir/medication\|1234567890
+</span></code></pre></div>    </div>
+
+    <p>指定された識別子に一致するMedicationDispenseリソースを含むBundleを検索する。</p>
+  </li>
+</ol>
+
+<h5 id="21244112-推奨検索パラメータ">2.1.2.4.4.1.1.2. 推奨検索パラメータ</h5>
+
+<p>次の検索パラメータをサポートすることが望ましい。</p>
+
+<ol>
+  <li>
+    <p>patient 検索パラメータを使用して、患者のリファレンス情報によるMedicationDispenseの検索をサポートすることが望ましい（SHOULD）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationDispense?patient=[id]
+GET [base]/MedicationDispense?patient=[url]
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationDispense?patient=123456
+</span></code></pre></div>    </div>
+
+    <p>リソースIDが123456の患者のMedicationDispenseリソースを含むBundleを検索する。</p>
+  </li>
+  <li>
+    <p>patient,whenhandedover 検索パラメータを使用して、患者のリファレンス情報と払い出し日によるMedicationDispenseの検索をサポートすることが望ましい（SHOULD）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationDispense?patient=[id]&amp;whenhandedover=[date]
+GET [base]/MedicationDispense?patient=[url]&amp;whenhandedover=[date]
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationDispense?patient=123456&amp;whenhandedover=eq2013-01-14
+</span></code></pre></div>    </div>
+
+    <p>リソースIDが123456の患者の2013-01-14に払い出されたMedicationDispenseリソースを含むBundleを検索する。</p>
+  </li>
+</ol>
+
+<h5 id="21244113-追加検索パラメータ">2.1.2.4.4.1.1.3. 追加検索パラメータ</h5>
+
+<h4 id="2124412-operation一覧">2.1.2.4.4.1.2. Operation一覧</h4>
+
+<p>JP Core MedicationDispense リソースに対して使用される操作は次の通りである。</p>
+
+<ul>
+  <li>
+    <p>$everything：[base]/MedicationDispense/[id]/$everything</p>
+
+    <ul>
+      <li>この操作が呼び出された特定のMedicationDispenseに関連する全ての情報を返す。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="2124413-operation-詳細">2.1.2.4.4.1.3. Operation 詳細</h4>
+
+<h5 id="21244131-everything-操作">2.1.2.4.4.1.3.1. $everything 操作</h5>
+
+<p>この操作は、この操作が呼び出された特定のMedicationDispenseリソースに関連する全ての情報を返す。応答は “searchset” タイプのBundleリソースである。サーバは、少なくとも、識別されたMedicationDispenseコンパートメントに含まれる全てのリソースと、それらから参照されるすべてのリソースを返すことが望ましい。</p>
+
+<p>この操作の公式なURLは以下である。</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">http://hl7.jp/fhir/OperationDefinition/MedicationDispense-everything
+</span></code></pre></div></div>
+
+<p>URL: [base]/MedicationDispense/[id]/$everything</p>
+
+<p>本操作は、べき等な操作である。</p>
+
+<h6 id="212441311-入力パラメータ">2.1.2.4.4.1.3.1.1. 入力パラメータ</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>多重度</th>
+      <th>型</th>
+      <th>バインディング</th>
+      <th>プロファイル</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>start</td>
+      <td>0..1</td>
+      <td>date</td>
+      <td> </td>
+      <td> </td>
+      <td>特定の日付範囲で提供されたケアに関連する全ての記録を意味する。開始日が指定されていない場合、終了日以前のすべてのレコードが対象に含まれる。</td>
+    </tr>
+    <tr>
+      <td>end</td>
+      <td>0..1</td>
+      <td>date</td>
+      <td> </td>
+      <td> </td>
+      <td>特定の日付範囲で提供されたケアに関連する全ての記録を意味する。終了日が指定されていない場合、開始日以降のすべてのレコードが対象に含まれる。</td>
+    </tr>
+    <tr>
+      <td>_since</td>
+      <td>0..1</td>
+      <td>instant</td>
+      <td> </td>
+      <td> </td>
+      <td>指定された日時以降に更新されたリソースのみが応答に含まれる。</td>
+    </tr>
+    <tr>
+      <td>_type</td>
+      <td>0..*</td>
+      <td>code</td>
+      <td> </td>
+      <td> </td>
+      <td>応答に含むFHIRリソース型を、カンマ区切りで指定する。指定されない場合は、サーバは全てのリソース型を対象とする。</td>
+    </tr>
+    <tr>
+      <td>_count</td>
+      <td>0..1</td>
+      <td>integer</td>
+      <td> </td>
+      <td> </td>
+      <td>Bundleの1ページに含まれるリソース件数を指定。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="212441312-出力パラメータ">2.1.2.4.4.1.3.1.2. 出力パラメータ</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>多重度</th>
+      <th>型</th>
+      <th>バインディング</th>
+      <th>プロファイル</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>return</td>
+      <td>1..1</td>
+      <td>Bundle</td>
+      <td> </td>
+      <td> </td>
+      <td>バンドルのタイプは”searchset”である。この操作の結果は、リソースとして直接返される。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="212441313-例">2.1.2.4.4.1.3.1.3. 例</h6>
+
+<p>リクエスト：単一のMedicationDispenseに関連する全てのリソースを取得する。</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationDispense/1234567890/$everything
+[some headers]
+</span></code></pre></div></div>
+
+<p>レスポンス：指定されたMedicationDispenseに関連する全てのリソースを返す。</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="s">[other headers]</span>
+
+{
+  "resourceType": "Bundle",
+  "id": "example",
+  "meta": {
+    "lastUpdated": "2014-08-18T01:43:33Z"
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/MedicationDispense/1234567890",
+      "resource": {
+        "resourceType": "MedicationDispense",
+
+　　　　　・・・
+
+　　　 },
+    }
+  ]
+}  
+</code></pre></div></div>
+
+<h3 id="212442-サンプル">2.1.2.4.4.2. サンプル</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rp1 ムコダイン錠２５０ｍｇ１錠（  １日３錠)
+　　１日３回朝昼夕食後３日分
+</code></pre></div></div>
+
+<pre><code class="language-JSON">{
+    "resourceType": "MedicationDispense",
+    "extension": [
+        {
+            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration",
+            "valueDuration": {
+                "value": 3,
+                "unit": "日",
+                "system": "http://unitsofmeasure.org",
+                "code": "d"
+            }
+        }
+    ],
+    "identifier": [ 
+        {
+            "system": "http://www.sample.com/fhir/medication-dispense",
+            "value": "1234567890"
+        },
+        {
+            "system": "urn:oid:1.2.392.100495.20.3.81",
+            "value": "1"
+        },
+        {
+            "system": "urn:oid:1.2.392.100495.20.3.82",
+            "value": "1"
+        } 
+    ],
+    "status" : "completed",
+    "category" : {
+        "coding":  [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v2-0482",
+                "code": "I",
+                "display": "入院オーダ"
+            }
+        ]
+    },
+    "medicationCodeableConcept": {
+        "coding":  [
+            {
+                "system": "urn:oid:1.2.392.200119.4.403.1",
+                "code": "103835401",
+                "display": "ムコダイン錠２５０ｍｇ"
+            }
+        ]
+    },
+    "subject" : {
+        "reference" : "Patient/1234567890"
+    },
+    "performer" : [
+        {
+            "function" : {
+                "coding" : [
+                    {
+                        "code" : "packager",
+                        "system" : "http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function",
+                        "display" : "Packager"
+                    }
+                ]
+            },
+            "actor" : {
+                "reference" : "Practitioner/01234567"
+            }
+        }
+    ],
+    "quantity": {
+        "value": 9,
+        "unit": "錠",
+        "system": "urn:oid:1.2.392.100495.20.2.101",
+        "code": "TAB"
+    },
+    "whenPrepared" : "2021-10-07T10:47:19+09:00",
+    "whenHandedOver" : "2021-10-07T10:55:23+09:00",
+    "destination" : {
+        "reference" : "Location/12A"
+    },
+    "note" : [
+        {
+            "text" : "後発品へ変更可能か依頼医のＡ医師に確認したところ、患者の希望により不可との回答あり。"
+        }
+    ],
+    "dosageInstruction":  [
+        {
+            "timing": {
+                "code":  {
+             "coding":  [
+                 {
+                     "system": "urn:oid:1.2.392.200250.2.2.20.20",
+                     "code": "1013044400000000",
+                     "display": "内服・経口・１日３回朝昼夕食後"
+                 }
+                    ]
+         }
+            },
+            "route": {
+                "coding": [
+                    {
+                        "system": "urn:oid:2.16.840.1.113883.3.1937.777.10.5.162",
+                        "code": "PO",
+                        "display": "口"
+                    }
+                ]
+            },
+            "method": {
+                "coding": [
+                    {
+                        "system": "urn:oid:1.2.392.200250.2.2.20.40",
+                        "code": "10",
+                        "display": "経口"
+                    }
+                ]
+            },
+            "doseAndRate":  [
+                {
+                    "type": {
+                        "coding":  [
+                            {
+                                "system": "urn:oid:1.2.392.100495.20.2.22",
+                                "code": "1",
+                                "display": "製剤量"
+                            }
+                        ]
+                    },
+                    "doseQuantity": {
+                        "value": 1,
+                        "unit": "錠",
+                        "system": "urn:oid:1.2.392.100495.20.2.101",
+                        "code": "TAB"
+                    },
+                    "rateRatio": {
+                        "numerator": {
+                            "value": 3,
+                            "unit": "錠",
+                            "system": "urn:oid:1.2.392.100495.20.2.101",
+                            "code": "TAB"
+                        },
+                        "denominator": {
+                            "value": 1,
+                            "unit": "日",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "d"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "substitution" : {
+        "wasSubstituted" : true,
+        "type" : {
+            "coding" : [
+                {
+                    "code" : "G",
+                    "system" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+                    "display" : "generic composition"
+                }
+            ]
+        },
+        "reason": [
+            {
+                "coding" : [
+                    {
+                        "code" : "RR",
+                        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+                        "display" : "regulatory requirement"
+                    }
+                ]
+            }
+        ]
+    }
+}
+</code></pre>
+
+<h2 id="21245-注意事項">2.1.2.4.5. 注意事項</h2>
+
+<h3 id="212451-記述の単位について">2.1.2.4.5.1. 記述の単位について</h3>
+<p>MedicationDispenseは薬剤をCodeableConceptとして1つまでしか持つか、Medication Resourceのreferenceをもつことしかできない。
+したがって、複数の薬剤を同一のRp番号で表現する場合にはMedicationDispenseを繰り返すか、複数の薬剤をまとめたMedication Resouceのインスタンスを参照することとなる。
+ワーキンググループでの検討の結果、冗長とはなるがidentifierにRp番号と薬剤番号を記録することとし、MedicationDispenseを繰り返すことで表現する方法を推奨することとした。</p>
+
+<h3 id="212452-調剤量の記述方法">2.1.2.4.5.2. 調剤量の記述方法</h3>
+<p>調剤量はquantityに、SimpleQuantity型で記録する。単位コードには、投与量と同様に医薬品単位略号（”urn:oid:1.2.392.100495.20.2.101”）を使用する。
+調剤日数を記述したい場合は、daysSupply要素にSimpleQuantity方で記述し、単位コードはUCUM(“http://unitsofmeasure.org”)を使用する。</p>
+
+<p>21錠（1日3錠×7日分）を調剤する場合のインスタンス例を以下に示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">21</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"錠"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:oid:1.2.392.100495.20.2.101"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TAB"</span><span class="w">
+</span><span class="p">}</span><span class="err">,</span><span class="w">
+</span><span class="nl">"daysSupply"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"日"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212453-力価区分の記述方法">2.1.2.4.5.3. 力価区分の記述方法</h3>
+<p>用量は製剤量で記述することを基本とするが、必要に応じて原薬量指定も可能とする。この識別の記述方法は、JP Core MedicationRequestと同様とする。</p>
+
+<h3 id="212454-代替医薬品への変更内容の記述方法">2.1.2.4.5.4. 代替医薬品への変更内容の記述方法</h3>
+<p>調剤時に行ったジェネリック医薬品などへの変更内容の記述は、substitution.wasSubstituted, substitution.type, substitusion.reason を使用する。
+変更の種類はデフォルトのコード表（”http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution”）を使用する。
+変更の理由はデフォルトのコード表（”http://terminology.hl7.org/CodeSystem/v3-ActReason”)を使用するかフリーテキストで記述する。ローカルのコード表を使用してもよい。</p>
+
+<p>ジェネリック医薬品への変更の場合のインスタンス例を以下に示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"substitution"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"wasSubstituted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"type"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"G"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"generic composition"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"reason"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"coding"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"RR"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v3-ActReason"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"regulatory requirement"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212455-払い出し先">2.1.2.4.5.5. 払い出し先</h3>
+<p>調剤された薬剤が払い出された先は、destination要素にReference型でLocationリソースの参照情報を記述する。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"destination"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Location/12A"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212456-払い出し日時">2.1.2.4.5.6. 払い出し日時</h3>
+<p>調剤された薬剤が払い出された日時は、whenHandedOver要素にdateTime型で記述する。</p>
+
+<h3 id="212457-調剤日時">2.1.2.4.5.7. 調剤日時</h3>
+<p>薬剤が実際に調剤された日時は、whenPrepared要素にdateTime型で記述する。</p>
+
+<h3 id="212458-調剤実施者">2.1.2.4.5.8. 調剤実施者</h3>
+<p>調剤を実際に行った医療従事者は、performer.actor要素にReference型でPractitionerリソースの参照情報を記述する。役割に応じて複数の医療従事者を記述できる。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"performer"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"function"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"coding"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                    </span><span class="nl">"code"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"packager"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"system"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/medicationdispense-performer-function"</span><span class="p">,</span><span class="w">
+                    </span><span class="nl">"display"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Packager"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"actor"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"reference"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Practitioner/01234567"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212459-調剤結果の記述方法">2.1.2.4.5.9. 調剤結果の記述方法</h3>
+<p>単一の薬剤に対する調剤結果は、MedicationDispenseに対して定義した拡張「JP_MedicationDispense_Preparation」を使用する。
+この拡張は、CodeableConcept型を使用してテキストによる指示とコードによる指示のどちらかを記述することができる。
+一つの薬剤に対して、複数の指示を記録する場合には、この拡張を、拡張単位で繰り返して記録する。 
+調剤結果で使用するコードは、電子処方箋HL7 FHIR仕様(調剤指示)(“urn:oid:1.2.392.200250.2.2.30.10”)を推奨する。</p>
+
+<p>薬剤単位の調剤結果を表すインスタンス例を示す。</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"C"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:oid:1.2.392.200250.2.2.30.10"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"粉砕指示"</span><span class="w">
+                </span><span class="p">}</span><span class="w">
+            </span><span class="p">]</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDispense_Preparation"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"text"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"嚥下障害のため、上記粉砕指示"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w"> 
+</span><span class="p">]</span><span class="err">,</span><span class="w">
+
+</span></code></pre></div></div>
+
+<h3 id="2124510-疑義照会の内容">2.1.2.4.5.10. 疑義照会の内容</h3>
+<p>調剤時に行った疑義照会の内容は、note要素にAnnotation型で記述する。</p>
+
+<h3 id="2124511-調剤時の特記事項コメントなど">2.1.2.4.5.11. 調剤時の特記事項（コメントなど）</h3>
+<p>調剤時の特記事項（コメントなど）も、note要素にAnnotation型で記述する。</p>
+
+<h3 id="2124512-薬剤処方の各種指示情報の記述方法について">2.1.2.4.5.12. 薬剤処方の各種指示情報の記述方法について</h3>
+<p>調剤の基となった薬剤処方の用法などの情報は、特に記述のない限り JP Core MedicationRequest と同様の記述方法とする。該当する項目としては以下のものがある。</p>
+
+<ul>
+  <li>服用期間、実服用日数</li>
+  <li>服用開始日</li>
+  <li>１回量と１日量</li>
+  <li>外用部位</li>
+  <li>RP番号、薬剤番号</li>
+  <li>処方箋番号（オーダーID）</li>
+  <li>投与方法、投与経路</li>
+  <li>入外区分</li>
+  <li>調剤指示以外の薬剤単位、RP単位のコメント</li>
+  <li>不均等投与</li>
+  <li>隔日投与、曜日指定投与</li>
+</ul>
+
+<h2 id="21246-その他参考文献リンク等">2.1.2.4.6. その他、参考文献・リンク等</h2>
+<ol>
+  <li>HL7, FHIR MedicationDispense Resource, http://hl7.org/fhir/MedicationDispense.html</li>
+  <li>保健医療福祉情報システム工業会, JAHIS 処方データ交換規約 Ver.3.0C, https://www.jahis.jp/standard/detail/id=564</li>
+  <li>日本医療情報学会MERIT-9研究会, 医療情報交換規約運用指針、MERIT-9 処方オーダver 1.0, http://merit-9.mi.hama-med.ac.jp/jahis/SHOHOU.pdf</li>
+  <li>保健医療福祉情報システム工業会, JAHISデータ交換規約（共通編）Ver.1.1, https://www.jahis.jp/standard/detail/id=125</li>
+  <li>保健医療福祉情報システム工業会, JAHIS注射データ交換規約Ver.2.1C, https://www.jahis.jp/standard/detail/id=590</li>
+  <li>児玉 義憲、hl7v2-to-fhir, 
+https://github.com/Acedia-Belphegor/hl7v2-to-fhir/</li>
+  <li>Mike Henderson, 日本HL7協会監修、「HL7メッセージ交換」、第2版、インナービジョン社、2013年</li>
+  <li>一般社団法人医療情報システム開発センター, 医薬品HOT コードマスター, http://www2.medis.or.jp/hcode/</li>
+  <li>日本医療情報学会、SS-MIX2仕様書・ガイドライン, http://www.jami.jp/jamistd/ssmix2.php</li>
+  <li>保健医療福祉情報システム工業会, JAHIS電子処方箋実装ガイドVer.1.2, https://www.jahis.jp/standard/detail/id=774</li>
+  <li>令和２年度厚⽣労働科学特別研究事業「診療情報提供書, 電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」研究班, 電子処方箋HL7 FHIR記述仕様書案, https://std.jpfhir.jp/</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

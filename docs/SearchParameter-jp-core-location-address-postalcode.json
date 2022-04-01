@@ -1,0 +1,84 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "jp-core-location-address-postalcode",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"jp-core-location-address-postalcode\" </p></div><p><b>url</b>: <code>http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-location-address-postalcode</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: JPCoreLocationAddressPostalcode</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2021-12-01</p><p><b>publisher</b>: HL7 FHIR 日本実装検討WG</p><p><b>contact</b>: HL7 FHIR 日本実装検討WG: <a href=\"https://jpfhir.jp/\">https://jpfhir.jp/</a></p><p><b>description</b>: Locationリソースのaddress-postalcodeに関する検索を定義します。</p><p><b>code</b>: address-postalcode</p><p><b>base</b>: Location</p><p><b>type</b>: string</p><p><b>expression</b>: Location.address.postalCode</p><p><b>xpath</b>: f:Location/f:address/f:postalCode</p><p><b>xpathUsage</b>: normal</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, exact, contains</p></div>"
+  },
+  "url": "http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-location-address-postalcode",
+  "version": "1.0.0",
+  "name": "JPCoreLocationAddressPostalcode",
+  "status": "active",
+  "experimental": false,
+  "date": "2021-12-01",
+  "publisher": "HL7 FHIR 日本実装検討WG",
+  "contact": [
+    {
+      "name": "HL7 FHIR 日本実装検討WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://jpfhir.jp/"
+        }
+      ]
+    }
+  ],
+  "description": "Locationリソースのaddress-postalcodeに関する検索を定義します。",
+  "code": "address-postalcode",
+  "base": [
+    "Location"
+  ],
+  "type": "string",
+  "expression": "Location.address.postalCode",
+  "xpath": "f:Location/f:address/f:postalCode",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "_multipleOr": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode": "MAY"
+      }
+    ]
+  },
+  "multipleAnd": true,
+  "_multipleAnd": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode": "MAY"
+      }
+    ]
+  },
+  "modifier": [
+    "missing",
+    "exact",
+    "contains"
+  ],
+  "_modifier": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+          "valueCode": "MAY"
+        }
+      ]
+    }
+  ]
+}

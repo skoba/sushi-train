@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <id value="jp-core-medicationrequest-requester"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "jp-core-medicationrequest-requester" </p></div><p><b>url</b>: <code>http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationrequest-requester</code></p><p><b>version</b>: 1.0.0</p><p><b>name</b>: JPCoreMedicationRequestrRequester</p><p><b>status</b>: active</p><p><b>experimental</b>: false</p><p><b>date</b>: 2021-12-01</p><p><b>publisher</b>: HL7 FHIR 日本実装検討WG</p><p><b>contact</b>: HL7 FHIR 日本実装検討WG: <a href="https://jpfhir.jp/">https://jpfhir.jp/</a></p><p><b>description</b>: MedicationRequestリソースのrequesterに関する検索を定義します。</p><p><b>code</b>: requester</p><p><b>base</b>: MedicationRequest</p><p><b>type</b>: reference</p><p><b>expression</b>: MedicationRequest.requester.where(resolve() is Patient)</p><p><b>xpath</b>: f:MedicationRequest/f:requester</p><p><b>xpathUsage</b>: normal</p><p><b>target</b>: Practitioner</p><p><b>multipleOr</b>: true</p><p><b>multipleAnd</b>: true</p><p><b>modifier</b>: missing, type, identifier</p><p><b>chain</b>: identifier, name</p></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/core/SearchParameter/StructureDefinition/jp-core-medicationrequest-requester"/>
+  <version value="1.0.0"/>
+  <name value="JPCoreMedicationRequestrRequester"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-12-01"/>
+  <publisher value="HL7 FHIR 日本実装検討WG"/>
+  <contact>
+    <name value="HL7 FHIR 日本実装検討WG"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://jpfhir.jp/"/>
+    </telecom>
+  </contact>
+  <description value="MedicationRequestリソースのrequesterに関する検索を定義します。"/>
+  <code value="requester"/>
+  <base value="MedicationRequest"/>
+  <type value="reference"/>
+  <expression value="MedicationRequest.requester.where(resolve() is Patient)"/>
+  <xpath value="f:MedicationRequest/f:requester"/>
+  <xpathUsage value="normal"/>
+  <target value="Practitioner"/>
+  <multipleOr value="true">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </multipleOr>
+  <multipleAnd value="true">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </multipleAnd>
+  <modifier value="missing">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+  <modifier value="type">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+  <modifier value="identifier">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="MAY"/>
+    </extension>
+  </modifier>
+  <chain value="identifier">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHALL"/>
+    </extension>
+  </chain>
+  <chain value="name">
+    <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+      <valueCode value="SHALL"/>
+    </extension>
+  </chain>
+</SearchParameter>

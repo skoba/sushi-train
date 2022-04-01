@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "jp-core-work-codesystem-ProcedureCodes",
+  "meta": {
+    "versionId": "4",
+    "lastUpdated": "2021-08-17T03:35:50.014+00:00",
+    "source": "#CFQmDnsfigCEj9JP"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+  },
+  "url": "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes",
+  "version": "1.0.0",
+  "name": "ProcedureCodes",
+  "title": "Procedureコード",
+  "status": "draft",
+  "date": "2022-04-01T16:21:14+09:00",
+  "publisher": "HL7 FHIR 日本実装検討WG",
+  "contact": [
+    {
+      "name": "HL7 FHIR 日本実装検討WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://jpfhir.jp/"
+        }
+      ]
+    }
+  ],
+  "content": "complete"
+}

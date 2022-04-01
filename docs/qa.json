@@ -1,0 +1,12 @@
+{
+  "url": "http://jpfhir.jp/core/experiments/ImplementationGuide/jp.jpfhir.experiments",
+  "name": "JP_CORE_EXPERIMENTAL",
+  "package-id": "jp.jpfhir.experiments",
+  "ig-ver": "1.0.0",
+  "date": "Fri, 01 Apr, 2022 16:21:14 +0900",
+  "errs": 29,
+  "warnings": 75,
+  "hints": 196,
+  "version": "4.0.1",
+  "tool": "5.0.0-snapshot1 (3)"
+}

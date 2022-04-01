@@ -1,0 +1,1914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Medicationadministration Injection - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"23"}
+    h3,h4,h5,h6{--heading-prefix:"23"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Medicationadministration Injection</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Medicationadministration Injection</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#2127-jp-core-medicationadministration-injection注射薬剤処方投与実施情報プロファイル" id="markdown-toc-2127-jp-core-medicationadministration-injection注射薬剤処方投与実施情報プロファイル">2.1.2.7. JP Core MedicationAdministration Injection（注射薬剤処方投与実施情報）プロファイル</a>    <ul>
+      <li><a href="#21271-概略" id="markdown-toc-21271-概略">2.1.2.7.1. 概略</a>        <ul>
+          <li><a href="#212711-背景および想定シナリオ" id="markdown-toc-212711-背景および想定シナリオ">2.1.2.7.1.1. 背景および想定シナリオ</a></li>
+          <li><a href="#212712-スコープ" id="markdown-toc-212712-スコープ">2.1.2.7.1.2. スコープ</a></li>
+        </ul>
+      </li>
+      <li><a href="#21272-関連するプロファイル" id="markdown-toc-21272-関連するプロファイル">2.1.2.7.2. 関連するプロファイル</a></li>
+      <li><a href="#21273-リソース定義" id="markdown-toc-21273-リソース定義">2.1.2.7.3. リソース定義</a>        <ul>
+          <li><a href="#212731-必須要素" id="markdown-toc-212731-必須要素">2.1.2.7.3.1. 必須要素</a></li>
+          <li><a href="#212732-extensions定義" id="markdown-toc-212732-extensions定義">2.1.2.7.3.2. Extensions定義</a></li>
+          <li><a href="#212733-用語定義" id="markdown-toc-212733-用語定義">2.1.2.7.3.3. 用語定義</a></li>
+          <li><a href="#212734-制約一覧" id="markdown-toc-212734-制約一覧">2.1.2.7.3.4. 制約一覧</a></li>
+          <li><a href="#212735-項目の追加" id="markdown-toc-212735-項目の追加">2.1.2.7.3.5. 項目の追加</a></li>
+        </ul>
+      </li>
+      <li><a href="#21274-利用方法" id="markdown-toc-21274-利用方法">2.1.2.7.4. 利用方法</a>        <ul>
+          <li><a href="#212741-interaction一覧" id="markdown-toc-212741-interaction一覧">2.1.2.7.4.1. Interaction一覧</a></li>
+          <li><a href="#212742-サンプル" id="markdown-toc-212742-サンプル">2.1.2.7.4.2. サンプル</a></li>
+        </ul>
+      </li>
+      <li><a href="#21275-注意事項" id="markdown-toc-21275-注意事項">2.1.2.7.5. 注意事項</a>        <ul>
+          <li><a href="#212751-記述の単位について" id="markdown-toc-212751-記述の単位について">2.1.2.7.5.1. 記述の単位について</a></li>
+          <li><a href="#212752-投与薬剤投与量の記述方法" id="markdown-toc-212752-投与薬剤投与量の記述方法">2.1.2.7.5.2. 投与薬剤、投与量の記述方法</a></li>
+          <li><a href="#212753-投薬管理ステータス" id="markdown-toc-212753-投薬管理ステータス">2.1.2.7.5.3. 投薬管理ステータス</a></li>
+          <li><a href="#212754-実施日" id="markdown-toc-212754-実施日">2.1.2.7.5.4. 実施日</a></li>
+          <li><a href="#212755-実施者" id="markdown-toc-212755-実施者">2.1.2.7.5.5. 実施者</a></li>
+          <li><a href="#212756-実施場所" id="markdown-toc-212756-実施場所">2.1.2.7.5.6. 実施場所</a></li>
+          <li><a href="#212757-実施投与ライン" id="markdown-toc-212757-実施投与ライン">2.1.2.7.5.7. 実施投与ライン</a></li>
+          <li><a href="#212758-実施投与経路" id="markdown-toc-212758-実施投与経路">2.1.2.7.5.8. 実施投与経路</a></li>
+          <li><a href="#212759-実施投与部位" id="markdown-toc-212759-実施投与部位">2.1.2.7.5.9. 実施投与部位</a></li>
+          <li><a href="#2127510-実施投与手技" id="markdown-toc-2127510-実施投与手技">2.1.2.7.5.10. 実施投与手技</a></li>
+          <li><a href="#2127511-実施投与量" id="markdown-toc-2127511-実施投与量">2.1.2.7.5.11. 実施投与量</a></li>
+          <li><a href="#2127512-投与速度" id="markdown-toc-2127512-投与速度">2.1.2.7.5.12. 投与速度</a></li>
+          <li><a href="#2127513-各種実施コメント" id="markdown-toc-2127513-各種実施コメント">2.1.2.7.5.13. 各種実施コメント</a></li>
+          <li><a href="#2127514-投薬依頼情報" id="markdown-toc-2127514-投薬依頼情報">2.1.2.7.5.14. 投薬依頼情報</a></li>
+          <li><a href="#2127515-依頼科" id="markdown-toc-2127515-依頼科">2.1.2.7.5.15. 依頼科</a></li>
+          <li><a href="#2127516-依頼医師" id="markdown-toc-2127516-依頼医師">2.1.2.7.5.16. 依頼医師</a></li>
+          <li><a href="#2127517-依頼日時" id="markdown-toc-2127517-依頼日時">2.1.2.7.5.17. 依頼日時</a></li>
+        </ul>
+      </li>
+      <li><a href="#21276-その他参考文献リンク等" id="markdown-toc-21276-その他参考文献リンク等">2.1.2.7.6. その他、参考文献・リンク等</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="2127-jp-core-medicationadministration-injection注射薬剤処方投与実施情報プロファイル">2.1.2.7. JP Core MedicationAdministration Injection（注射薬剤処方投与実施情報）プロファイル</h1>
+
+<h2 id="21271-概略">2.1.2.7.1. 概略</h2>
+<p><br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>定義URL</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationAdministration_Injection</td>
+    </tr>
+    <tr>
+      <td>バージョン</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>名前</td>
+      <td>JPCoreMedicationAdministrationInjectionProfile</td>
+    </tr>
+    <tr>
+      <td>タイトル</td>
+      <td>JP Core MedicationAdministration Injection Profile</td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>アクティブ（2021-08-26）</td>
+    </tr>
+    <tr>
+      <td>定義</td>
+      <td>このプロファイルはMedicationAdministrationリソースに対して、注射薬剤処方投与実施情報のデータを送受信するための基礎となる制約と拡張を定めたものである。</td>
+    </tr>
+    <tr>
+      <td>公開者</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>ソースリソース</td>
+      <td>https://simplifier.net/jp-core-draftv1/jpmedicationadministrationinjection</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /></p>
+
+<p>このResource/Profileは注射の薬剤処方の投与実施情報を表現する。薬剤処方は指示する項目、使用する用語集、プロセスなどにおいて諸外国と日本では異なっており、日本国内で規格を運用するためにExtensionの追加や用語集の追加・変更を行った。現在、日本での注射関連規格として利用されている <a href="https://www.jahis.jp/standard/detail/id=590">JAHIS注射データ交換規約Ver.2.1C</a> を参考にした。</p>
+
+<h3 id="212711-背景および想定シナリオ">2.1.2.7.1.1. 背景および想定シナリオ</h3>
+<p>本プロファイルは、以下のようなユースケースを想定している。</p>
+
+<ul>
+  <li>電子カルテから特定の患者の注射実施情報を検索する</li>
+  <li>SS-MIX2やJAHIS注射データ交換規約に準拠した注射実施メッセージをJSONに変換する</li>
+</ul>
+
+<h3 id="212712-スコープ">2.1.2.7.1.2. スコープ</h3>
+<h4 id="2127121-対象">2.1.2.7.1.2.1. 対象</h4>
+<p>このProfileの対象は注射の一般的な薬剤処方の投与実施情報を電子的に連携するためのメッセージを記述することである。</p>
+
+<h4 id="2127122-対象としないこと">2.1.2.7.1.2.2. 対象としないこと</h4>
+<p>このProfileは注射の薬剤に関するものであり、内服・外用薬剤については対象としない。内服・外用薬剤は、指示の仕方や指示する項目が注射とは大きく異なるため、別のProfileとして記述することとする。</p>
+
+<p>また、このリソースは薬剤の投与実施に関するものであり、指示（オーダー）、調剤や払い出しは対象としない。それぞれ、MedicationRequest、MedicationDispense が対応するリソースである。</p>
+
+<h2 id="21272-関連するプロファイル">2.1.2.7.2. 関連するプロファイル</h2>
+<p>JP MedicationAdministrationリソースは、以下のリソースから直接参照される。</p>
+
+<ul>
+  <li>JP Core Observationリソース</li>
+  <li>JP Core Procedureリソース</li>
+</ul>
+
+<p>JP MedicationAdministrationリソースは、以下のリソースを直接参照する。</p>
+
+<ul>
+  <li>JP Core Patientリソース</li>
+  <li>JP Core Encounterリソース</li>
+  <li>JP Core Practitionerリソース</li>
+  <li>JP Core PractitionerRoleリソース</li>
+  <li>JP Core MedicationRequestリソース</li>
+  <li>JP Core Medicationリソース</li>
+</ul>
+
+<h2 id="21273-リソース定義">2.1.2.7.3. リソース定義</h2>
+<p><a href="https://simplifier.net/jp-core-draftv1/jpmedicationadministrationinjection">リソース定義ページの参照</a></p>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/jpmedicationadministrationinjection/$download?format=json">リソース定義のダウンロード</a></p>
+
+<h3 id="212731-必須要素">2.1.2.7.3.1. 必須要素</h3>
+<p>次のデータ項目は必須（データが存在しなければならない）、あるいは、データが送信システムに存在する場合はサポートされなければならないことを意味する。（Must Support）。</p>
+
+<p>MedicationAdministration リソースは、次の要素を持たなければならない。</p>
+<ul>
+  <li>status : ステータスは必須であり、JP Coreでは <code class="language-plaintext highlighter-rouge">completed</code> or <code class="language-plaintext highlighter-rouge">stopped</code> に限定される。</li>
+  <li>medicationCodeableConcept : 医薬品の識別情報は必須であり、medicationCodeableConcept.coding.system, medicationCodeableConcept.coding.code, medicationCodeableConcept.coding.display が必ず存在しなければならない。</li>
+  <li>subject :患者の参照情報は必須であり、subject.reference ないし subject.identifier が必ず存在しなければならない。</li>
+  <li>effectiveDateTime : 投与実施日時であり、JP Coreでは必須である。</li>
+</ul>
+
+<p>※投与実施のユースケースにおいては、実施投与量(dose)が必須であることが望ましいが、ワーキンググループでの検討の結果、投与中止のユースケースも考慮して必須としない結論となった。</p>
+
+<p>MedicationAdministrationリソースは、次の要素をサポートしなければならない。</p>
+<ul>
+  <li>medicationCodeableConcept : 医薬品の識別情報</li>
+  <li>subject :患者の参照情報</li>
+  <li>effectiveDateTime : 投与実施日時</li>
+</ul>
+
+<h3 id="212732-extensions定義">2.1.2.7.3.2. Extensions定義</h3>
+<p>MedicationAdministration リソースで使用される拡張は次の通りである。</p>
+
+<h4 id="2127321-jp-medicationadministration独自で追加されたextension">2.1.2.7.3.2.1. JP MedicationAdministration独自で追加されたExtension</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>拡張</th>
+      <th>説明</th>
+      <th>URL</th>
+      <th>値の型</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>依頼科</td>
+      <td>依頼科を格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestDepartment</td>
+      <td>CodeableConcept</td>
+    </tr>
+    <tr>
+      <td>依頼医</td>
+      <td>依頼医を格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Requester</td>
+      <td>Reference(Practitioner)</td>
+    </tr>
+    <tr>
+      <td>依頼日時</td>
+      <td>依頼日時を格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestAuthoredOn</td>
+      <td>DateTime</td>
+    </tr>
+    <tr>
+      <td>実施場所</td>
+      <td>実施場所を格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Location</td>
+      <td>Reference(Location)</td>
+    </tr>
+    <tr>
+      <td>投与経路コメント</td>
+      <td>投与経路コメントを格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Route_RouteComment</td>
+      <td>CodeableConcept/String</td>
+    </tr>
+    <tr>
+      <td>投与部位コメント</td>
+      <td>投与部位コメントを格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Site_SiteComment</td>
+      <td>CodeableConcept/String</td>
+    </tr>
+    <tr>
+      <td>手技コメント</td>
+      <td>手技コメントを格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Method_MethodComment</td>
+      <td>CodeableConcept/String</td>
+    </tr>
+    <tr>
+      <td>ラインコメント</td>
+      <td>ラインコメントを格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_LineComment</td>
+      <td>CodeableConcept/String</td>
+    </tr>
+    <tr>
+      <td>投与速度コメント</td>
+      <td>投与速度コメントを格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Rate_RateComment</td>
+      <td>CodeableConcept/String</td>
+    </tr>
+    <tr>
+      <td>用法コメント</td>
+      <td>用法コメントを格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_DosageComment</td>
+      <td>CodeableConcept/String</td>
+    </tr>
+    <tr>
+      <td>未分類コメント</td>
+      <td>未分類コメントを格納するための拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_UncategorizedComment</td>
+      <td>CodeableConcept/String</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="2127322-既存のextensionの利用">2.1.2.7.3.2.2. 既存のExtensionの利用</h4>
+
+<p>JP_MedicationRequestInjectionで追加された以下のExtensionを利用する。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>拡張</th>
+      <th>説明</th>
+      <th>URL</th>
+      <th>値の型</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>指示ライン</td>
+      <td>指示ラインを格納する拡張</td>
+      <td>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line</td>
+      <td>CodeableConcept</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="212733-用語定義">2.1.2.7.3.3. 用語定義</h3>
+<p>HL7 FHIRの基底規格では、薬剤コードをはじめとして、剤形などでSNOMED CTが使われているが、日本ではライセンスの問題もあり普及していない。代替としてJAHIS処方データ交換規約やSS-MIX2で使われている用語集を採用した。</p>
+
+<p>HL7 V2系では用語集を識別するコーディングシステム名(以下、「CS名」）は文字列であったが、FHIRではURIを指定する必要があるため、それぞれにURIを割り当てた。以下に使用する用語集のCS名とURI表記を列記する。</p>
+
+<p>★電子処方箋HL7 FHIR仕様を参照しているがよいか。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>分類</th>
+      <th>CS名</th>
+      <th>URI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>医薬品</td>
+      <td>HOT7</td>
+      <td>urn:oid:1.2.392.200119.4.403.</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>HOT9</td>
+      <td>urn:oid:1.2.392.200119.4.403.1</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>HOT13</td>
+      <td>urn:oid:1.2.392.200119.4.402.1</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>YJコード</td>
+      <td>urn:oid:1.2.392.100495.20.1.73</td>
+    </tr>
+    <tr>
+      <td>医薬品</td>
+      <td>⼀般処⽅名マスター</td>
+      <td>urn:oid:1.2.392.100495.20.1.81</td>
+    </tr>
+    <tr>
+      <td>薬品単位</td>
+      <td>MERIT-9(単位）</td>
+      <td>urn:oid:1.2.392.100495.20.2.101</td>
+    </tr>
+    <tr>
+      <td>力価区分</td>
+      <td>電子処方箋HL7 FHIR仕様(力価区分)</td>
+      <td>urn:oid:1.2.392.100495.20.2.22</td>
+    </tr>
+    <tr>
+      <td>用法</td>
+      <td>JAMI処方・注射オーダ標準用法規格(用法コード)</td>
+      <td>urn:oid:1.2.392.200250.2.2.20.20</td>
+    </tr>
+    <tr>
+      <td>用法</td>
+      <td>JAMI処方・注射オーダ標準用法規格(補足用法コード)</td>
+      <td>urn:oid:1.2.392.200250.2.2.20.22</td>
+    </tr>
+    <tr>
+      <td>部位</td>
+      <td>JAMI処方・注射オーダ標準用法規格(部位コード)</td>
+      <td>urn:oid:1.2.392.200250.2.2.20.32</td>
+    </tr>
+    <tr>
+      <td>投与方法</td>
+      <td>JAMI処方・注射オーダ標準用法規格(基本用法区分)</td>
+      <td>urn:oid:1.2.392.200250.2.2.20.30</td>
+    </tr>
+    <tr>
+      <td>投与経路</td>
+      <td>JAMI処方・注射オーダ標準用法規格(用法詳細区分)</td>
+      <td>urn:oid:1.2.392.200250.2.2.20.40</td>
+    </tr>
+    <tr>
+      <td>入外区分</td>
+      <td>HL7V2(HL7表0482)</td>
+      <td>http://terminology.hl7.org/CodeSystem/v2-0482</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>MedicationAdministrationの各要素のバインディングは以下の通りである。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Path</th>
+      <th>定義</th>
+      <th>バインディング強度</th>
+      <th>バリューセット</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MedicationAdministration.status</td>
+      <td>投与実施の状態を示すコード</td>
+      <td>required</td>
+      <td>http://hl7.org/fhir/ValueSet/medication-admin-status</td>
+    </tr>
+    <tr>
+      <td>MedicationAdministration.medicationCodeableConcept</td>
+      <td>医薬品の識別情報</td>
+      <td>prefered</td>
+      <td>HOT7,HOT9,HOT13,YJコード</td>
+    </tr>
+    <tr>
+      <td>MedicationAdministration.dosage.site</td>
+      <td>投与部位</td>
+      <td>prefered</td>
+      <td>JAMI処方・注射オーダ標準用法規格(外用部位コード)</td>
+    </tr>
+    <tr>
+      <td>MedicationAdministration.dosage.route</td>
+      <td>投与経路</td>
+      <td>prefered</td>
+      <td>JAMI処方・注射オーダ標準用法規格(用法詳細区分)</td>
+    </tr>
+    <tr>
+      <td>MedicationAdministration.dosage.method</td>
+      <td>投与方法</td>
+      <td>prefered</td>
+      <td>JAMI処方・注射オーダ標準用法規格(基本用法区分)</td>
+    </tr>
+    <tr>
+      <td>MedicationAdministration.dosage.dose.code</td>
+      <td>１回量単位</td>
+      <td>prefered</td>
+      <td>MERIT-9(単位)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="212734-制約一覧">2.1.2.7.3.4. 制約一覧</h3>
+<p>MedicationAdministration リソースは、以下の制約を満たさなければならない。</p>
+<ul>
+  <li>status : JP Coreでは <code class="language-plaintext highlighter-rouge">completed</code> or <code class="language-plaintext highlighter-rouge">stopped</code> に限定される。</li>
+</ul>
+
+<h3 id="212735-項目の追加">2.1.2.7.3.5. 項目の追加</h3>
+<p>MedicationAdministrationリソースでは、依頼元のMedicationRequestリソースをrequest要素にReferenceで参照できるようになっているが、
+依頼元のMedicationRequestリソースが取得できないケースも考慮して、依頼情報を直接記述できるように以下の項目を追加した。</p>
+
+<ul>
+  <li>依頼科の追加（拡張「JP_MedicationAdministration_RequestDepartment」を使用）</li>
+  <li>依頼医の追加（拡張「JP_MedicationAdministration_Requester」を使用）</li>
+  <li>依頼日時の追加（拡張「JP_MedicationAdministration_RequestAuthoredOn」を使用）</li>
+</ul>
+
+<p>また、投薬実施場所（病棟、病室、ベッド番号など）を記述できるように以下の項目を追加した。</p>
+
+<ul>
+  <li>実施場所の追加（拡張「JP_MedicationAdministration_Location」を使用）</li>
+</ul>
+
+<h2 id="21274-利用方法">2.1.2.7.4. 利用方法</h2>
+
+<h3 id="212741-interaction一覧">2.1.2.7.4.1. Interaction一覧</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>インタラクション</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHALL（必須）</td>
+      <td>search-type、read</td>
+    </tr>
+    <tr>
+      <td>SHOULD（推奨）</td>
+      <td>vread、history-instance</td>
+    </tr>
+    <tr>
+      <td>MAY（利用可能）</td>
+      <td>create、update、patch、delete、history-type</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="2127411-search-parameter一覧">2.1.2.7.4.1.1. Search Parameter一覧</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>パラメータ</th>
+      <th>型</th>
+      <th>例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHALL</td>
+      <td>identifier</td>
+      <td>token</td>
+      <td>GET [base]/MedicationAdministration?identifier=http://myhospital.com/fhir/medication|1234567890</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>patient</td>
+      <td>reference</td>
+      <td>GET [base]/MedicationAdministration?patient=123456</td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td>patient,effective-time</td>
+      <td>referenece,date</td>
+      <td>GET [base]/MedicationAdministration?patient=123456&amp;effective-time=eq2013-01-14</td>
+    </tr>
+    <tr>
+      <td>MAY</td>
+      <td>TBD</td>
+      <td>TBD</td>
+      <td>GET [base]/MedicationAdministration?code=urn:oid:1.2.392.100495.20.2.74|105271807</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="21274111-必須検索パラメータ">2.1.2.7.4.1.1.1. 必須検索パラメータ</h5>
+
+<p>次の検索パラメータは必須でサポートされなければならない。</p>
+
+<ol>
+  <li>
+    <p>identifier 検索パラメータを使用して、オーダーIDなどの識別子によるMedicationAdministrationの検索をサポートしなければならない（SHALL）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationAdministration?identifier={system|}[code]
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationAdministration?identifier=http://myhospital.com/fhir/medication\|1234567890
+</span></code></pre></div>    </div>
+
+    <p>指定された識別子に一致するMedicationAdministrationリソースを含むBundleを検索する。</p>
+  </li>
+</ol>
+
+<h5 id="21274112-推奨検索パラメータ">2.1.2.7.4.1.1.2. 推奨検索パラメータ</h5>
+
+<p>次の検索パラメータをサポートすることが望ましい。</p>
+
+<ol>
+  <li>
+    <p>patient 検索パラメータを使用して、患者のリファレンス情報によるMedicationAdministrationの検索をサポートすることが望ましい（SHOULD）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationAdministration?patient=[id]
+GET [base]/MedicationAdministration?patient=[url]
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationAdministration?patient=123456
+</span></code></pre></div>    </div>
+
+    <p>リソースIDが123456の患者のMedicationAdministrationリソースを含むBundleを検索する。</p>
+  </li>
+  <li>
+    <p>patient,effective-time 検索パラメータを使用して、患者のリファレンス情報と払い出し日によるMedicationAdministrationの検索をサポートすることが望ましい（SHOULD）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationAdministration?patient=[id]&amp;effective-time=[date]
+GET [base]/MedicationAdministration?patient=[url]&amp;effective-time=[date]
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationAdministration?patient=123456&amp;effective-time=eq2013-01-14
+</span></code></pre></div>    </div>
+
+    <p>リソースIDが123456の患者の2013-01-14に投与実施されたMedicationAdministrationリソースを含むBundleを検索する。</p>
+  </li>
+</ol>
+
+<h5 id="21274113-追加検索パラメータ">2.1.2.7.4.1.1.3. 追加検索パラメータ</h5>
+
+<h4 id="2127412-operation一覧">2.1.2.7.4.1.2. Operation一覧</h4>
+
+<p>JP MedicationAdministration リソースに対して使用される操作は次の通りである。</p>
+
+<ul>
+  <li>
+    <p>$everything：[base]/MedicationAdministration/[id]/$everything</p>
+
+    <ul>
+      <li>この操作が呼び出された特定のMedicationAdministrationに関連する全ての情報を返す。</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="2127413-operation-詳細">2.1.2.7.4.1.3. Operation 詳細</h4>
+
+<h5 id="21274131-everything-操作">2.1.2.7.4.1.3.1. $everything 操作</h5>
+
+<p>この操作は、この操作が呼び出された特定のMedicationAdministrationリソースに関連する全ての情報を返す。応答は “searchset” タイプのBundleリソースである。サーバは、少なくとも、識別されたMedicationAdministrationコンパートメントに含まれる全てのリソースと、それらから参照されるすべてのリソースを返すことが望ましい。</p>
+
+<p>この操作の公式なURLは以下である。</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">http://hl7.jp/fhir/OperationDefinition/MedicationAdministration-everything
+</span></code></pre></div></div>
+
+<p>URL: [base]/MedicationAdministration/[id]/$everything</p>
+
+<p>本操作は、べき等な操作である。</p>
+
+<h6 id="212741311-入力パラメータ">2.1.2.7.4.1.3.1.1. 入力パラメータ</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>多重度</th>
+      <th>型</th>
+      <th>バインディング</th>
+      <th>プロファイル</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>start</td>
+      <td>0..1</td>
+      <td>date</td>
+      <td> </td>
+      <td> </td>
+      <td>特定の日付範囲で提供されたケアに関連する全ての記録を意味する。開始日が指定されていない場合、終了日以前のすべてのレコードが対象に含まれる。</td>
+    </tr>
+    <tr>
+      <td>end</td>
+      <td>0..1</td>
+      <td>date</td>
+      <td> </td>
+      <td> </td>
+      <td>特定の日付範囲で提供されたケアに関連する全ての記録を意味する。終了日が指定されていない場合、開始日以降のすべてのレコードが対象に含まれる。</td>
+    </tr>
+    <tr>
+      <td>_since</td>
+      <td>0..1</td>
+      <td>instant</td>
+      <td> </td>
+      <td> </td>
+      <td>指定された日時以降に更新されたリソースのみが応答に含まれる。</td>
+    </tr>
+    <tr>
+      <td>_type</td>
+      <td>0..*</td>
+      <td>code</td>
+      <td> </td>
+      <td> </td>
+      <td>応答に含むFHIRリソース型を、カンマ区切りで指定する。指定されない場合は、サーバは全てのリソース型を対象とする。</td>
+    </tr>
+    <tr>
+      <td>_count</td>
+      <td>0..1</td>
+      <td>integer</td>
+      <td> </td>
+      <td> </td>
+      <td>Bundleの1ページに含まれるリソース件数を指定。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="212741312-出力パラメータ">2.1.2.7.4.1.3.1.2. 出力パラメータ</h6>
+
+<table>
+  <thead>
+    <tr>
+      <th>名前</th>
+      <th>多重度</th>
+      <th>型</th>
+      <th>バインディング</th>
+      <th>プロファイル</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>return</td>
+      <td>1..1</td>
+      <td>Bundle</td>
+      <td> </td>
+      <td> </td>
+      <td>バンドルのタイプは”searchset”である。この操作の結果は、リソースとして直接返される。</td>
+    </tr>
+  </tbody>
+</table>
+
+<h6 id="212741313-例">2.1.2.7.4.1.3.1.3. 例</h6>
+
+<p>リクエスト：単一のMedicationAdministrationに関連する全てのリソースを取得する。</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/MedicationAdministration/1234567890/$everything
+[some headers]
+</span></code></pre></div></div>
+
+<p>レスポンス：指定されたMedicationAdministrationに関連する全てのリソースを返す。</p>
+
+<div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span> <span class="m">200</span> <span class="ne">OK</span>
+<span class="s">[other headers]</span>
+
+{
+  "resourceType": "Bundle",
+  "id": "example",
+  "meta": {
+    "lastUpdated": "2014-08-18T01:43:33Z"
+  },
+  "type": "searchset",
+  "entry": [
+    {
+      "fullUrl": "http://example.org/fhir/MedicationAdministration/1234567890",
+      "resource": {
+        "resourceType": "MedicationAdministration",
+
+　　　　　・・・
+
+　　　 },
+    }
+  ]
+}  
+</code></pre></div></div>
+
+<h3 id="212742-サンプル">2.1.2.7.4.2. サンプル</h3>
+<p><a href="https://www.jahis.jp/standard/detail/id=590">JAHIS注射データ交換規約Ver.2.1C</a>に記載されている下記の注射実施メッセージをFHIRで表現する場合のサンプル</p>
+
+<details>
+<summary>（２）実施情報（ワンショット）</summary>
+
+| 項目名 | 項目値 | 備考 |
+| :--- | :--- | :--- |
+| オーダ番号 | 123456789012345 |
+| 入外区分 | 入院 (I) |
+| 依頼科 | 内科 (01) |
+| 依頼医 | 医師 一郎 (10001) |
+| Rp番号 | 01 |
+| 施用番号 | 001 |
+| 実施投与経路 | 静脈内 (IV) |
+| 実施投与部位 | 右腕 (ARM,R) |
+| 実施投与部位コメント | 左利きのため |
+| 実施投与装置 | シリンジ (01) |
+| 実施手技 | 静注(末梢) (101) |
+| 実施手技コメント | １分ほどかけて緩徐に行いました |
+| 実施用法コメント | 痙攣が発生したため、主治医に確認の上実施しました |
+| 実施投薬剤 | ホリゾン注射液10mg (100558502) |
+| 実施投薬量 | 1 |
+| 分量単位 | アンプル (AMP) |
+| 実施開始日時 | 2016/07/01 10:05:21 |
+| 実施終了日時 | (指定なし) |
+| 実施者 | 看護 花子 (20001) |
+| 実施場所 | 09A/021/4 |
+| 進捗 | 完了 (CP) |
+
+```json
+{
+  "resourceType": "MedicationAdministration",
+  "contained": [
+    {
+      "resourceType": "Medication",
+      "id": "medication1",
+      "ingredient": [
+        {
+          "itemCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.392.100495.20.2.74",
+                "code": "100558502",
+                "display": "ホリゾン注射液１０ｍｇ"
+              }
+            ]
+          },
+          "strength": {
+            "numerator": {
+              "value": 1,
+              "unit": "アンプル",
+              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "code": "AMP"
+            },
+            "denominator": {
+              "value": 1,
+              "unit": "回",
+              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "code": "KAI"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "BodyStructure",
+      "id": "bodystructure1",
+      "location": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0550",
+            "code": "ARM",
+            "display": "腕"
+          }
+        ]
+      },
+      "locationQualifier": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0495",
+              "code": "R",
+              "display": "右"
+            }
+          ]
+        }
+      ],
+      "patient": {
+        "reference": "Patient/1"
+      }
+    },
+    {
+      "resourceType": "Device",
+      "id": "device1",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7fhir.jp/medication/99ILL",
+            "code": "01",
+            "display": "シリンジ"
+          }
+        ]
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestDepartment",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:1.2.392.100495.20.2.51",
+            "code": "01",
+            "display": "内科"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Requester",
+      "valueReference": {
+        "reference": "Practitioner/2",
+        "display": "医師 一郎"
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestAuthoredOn",
+      "valueDateTime": "2016-07-01T00:00:00+09:00"
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Location",
+      "valueReference": {
+        "reference": "Location/1",
+        "display": "09A病棟 021病室 4ベッド"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://www.example.com/fhir/order-number",
+      "value": "123456789012345"
+    },
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.81",
+      "value": "1"
+    },
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.82",
+      "value": "1"
+    }
+  ],
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0482",
+        "code": "I",
+        "display": "入院オーダ"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "#medication1",
+    "type": "Medication"
+  },
+  "subject": {
+    "reference": "Patient/1"
+  },
+  "effectivePeriod": {
+    "start": "2016-07-01T10:05:21+09:00",
+    "end": "2016-07-01T10:05:21+09:00"
+  },
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+            "code": "performer",
+            "display": "Performer"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/1",
+        "display": "看護 花子"
+      }
+    }
+  ],
+  "request": {
+    "reference": "MedicationRequest/1"
+  },
+  "device": [
+    {
+      "reference": "#device1",
+      "display": "シリンジ"
+    }
+  ],
+  "dosage": {
+    "extension": [
+      {
+        "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_DosageComment",
+        "valueString": "痙攣が発生したため、主治医に確認の上実施しました"
+      }
+    ],
+    "site": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+          "valueReference": {
+            "reference": "#bodystructure1",
+            "display": "右腕"
+          }
+        },
+        {
+          "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Site_SiteComment",
+          "valueString": "左利きのため"
+        }
+      ]
+    },
+    "route": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0162",
+          "code": "IV",
+          "display": "静脈内"
+        }
+      ]
+    },
+    "method": {
+      "extension": [
+        {
+          "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Method_MethodComment",
+          "valueString": "１分ほどかけて緩徐に行いました"
+        }
+      ],
+      "coding": [
+        {
+          "system": "http://hl7fhir.jp/99ILL",
+          "code": "101",
+          "display": "静注(末梢)"
+        }
+      ]
+    },
+    "dose": {
+      "value": 2,
+      "unit": "mL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mL"
+    }
+  }        
+}
+```
+
+</details>
+
+<details>
+<summary>（４）実施情報（点滴実施）</summary>
+
+| 項目名 | 項目値 | 備考 |
+| :--- | :--- | :--- |
+| オーダ番号 | 123456789012345 |
+| 入外区分 | 入院 (I) |
+| 依頼科 | 内科 (01) |
+| 依頼医 | 医師 一郎 (10001) |
+| Rp番号 | 01 |
+| 施用番号 | 001 |
+| 実施投与経路 | 静脈内 (IV) |
+| 実施投与部位 | 左腕 (ARM,L) |
+| 実施手技 | IVプッシュ (IVP) |
+| 薬品 #1 |
+| #1 実施投薬剤 | ソリタ－Ｔ３号輸液５００ｍＬ (107750602) |
+| #1 実施投薬量 | 1 |
+| #1 分量単位 | 本 (HON) |
+| #1 実施開始日時 | 2016/07/01 08:05:21 |
+| #1 実施終了日時 | 2016/07/01 13:05:43 |
+| #1 投与速度 | 102ml/hr  |
+| #1 実施者 | 看護 花子 (20001) |
+| #1 実施場所 | 09A/021/4 |
+| #1 進捗 | 完了 (CP) |
+| 薬品 #2 |
+| #2 実施投薬剤 | アドナ注（静脈用）50mg／10mL (108010001) |
+| #2 実施投薬量 | 1 |
+| #2 分量単位 | アンプル (AMP) |
+| #2 実施開始日時 | 2016/07/01 08:05:21 |
+| #2 実施終了日時 | 2016/07/01 13:05:43 |
+| #2 投与速度 | 102ml/hr  |
+| #2 実施者 | 看護 花子 (20001) |
+| #2 実施場所 | 09A/021/4 |
+| #2 進捗 | 完了 (CP) |
+
+```json
+{
+  "resourceType": "MedicationAdministration",
+  "contained": [
+    {
+      "resourceType": "Medication",
+      "id": "medication1",
+      "ingredient": [
+        {
+          "itemCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.392.100495.20.2.74",
+                "code": "107750602",
+                "display": "ソリタ－Ｔ３号輸液５００ｍＬ"
+              }
+            ]
+          },
+          "strength": {
+            "numerator": {
+              "value": 1,
+              "unit": "本",
+              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "code": "HON"
+            },
+            "denominator": {
+              "value": 1,
+              "unit": "回",
+              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "code": "KAI"
+            }
+          }
+        },
+        {
+          "itemCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:1.2.392.100495.20.2.74",
+                "code": "108010001",
+                "display": "アドナ注（静脈用）５０ｍｇ／１０ｍＬ"
+              }
+            ]
+          },
+          "strength": {
+            "numerator": {
+              "value": 1,
+              "unit": "アンプル",
+              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "code": "AMP"
+            },
+            "denominator": {
+              "value": 1,
+              "unit": "回",
+              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "code": "KAI"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "resourceType": "BodyStructure",
+      "id": "bodystructure1",
+      "location": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0550",
+            "code": "ARM",
+            "display": "腕"
+          }
+        ]
+      },
+      "locationQualifier": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0495",
+              "code": "L",
+              "display": "左"
+            }
+          ]
+        }
+      ],
+      "patient": {
+        "reference": "Patient/1"
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestDepartment",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:1.2.392.100495.20.2.51",
+            "code": "01",
+            "display": "内科"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Requester",
+      "valueReference": {
+        "reference": "Practitioner/2",
+        "display": "医師 一郎"
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestAuthoredOn",
+      "valueDateTime": "2016-07-01T00:00:00+09:00"
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Location",
+      "valueReference": {
+        "reference": "Location/1",
+        "display": "09A病棟 021病室 4ベッド"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://www.example.com/fhir/order-number",
+      "value": "123456789012345"
+    },
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.81",
+      "value": "1"
+    },
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.82",
+      "value": "1"
+    }
+  ],
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0482",
+        "code": "I",
+        "display": "入院オーダ"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "#medication1",
+    "type": "Medication"
+  },
+  "subject": {
+    "reference": "Patient/1"
+  },
+  "effectivePeriod": {
+    "start": "2016-07-01T08:05:21+09:00",
+    "end": "2016-07-01T13:05:43+09:00"
+  },
+  "performer": [
+    {
+      "function": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+            "code": "performer",
+            "display": "Performer"
+          }
+        ]
+      },
+      "actor": {
+        "reference": "Practitioner/1",
+        "display": "看護 花子"
+      }
+    }
+  ],
+  "request": {
+    "reference": "MedicationRequest/1"
+  },
+  "dosage": {
+    "extension": [
+      {
+        "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7fhir.jp/medication/99ILL",
+              "code": "01",
+              "display": "主管"
+            }
+          ]
+        }
+      }
+    ],
+    "site": {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/bodySite",
+          "valueReference": {
+            "reference": "#bodystructure1",
+            "display": "左腕"
+          }
+        }
+      ]
+    },
+    "route": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0162",
+          "code": "IV",
+          "display": "静脈内"
+        }
+      ]
+    },
+    "method": {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0165",
+          "code": "IVP",
+          "display": "IVプッシュ"
+        }
+      ]
+    },
+    "dose": {
+      "value": 510,
+      "unit": "mL",
+      "system": "http://unitsofmeasure.org",
+      "code": "mL"
+    },
+    "rateRatio": {
+      "numerator": {
+        "value": 102,
+        "unit": "mL",
+        "system": "http://unitsofmeasure.org",
+        "code": "mL"
+      },
+      "denominator": {
+        "value": 1,
+        "unit": "h",
+        "system": "http://unitsofmeasure.org",
+        "code": "h"
+      }
+    }
+  }
+}
+```
+
+</details>
+
+<h2 id="21275-注意事項">2.1.2.7.5. 注意事項</h2>
+
+<h3 id="212751-記述の単位について">2.1.2.7.5.1. 記述の単位について</h3>
+<p>MedicationAdministrationは薬剤をCodeableConceptとして1つまでしか持つか、Medicationリソースのreferenceをもつことしかできない。したがって、複数の薬剤を同一のRp番号で表現する場合にはMedicationAdministrationを繰り返すか、複数の薬剤をまとめたMedication Resouceのインスタンスを参照することとなる。ワーキンググループでの検討の結果、複数の薬剤をまとめたMedicationリソースのインスタンスをcontained属性に内包した上で参照することとした。</p>
+
+<h3 id="212752-投与薬剤投与量の記述方法">2.1.2.7.5.2. 投与薬剤、投与量の記述方法</h3>
+<p>１回の投与薬剤と投与量は、RP内の薬剤が１薬剤の場合も混注などで複数の薬剤を含む場合も、すべての薬剤を記述したMedicationリソースを contained 属性に内包し、それをMedicationRequest.medicationReference属性で参照するようにする。
+Medicationリソースのingredient.itemCodeableConcept要素にCodeableConcept型で各薬剤の識別情報を記述し、ingredient.strength.numerator要素に１回あたりの含有量を記述する。薬剤を識別するコードはHOT7(“urn:oid:1.2.392.100495.20.2.73”)、HOT9(“urn:oid:1.2.392.200119.4.403.1”)、YJコード(“urn:oid:1.2.392.100495.20.1.73”)を推奨するが、ローカルコードを使用してもよい。含有量の単位コードは MERIT-9（”urn:oid:1.2.392.100495.20.2.101”）を使用する。ingredient.strength.denominatorには固定値「１回」をMERIT-9（”urn:oid:1.2.392.100495.20.2.101”）を使用して指定する。
+dosage.dose要素には、情報が得られる場合には全体の容量をUCUM(<code class="language-plaintext highlighter-rouge">http://unitsofmeasure.org</code>)を使用してmL単位で指定する。</p>
+
+<h3 id="212753-投薬管理ステータス">2.1.2.7.5.3. 投薬管理ステータス</h3>
+<p>投与が実施された場合、status要素に <code class="language-plaintext highlighter-rouge">completed</code> を記述する。</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"completed"</span><span class="w">
+</span></code></pre></div></div>
+
+<p>投与が中止された場合、status要素に <code class="language-plaintext highlighter-rouge">stopped</code> を記述する。</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"stopped"</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212754-実施日">2.1.2.7.5.4. 実施日</h3>
+<p>投与が実施された日時をeffectiveDateTime、またはeffectivePeriod要素に<a href="https://datatracker.ietf.org/doc/html/rfc3339">RFC3339</a>形式で記述する。
+タイムゾーンはJST(+09:00)を指定する。</p>
+
+<p>開始日時、終了日時が明確である場合はeffectivePeriodに記述する。（e.g. 点滴注射）</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"effectivePeriod"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"start"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-01T08:05:21+09:00"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"end"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-01T13:05:43+09:00"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p>開始日時しか存在せず終了日時が明確でない場合、effectivePeriodのstartとendに同じ値を記述するか、effectiveDateTime要素に記述する。（e.g. ワンショット注射）</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"effectiveDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-08-25T08:30:00+09:00"</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212755-実施者">2.1.2.7.5.5. 実施者</h3>
+<p>投与を実施した医療従事者（自己管理の場合は患者）をperformer要素に記述する。</p>
+
+<p>performer.functionには、FHIR標準のValueSetである <code class="language-plaintext highlighter-rouge">http://hl7.org/fhir/ValueSet/med-admin-perform-function</code> から、実施者を表す <code class="language-plaintext highlighter-rouge">performer</code> を固定で記述する。
+performer.actorには、医療従事者(Practitioner)、または患者(Patient)リソースの参照を記述する。</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"performer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"function"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/ValueSet/med-admin-perform-function"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"performer"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Performer"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"actor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Practitioner/1"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212756-実施場所">2.1.2.7.5.6. 実施場所</h3>
+<p>投与を実施した場所（病棟、病室、ベッド番号など）を、拡張「JP_MedicationAdministration_Location」を使用して、Reference型でLocationリソースの参照情報を記述する。
+(Location Resourceの記述仕様については、当プロファイルのスコープ外とする)</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MedicationAdministration"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Location"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Location/1"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212757-実施投与ライン">2.1.2.7.5.7. 実施投与ライン</h3>
+<p>投与時に使用したラインを記述する場合は、dosage要素で拡張「JP_MedicationRequest_DosageInstruction_Line」を使用し、CodeableConcept型で指定する。推奨するコードシステムはないので、ローカルコードを使用する。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"dosage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7fhir.jp/medication/99ILL"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"主管"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212758-実施投与経路">2.1.2.7.5.8. 実施投与経路</h3>
+<p>「1:内服」、「2:外用」などJAMI標準用法コードにて基本用法区分として表現される区分は、dosage.route 要素にコードまたは文字列で指定する。基本用法区分を識別するURIとして、”urn:oid:1.2.392.200250.2.2.20.30”を使用する。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"dosage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"route"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0162"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IV"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"静脈内"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="212759-実施投与部位">2.1.2.7.5.9. 実施投与部位</h3>
+<p>投与部位を指定する場合は、dosage.site 要素に、CodeableConcept型で指定する。部位コードは、JAMI標準用法コード 表13 外用部位コード（”urn:oid:1.2.392.100495.20.2.33”）を推奨する。
+HL7表0550 身体部位(“http://terminology.hl7.org/CodeSystem/v2-0550”)とHL7表0495 身体部位修飾子(“http://terminology.hl7.org/CodeSystem/v2-0495”)を組み合わせて使用してもよいが、その場合は拡張「BodyStructure」を使用する。
+この拡張は BodyStructureリソースを参照することができるので、location 要素にHL7表0550 身体部位(“http://terminology.hl7.org/CodeSystem/v2-0550”)のコードを、locationQualifier 要素に
+身体部位修飾子(“http://terminology.hl7.org/CodeSystem/v2-0495”)のコードをそれぞれ指定したBodyStructureリソースをMedicationRequestリソースのcontained属性に内包し、それをExtension.valueRefenrence 要素で参照するようにする。</p>
+
+<p>投与部位「左腕」をJAMI標準用法コードで指定した場合のインスタンス例を示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"dosage"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"site"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"urn:oid:1.2.392.100495.20.2.33"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"73L"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"左腕"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+
+</span></code></pre></div></div>
+
+<p>投与部位「左腕」をHL7表0550 身体部位とHL7表0495 身体部位修飾子で指定した場合のインスタンス例を示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"contained"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BodyStructure"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#site"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"location"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0550"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ARM"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"腕"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"locationQualifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0495"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"L"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"左"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="err">,</span><span class="w">
+</span><span class="nl">"dosage"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"site"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+          </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/core/StructureDefinition/bodySite"</span><span class="p">,</span><span class="w">
+          </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#site"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">]</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2127510-実施投与手技">2.1.2.7.5.10. 実施投与手技</h3>
+<p>「A:貼付」、「B:塗布」などJAMI標準用法コードにて用法詳細区分として表現される区分は、dosage.method 要素にコードまたは文字列で指定する。 用法詳細区分を識別するURIとして、”urn:oid:1.2.392.200250.2.2.20.40”を使用する。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"dosage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0165"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IVP"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IVプッシュ"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2127511-実施投与量">2.1.2.7.5.11. 実施投与量</h3>
+<p>Medication.ingredientに記述される薬剤の合計容量(mL)を dosage.dose に、SimpleQuantity型で記録する。単位コードには、医薬品単位略号（urn:oid:1.2.392.100495.20.2.101）を使用する。</p>
+
+<p>以下薬剤を混注した際の合計容量「510mL」を記述したインスタンス例を示す。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ソリタ－Ｔ３号輸液５００ｍＬ ... 1本
+アドナ注（静脈用）５０ｍｇ／１０ｍＬ ... 1アンプル
+</code></pre></div></div>
+<p>=&gt; <strong>510mL</strong> (500mL + 10mL) をdosage.doseに記述する。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"dosage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"dose"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">510</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mL"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2127512-投与速度">2.1.2.7.5.12. 投与速度</h3>
+<p>点滴注射など一定の速度で時間をかけて投与する場合、その投与速度は dosageInstruction.doseAndRate.rateRatioを使用してRatio型で表現する。単位コードには、UCUM(<code class="language-plaintext highlighter-rouge">http://unitsofmeasure.org</code>)を使用する。</p>
+
+<p>投与速度「100mL/h」を記述したインスタンス例を示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"dosage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"rateRatio"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"numerator"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mL"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mL"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"denominator"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"h"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"h"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2127513-各種実施コメント">2.1.2.7.5.13. 各種実施コメント</h3>
+
+<h4 id="21275131-投与経路コメント">2.1.2.7.5.13.1. 投与経路コメント</h4>
+<p>投与経路を補足するためのコメントは、route要素に対して定義した拡張「JP_MedicationAdministration_Route_RouteComment」を使用する。
+この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
+複数のコメントを記述する場合は、この拡張を繰り返して記述する。</p>
+
+<p>投与経路コメントをString型で記述したインスタンス例を示す。</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"route"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Route_RouteComment"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"【仮】投与経路コメントを記述する"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0162"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"IV"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"静脈内"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="21275132-投与部位コメント">2.1.2.7.5.13.2. 投与部位コメント</h4>
+<p>投与部位を補足するためのコメントは、site要素に対して定義した拡張「JP_MedicationAdministration_Site_SiteComment」を使用する。
+この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
+複数のコメントを記述する場合は、この拡張を繰り返して記述する。</p>
+
+<p>投与部位コメントをString型で記述したインスタンス例を示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"site"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7.org/fhir/core/StructureDefinition/bodySite"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BodyStructure/1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"右腕"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Site_SiteComment"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"左利きのため"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="21275133-手技コメント">2.1.2.7.5.13.3. 手技コメント</h4>
+<p>手技を補足するためのコメントは、method要素に対して定義した拡張「JP_MedicationAdministration_Method_MethodComment」を使用する。
+この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
+複数のコメントを記述する場合は、この拡張を繰り返して記述する。</p>
+
+<p>手技コメントをString型で記述したインスタンス例を示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"method"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Method_MethodComment"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"１分ほどかけて緩徐に行いました"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7fhir.jp/99ILL"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"101"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"静注(末梢)"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="21275134-ラインコメント">2.1.2.7.5.13.4. ラインコメント</h4>
+<p>ラインを補足するためのコメントは、dosage要素に対して定義した拡張「JP_MedicationAdministration_Dosage_LineComment」を使用する。
+この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
+複数のコメントを記述する場合は、この拡張を繰り返して記述する。</p>
+
+<p>ラインコメントをString型で記述したインスタンス例を示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"dosage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_Line"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://hl7fhir.jp/medication/99ILL"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"主管"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_LineComment"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"【仮】ラインコメントを記述する"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="21275135-投与速度コメント">2.1.2.7.5.13.5. 投与速度コメント</h4>
+<p>投与速度を補足するためのコメントは、rate要素に対して定義した拡張「JP_MedicationAdministration_Rate_RateComment」を使用する。
+この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
+複数のコメントを記述する場合は、この拡張を繰り返して記述する。</p>
+
+<p>投与速度コメントをString型で記述したインスタンス例を示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"rateRatio"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Rate_RateComment"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"倍速で実施"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"numerator"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">102</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mL"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"mL"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"denominator"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"h"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://unitsofmeasure.org"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"h"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="21275136-用法コメント">2.1.2.7.5.13.6. 用法コメント</h4>
+<p>用法を補足するためのコメントは、dosage要素に対して定義した拡張「JP_MedicationAdministration_Dosage_DosageComment」を使用する。
+この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
+複数のコメントを記述する場合は、この拡張を繰り返して記述する。</p>
+
+<p>用法コメントをString型で記述したインスタンス例を示す。</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"dosage"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Dosage_DosageComment"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"痙攣が発生したため、主治医に確認の上実施しました"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="21275137-進捗コメント">2.1.2.7.5.13.7. 進捗コメント</h4>
+<p>進捗を補足するためのコメントは、reasonCode要素を使用してCodeableConcept型でテキストによる記述とコードによる記述のどちらかを選択することができる。</p>
+
+<p>進捗コメントをテキストで記述したインスタンス例を示す</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"reasonCode"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"容体急変のため倍の速度で実施"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="21275138-未分類コメント">2.1.2.7.5.13.8. 未分類コメント</h4>
+<p>上記のコメントに分類できない、またはシステム的に分類して管理されていない場合、MedicationAdminstrationに対して定義した拡張「JP_MedicationAdministration_UncategorizedComment」を使用する。
+この拡張は、コメントがコード化されている場合はCodeableConcept型を使用して記述する。コード化されていない場合はString型を使用して記述する。
+複数のコメントを記述する場合は、この拡張を繰り返して記述する。</p>
+
+<p>未分類コメントをString型で記述したインスタンス例を示す。</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MedicationAdministration"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_UncategorizedComment"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"１分ほどかけて緩徐に行いました"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_UncategorizedComment"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueString"</span><span class="p">:</span><span class="w"> </span><span class="s2">"痙攣が発生したため、主治医に確認の上実施しました"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2127514-投薬依頼情報">2.1.2.7.5.14. 投薬依頼情報</h3>
+<p>実施の元となった投薬依頼(MedicationRequest)リソースの参照を記述する。</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MedicationRequest/1"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2127515-依頼科">2.1.2.7.5.15. 依頼科</h3>
+<p>投薬依頼を行なった診療科を、拡張「JP_MedicationAdministration_RequestDepartment」を使用して、CodeableConcept型で記述する。</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MedicationAdministration"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestDepartment"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ttp://terminology.hl7.org/CodeSystem/v2-0069"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"801"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"肝胆外科"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2127516-依頼医師">2.1.2.7.5.16. 依頼医師</h3>
+<p>投薬依頼を行なった医師を、拡張「JP_MedicationAdministration_Requester」を使用して、Reference型でPractitionerリソースの参照情報を記述する。
+(Practitioner Resourceの記述仕様については、当プロファイルのスコープ外とする)</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MedicationAdministration"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_Requester"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueReference"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"reference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Practitioner/2"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="2127517-依頼日時">2.1.2.7.5.17. 依頼日時</h3>
+<p>投薬依頼を行なった日時を、拡張「JP_MedicationAdministration_RequestAuthoredOn」を使用して、<a href="https://datatracker.ietf.org/doc/html/rfc3339">RFC3339</a>形式で記述する。
+タイムゾーンはJST(+09:00)を指定する。</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MedicationAdministration"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"extension"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationAdministration_RequestAuthoredOn"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueDateTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-08-20T09:30:00+09:00"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="21276-その他参考文献リンク等">2.1.2.7.6. その他、参考文献・リンク等</h2>
+<ol>
+  <li>HL7, FHIR MedicationRequest Resource, http://hl7.org/fhir/medicationrequest.html</li>
+  <li>保健医療福祉情報システム工業会, JAHIS 処方データ交換規約 Ver.3.0C, https://www.jahis.jp/standard/detail/id=564</li>
+  <li>日本医療情報学会MERIT-9研究会, 医療情報交換規約運用指針、MERIT-9 処方オーダver 1.0, http://merit-9.mi.hama-med.ac.jp/jahis/SHOHOU.pdf</li>
+  <li>保健医療福祉情報システム工業会, JAHISデータ交換規約（共通編）Ver.1.1, https://www.jahis.jp/standard/detail/id=125</li>
+  <li>保健医療福祉情報システム工業会, JAHIS注射データ交換規約Ver.2.1C, https://www.jahis.jp/standard/detail/id=590</li>
+  <li>Mike Henderson, 日本HL7協会監修、「HL7メッセージ交換」、第2版、インナービジョン社、2013年</li>
+  <li>厚生労働省、保険医療機関及び保険医療養担当規則、平三〇厚労令二〇・一部改正, https://www.mhlw.go.jp/web/t_doc?dataId=84035000&amp;dataType=0&amp;pageNo=1</li>
+  <li>一般社団法人医療情報システム開発センター, 医薬品HOT コードマスター, http://www2.medis.or.jp/hcode/</li>
+  <li>日本医療情報学会、SS-MIX2仕様書・ガイドライン, http://www.jami.jp/jamistd/ssmix2.php</li>
+  <li>保健医療福祉情報システム工業会, JAHIS電子処方箋実装ガイドVer.1.2, https://www.jahis.jp/standard/detail/id=774</li>
+  <li>令和２年度厚⽣労働科学特別研究事業「診療情報提供書, 電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」研究班, 電子処方箋HL7 FHIR記述仕様書案, https://std.jpfhir.jp/</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

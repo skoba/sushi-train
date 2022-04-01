@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Practitionerrole - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"42"}
+    h3,h4,h5,h6{--heading-prefix:"42"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Practitionerrole</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Practitionerrole</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#2117-jp-core-practitionerrole医療従事者役割-プロファイル" id="markdown-toc-2117-jp-core-practitionerrole医療従事者役割-プロファイル">2.1.1.7. JP Core PractitionerRole（医療従事者役割) プロファイル</a>    <ul>
+      <li><a href="#21171-概略" id="markdown-toc-21171-概略">2.1.1.7.1. 概略</a>        <ul>
+          <li><a href="#211711-背景および想定シナリオ" id="markdown-toc-211711-背景および想定シナリオ">2.1.1.7.1.1. 背景および想定シナリオ</a></li>
+          <li><a href="#211712-スコープ" id="markdown-toc-211712-スコープ">2.1.1.7.1.2. スコープ</a></li>
+        </ul>
+      </li>
+      <li><a href="#21172-関連するプロファイル" id="markdown-toc-21172-関連するプロファイル">2.1.1.7.2. 関連するプロファイル</a></li>
+      <li><a href="#21173-リソース定義" id="markdown-toc-21173-リソース定義">2.1.1.7.3. リソース定義</a>        <ul>
+          <li><a href="#211731-必須要素" id="markdown-toc-211731-必須要素">2.1.1.7.3.1. 必須要素</a></li>
+          <li><a href="#211732-extensions定義" id="markdown-toc-211732-extensions定義">2.1.1.7.3.2. Extensions定義</a></li>
+          <li><a href="#211733-用語定義" id="markdown-toc-211733-用語定義">2.1.1.7.3.3. 用語定義</a></li>
+          <li><a href="#211734-制約一覧" id="markdown-toc-211734-制約一覧">2.1.1.7.3.4. 制約一覧</a></li>
+        </ul>
+      </li>
+      <li><a href="#21174-利用方法" id="markdown-toc-21174-利用方法">2.1.1.7.4. 利用方法</a>        <ul>
+          <li><a href="#211741-インタラクション一覧" id="markdown-toc-211741-インタラクション一覧">2.1.1.7.4.1. インタラクション一覧</a></li>
+          <li><a href="#211742-operationおよびsearch-parameter-一覧" id="markdown-toc-211742-operationおよびsearch-parameter-一覧">2.1.1.7.4.2. OperationおよびSearch Parameter 一覧</a></li>
+          <li><a href="#211743-サンプル" id="markdown-toc-211743-サンプル">2.1.1.7.4.3. サンプル</a></li>
+        </ul>
+      </li>
+      <li><a href="#21175-注意事項" id="markdown-toc-21175-注意事項">2.1.1.7.5. 注意事項</a></li>
+      <li><a href="#21176-その他参考文献リンク等" id="markdown-toc-21176-その他参考文献リンク等">2.1.1.7.6. その他、参考文献・リンク等</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="2117-jp-core-practitionerrole医療従事者役割-プロファイル">2.1.1.7. JP Core PractitionerRole（医療従事者役割) プロファイル</h1>
+
+<h2 id="21171-概略">2.1.1.7.1. 概略</h2>
+
+<p><span style="color: ;">医療者が組織で一定期間担当する可能性のある特定の役割/場所/専門分野/サービスのセット。</span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>定義URL</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_PractitionerRole</td>
+    </tr>
+    <tr>
+      <td>バージョン</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>名前</td>
+      <td>JPCorePractitionerRoleProfile</td>
+    </tr>
+    <tr>
+      <td>タイトル</td>
+      <td>JP Core PractitionerRole Profile</td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>アクティブ（2021-10-25）</td>
+    </tr>
+    <tr>
+      <td>定義</td>
+      <td>このプロファイルはPractitionerRoleリソースに対して、医療従事者役割のデータを送受信するための基礎となる制約と拡張を定めたものである。</td>
+    </tr>
+    <tr>
+      <td>公開者</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>FHIR® Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>ソースリソース</td>
+      <td>https://simplifier.net/jp-core-draftv1/jppractitionerrole</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>本プロファイルは、PractitionerRoleリソースが医療者の役割を記録、検索、および取得するための最小の期待値を設定する。 これは、このプロファイルを使用するときにPractitionerRoleリソースに存在する必要がある必須のコア要素、拡張機能、語彙、および値セットを識別する。</p>
+
+<h3 id="211711-背景および想定シナリオ">2.1.1.7.1.1. 背景および想定シナリオ</h3>
+
+<p>本プロファイルは、以下のようなユースケースを想定している。</p>
+
+<ul>
+  <li>
+    <p>医療者の臨床専門分野による医療者役割の検索</p>
+  </li>
+  <li>
+    <p>他のリソースからの医療者役割の参照（例：Encounterリソースのparticipantで参照される患者の関係者の医療者役割）</p>
+  </li>
+</ul>
+
+<h3 id="211712-スコープ">2.1.1.7.1.2. スコープ</h3>
+
+<p>医療者役割は、医療者が組織に提供できるサービスの場所と種類の記録をカバーする。</p>
+
+<p>医療者役割の他のインスタンスで必要に応じて、ロール、スペシャリティ、ロケーションテレコム、およびHealthcareServiceプロパティを繰り返すことができる。 単一の場所のサービス値のコレクションを記録するシステムもあれば、単一のサービスとそれが利用可能な場所のリストを記録するシステムもある。 どちらも、このデータを表すための許容可能なオプションである。可用性、通信、またはその他の詳細がすべてのヘルスケアサービス間で同じではない場合、または場所ごとに個別の医療者役割インスタンスを作成する必要がある。</p>
+
+<h2 id="21172-関連するプロファイル">2.1.1.7.2. 関連するプロファイル</h2>
+
+<p>JP PractitionerRole リソースは、以下のリソースから直接参照される。</p>
+
+<ul>
+  <li>Signature, Account, AdverseEvent, AllergyIntolerance, Appointment, AppointmentResponse, AuditEvent, Basic, BiologicallyDerivedProduct, CarePlan, CareTeam, CatalogEntry, ChargeItem, Claim, ClaimResponse, ClinicalImpression, Communication, CommunicationRequest, Composition, Condition, Consent, Contract, CoverageEligibilityRequest, CoverageEligibilityResponse, DetectedIssue, DeviceRequest, DeviceUseStatement, DiagnosticReport, DocumentManifest, DocumentReference, Encounter, EnrollmentRequest, EnrollmentResponse, EpisodeOfCare, ExplanationOfBenefit, Flag, Goal, Group, ImagingStudy, Immunization, Invoice, Linkage, List, MeasureReport, Media, MedicationAdministration, MedicationDispense, MedicationRequest, MedicationStatement, MedicinalProduct, MessageHeader, NutritionOrder, Observation, Patient, PaymentNotice, PaymentReconciliation, Procedure, Provenance, QuestionnaireResponse, RequestGroup, ResearchStudy, RiskAssessment, Schedule, ServiceRequest, Specimen, SupplyDelivery, SupplyRequest, Task, VerificationResult and VisionPrescription</li>
+</ul>
+
+<p>JP Core PractitionerRole リソースは、以下のリソースを直接参照する。</p>
+
+<ul>
+  <li>Practitioner, Organization, Location, HealthcareService and Endpoint</li>
+</ul>
+
+<h2 id="21173-リソース定義">2.1.1.7.3. リソース定義</h2>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/jppractitionerrole">リソース定義ページの参照</a></p>
+
+<p><a href="https://simplifier.net/jp-core-draftv1/jppractitionerrole/$download?format=json">リソース定義のダウンロード</a></p>
+
+<h3 id="211731-必須要素">2.1.1.7.3.1. 必須要素</h3>
+
+<p>JP Core PractitionerRole リソースで定義された必須要素は特にありません。</p>
+
+<h3 id="211732-extensions定義">2.1.1.7.3.2. Extensions定義</h3>
+
+<p>JP Core PractitionerRole リソースで定義された拡張は特にありません。</p>
+
+<h3 id="211733-用語定義">2.1.1.7.3.3. 用語定義</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Path</th>
+      <th>定義</th>
+      <th>バインディング強度</th>
+      <th>バリューセット</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PractitionerRole.code</td>
+      <td>医療者が組織のために担当することを許可されている役割</td>
+      <td>Example</td>
+      <td>JP用語集</td>
+    </tr>
+    <tr>
+      <td>PractitionerRole.specialty</td>
+      <td>医療者の特定の専門性</td>
+      <td> </td>
+      <td>推奨値なし</td>
+    </tr>
+    <tr>
+      <td>PractitionerRole.availableTime.daysOfWeek</td>
+      <td>開始時刻と終了時刻の間の利用可能な曜日</td>
+      <td>Required</td>
+      <td><a href="http://hl7.org/fhir/valueset-days-of-week.html">DaysOfWeek</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="211734-制約一覧">2.1.1.7.3.4. 制約一覧</h3>
+
+<p>制約はありません。</p>
+
+<h2 id="21174-利用方法">2.1.1.7.4. 利用方法</h2>
+
+<h3 id="211741-インタラクション一覧">2.1.1.7.4.1. インタラクション一覧</h3>
+
+<p><span style="color: red;">★★コメント ： 説明のための例示です。内容の妥当性は考慮していません。★★</span></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>インタラクション</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHALL（必須）</td>
+      <td>search-type、read</td>
+    </tr>
+    <tr>
+      <td>SHOULD（推奨）</td>
+      <td>vread、history-instance</td>
+    </tr>
+    <tr>
+      <td>MAY（利用可能）</td>
+      <td>create、update、patch、delete、history-type</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="211742-operationおよびsearch-parameter-一覧">2.1.1.7.4.2. OperationおよびSearch Parameter 一覧</h3>
+
+<h4 id="2117421-search-parameter一覧">2.1.1.7.4.2.1. Search Parameter一覧</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>パラメータ</th>
+      <th>型</th>
+      <th>例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHALL</td>
+      <td>specialty</td>
+      <td>token</td>
+      <td>GET [base]/PractitionerRole?specialty=http://nucc.org/provider-taxonomy|208D0000X</td>
+    </tr>
+    <tr>
+      <td>SHALL</td>
+      <td>practitioner</td>
+      <td>token</td>
+      <td>GET [base]/PractitionerRole?practitioner.identifier=http://hl7.org/fhir/sid/us-npi|97860456</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="21174211-必須検索パラメータ">2.1.1.7.4.2.1.1. 必須検索パラメータ</h5>
+
+<p>次の検索パラメータは必須でサポートされなければならない。</p>
+
+<ol>
+  <li>
+    <p>specialty 検索パラメータを使用して、医療者の特定の専門性によるPractitionerRoleの検索をサポートしなければならない（SHALL）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/PractitionerRole?specialty={system|}[code]
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/PractitionerRole?specialty=http://nucc.org/provider-taxonomy|208D0000X
+</span></code></pre></div>    </div>
+
+    <p>指定された医療者の特定の専門性に一致するPractitionerRoleリソースを含むBundleを検索する。</p>
+  </li>
+  <li>
+    <p>practitioner 検索パラメータを使用して、医療者の名前と識別子によるPractitionerRoleの検索をサポートしなければならない（SHALL）。</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">GET [base]/PractitionerRole?practitioner={Type/}[id]
+</span></code></pre></div>    </div>
+
+    <p>例：</p>
+
+    <div class="language-http highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">1.GET [base]/PractitionerRole?practitioner.identifier=http://hl7.org/fhir/sid/us-npi|97860456&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole?endpoint
+2.GET [base]/PractitionerRole?practitioner.name=山田&amp;_include=PractitionerRole:practitioner&amp;_include=PractitionerRole?endpoint
+</span></code></pre></div>    </div>
+
+    <p>practitioner.nameまたはpractitioner.identifierの連結パラメータに一致するPractitionerRoleリソースを含むBundleを検索する。PractionerRole.practitionerとPractitionerRole.endpointの_include検索をサポートすることが望ましい。（SHOULD）</p>
+  </li>
+</ol>
+
+<h5 id="21174212-推奨検索パラメータ">2.1.1.7.4.2.1.2. 推奨検索パラメータ</h5>
+
+<p>推奨検索パラメータはありません。</p>
+
+<h5 id="21174213-追加検索パラメータ">2.1.1.7.4.2.1.3. 追加検索パラメータ</h5>
+
+<p>追加検索パラメータはありません。</p>
+
+<h4 id="2117422-operation一覧">2.1.1.7.4.2.2. Operation一覧</h4>
+
+<p>PractitionerRoleに対するOperationは定義されていません。</p>
+
+<h3 id="211743-サンプル">2.1.1.7.4.3. サンプル</h3>
+
+<pre><code class="language-JSON">{
+  "resourceType": "PractitionerRole",
+  "id": "example",
+  "text": {
+    "status": "generated",
+    "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;\n\t\t\t&lt;p&gt;\n\t\t\t\tアダム・ケアフル博士は、2012年1月1日から2012年3月31日までアクメ病院の紹介医です。\n\t\t\t\t2012\n\t\t\t&lt;/p&gt;\n\t\t&lt;/div&gt;"
+  },
+  "identifier": [
+    {
+      "system": "http://www.acme.org/practitioners",
+      "value": "23"
+    }
+  ],
+  "active": true,
+  "period": {
+    "start": "2012-01-01",
+    "end": "2012-03-31"
+  },
+  "practitioner": {
+    "reference": "Practitioner/example",
+    "display": "アダム・ケアフル博士"
+  },
+  "organization": {
+    "reference": "Organization/f001"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0286",
+          "code": "RP"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "408443003",
+          "display": "General medical practice"
+        }
+      ]
+    }
+  ],
+  "location": [
+    {
+      "reference": "Location/1",
+      "display": "南ウィング, 2階"
+    }
+  ],
+  "healthcareService": [
+    {
+      "reference": "HealthcareService/example"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(03) 5555 6473",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "adam.southern@example.org",
+      "use": "work"
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "16:30:00"
+    },
+    {
+      "daysOfWeek": [
+        "thu",
+        "fri"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "12:00:00"
+    }
+  ],
+  "notAvailable": [
+    {
+      "description": "アダム博士は2017年5月中に長期休暇を取る予定です。",
+      "during": {
+        "start": "2017-05-01",
+        "end": "2017-05-20"
+      }
+    }
+  ],
+  "availabilityExceptions": "祝祭日やクリスマス・年末年始の休暇中は、アダム博士は休日です。",
+  "endpoint": [
+    {
+      "reference": "Endpoint/example"
+    }
+  ]
+}
+
+</code></pre>
+
+<h2 id="21175-注意事項">2.1.1.7.5. 注意事項</h2>
+
+<p>PractitionerRoleには、ここで定義されているlocationに住所が含まれているため、addressはありません。
+これにより、複数のリソースにaddressの値を重複させる必要がなくなります。</p>
+
+<h2 id="21176-その他参考文献リンク等">2.1.1.7.6. その他、参考文献・リンク等</h2>
+
+<p>・退院時サマリー規約
+http://www.hl7.jp/library/item/HL7J-CDA-007.pdf</p>
+
+<p>・診療情報提供書規格
+http://www.hl7.jp/intro/std/HL7J-CDA-005.pdf</p>
+
+<p>・特定健診情報ファイル仕様
+https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000165280.html</p>
+
+<p>・SS-MIX2 標準化ストレージ 仕様書 Ver.1.2f
+http://www.jami.jp/jamistd/docs/SS-MIX2/f/SS-MIX2_StndrdStrgSpecVer.1.2f.pdf</p>
+
+<p>・ICSR E2B(R3)
+https://www.pmda.go.jp/int-activities/int-harmony/ich/0093.html</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,106 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "jp-procedure-capability",
+  "meta": {
+    "versionId": "47",
+    "lastUpdated": "2021-08-17T03:02:28.671+00:00",
+    "source": "#KBL3EPJxogq1mZJG"
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>JPCoreProcedureCapability</h2><div><p>ここでは、問い合わせ方法について記載します。</p>\n</div><table><tr><td>Mode</td><td>CLIENT</td></tr><tr><td>Description</td><td/></tr><tr><td>Transaction</td><td></td></tr><tr><td>System History</td><td></td></tr><tr><td>System Search</td><td></td></tr></table><table><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th><b title=\"GET a resource (read interaction)\">Read</b></th><th><b title=\"GET past versions of resources (vread interaction)\">V-Read</b></th><th><b title=\"GET all set of resources of the type (search interaction)\">Search</b></th><th><b title=\"PUT a new resource version (update interaction)\">Update</b></th><th><b title=\"PATCH a new resource version (patch interaction)\">Patch</b></th><th><b title=\"POST a new resource (create interaction)\">Create</b></th><th><b title=\"DELETE a resource (delete interaction)\">Delete</b></th><th><b title=\"GET changes to a resource (history interaction on instance)\">Updates</b></th><th><b title=\"GET changes for all resources of the type (history interaction on type)\">History</b></th></tr><tr><td>Procedure</td><td>Supported profiles:<br/>  <a href=\"https://hl7fhir.jp/fhir/ImplementationGuide/StructureDefinition/JP-Procedure\">https://hl7fhir.jp/fhir/ImplementationGuide/StructureDefinition/JP-Procedure</a></td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td><td>y</td></tr></table></div>"
+  },
+  "url": "https://hl7fhir.jp/fhir/ImplementationGuide/CapabilityStatement/jp-procedure-capability",
+  "version": "1.0.0",
+  "name": "JPCoreProcedureCapability",
+  "title": "JP Core Procedure Capability",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-08-05",
+  "publisher": "HL7 FHIR 日本実装検討WG",
+  "contact": [
+    {
+      "name": "HL7 FHIR 日本実装検討WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://jpfhir.jp/"
+        }
+      ]
+    }
+  ],
+  "description": "ここでは、問い合わせ方法について記載します。",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "JP",
+          "display": "Japan"
+        }
+      ],
+      "text": "Jurisdiction"
+    }
+  ],
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "xml",
+    "json"
+  ],
+  "rest": [
+    {
+      "mode": "client",
+      "resource": [
+        {
+          "type": "Procedure",
+          "supportedProfile": [
+            "https://hl7fhir.jp/fhir/ImplementationGuide/StructureDefinition/JP-Procedure"
+          ],
+          "documentation": "必須検索パラメータ\n次の検索パラメータは必須でサポートされなければならない。\n\n* identifier 検索パラメータを使用して、医療従事者番号などの識別子によるPractitionerの検索をサポートしなければならない（SHALL）。  \n　GET [base]/Practitioner?identifier={system|}[code]  \n　例：  \n　　　GET [base]/Practitioner?identifier=http://myhospital.com/fhir/drid|123456  \n　　　指定された識別子(identifier)に一致するPractitionerリソースを含むBundleを検索する。  \n \n* name 検索パラメータを使用して、任意の名前パートによる文字列検索をサポートしなければならない（SHALL）。  \n　GET [base]/Practitioner?name=[string]  \n　例：  \n　　　GET [base]/Practitioner?name=山田  \n　　　名前（姓:family、名:given、またはテキスト:text）が一致するPractitionerリソースを含むBundleを検索する。\n\n推奨検索パラメータ  \n* 推奨検索パラメータ(SHOULD)はありません。\n\nオプション検索パラメータ  \n* オプション検索パラメータ(MAY)はありません。\n\nOperation一覧  \n* Operationはありません。",
+          "interaction": [
+            {
+              "code": "search-type"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            },
+            {
+              "code": "history-instance"
+            },
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "patch"
+            },
+            {
+              "code": "delete"
+            },
+            {
+              "code": "history-type"
+            }
+          ],
+          "searchParam": [
+            {
+              "name": "identifier",
+              "type": "token",
+              "documentation": "GET [base]/Practitioner?identifier=http://myhospital.com/fhir/drid|789"
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "documentation": "GET [base]/Practitioner?name=山田"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

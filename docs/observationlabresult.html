@@ -1,0 +1,602 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>JP.JPFHIR.EXPERIMENTS\Observationlabresult - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"31"}
+    h3,h4,h5,h6{--heading-prefix:"31"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR JP Core CI/CD実験</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Observationlabresult</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">FHIR JP Core CI/CD実験 - Local Development build (v1.0.0). See the <a href="http://jpfhir.jp/core/experiments/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Observationlabresult</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#21311-jp-core-observation検体検査結果プロファイル" id="markdown-toc-21311-jp-core-observation検体検査結果プロファイル">2.1.3.1.1. JP Core Observation（検体検査結果）プロファイル</a>    <ul>
+      <li><a href="#213111-概略" id="markdown-toc-213111-概略">2.1.3.1.1.1. 概略</a></li>
+      <li><a href="#213112-背景および想定シナリオ" id="markdown-toc-213112-背景および想定シナリオ">2.1.3.1.1.2. 背景および想定シナリオ</a>        <ul>
+          <li><a href="#2131121-スコープ" id="markdown-toc-2131121-スコープ">2.1.3.1.1.2.1. スコープ</a></li>
+          <li><a href="#2131122-関連するプロファイル" id="markdown-toc-2131122-関連するプロファイル">2.1.3.1.1.2.2. 関連するプロファイル</a></li>
+        </ul>
+      </li>
+      <li><a href="#213113-リソース定義" id="markdown-toc-213113-リソース定義">2.1.3.1.1.3. リソース定義</a>        <ul>
+          <li><a href="#2131131-必須要素" id="markdown-toc-2131131-必須要素">2.1.3.1.1.3.1. 必須要素</a></li>
+          <li><a href="#2131132-extensions定義" id="markdown-toc-2131132-extensions定義">2.1.3.1.1.3.2. Extensions定義</a></li>
+          <li><a href="#2131133-用語定義" id="markdown-toc-2131133-用語定義">2.1.3.1.1.3.3. 用語定義</a></li>
+          <li><a href="#2131134-制約一覧" id="markdown-toc-2131134-制約一覧">2.1.3.1.1.3.4. 制約一覧</a></li>
+        </ul>
+      </li>
+      <li><a href="#213114-利用方法" id="markdown-toc-213114-利用方法">2.1.3.1.1.4. 利用方法</a>        <ul>
+          <li><a href="#2131141-インタラクション一覧" id="markdown-toc-2131141-インタラクション一覧">2.1.3.1.1.4.1. インタラクション一覧</a></li>
+          <li><a href="#2131142-operationおよびsearch-parameter-一覧" id="markdown-toc-2131142-operationおよびsearch-parameter-一覧">2.1.3.1.1.4.2. OperationおよびSearch Parameter 一覧</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="21311-jp-core-observation検体検査結果プロファイル">2.1.3.1.1. JP Core Observation（検体検査結果）プロファイル</h1>
+
+<h2 id="213111-概略">2.1.3.1.1.1. 概略</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>項目</th>
+      <th>内容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>定義URL</td>
+      <td>http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult</td>
+    </tr>
+    <tr>
+      <td>バージョン</td>
+      <td>1.0.0</td>
+    </tr>
+    <tr>
+      <td>名前</td>
+      <td>JPObservationLabResult</td>
+    </tr>
+    <tr>
+      <td>タイトル</td>
+      <td>JP Core Observation Lab Result Profile</td>
+    </tr>
+    <tr>
+      <td>ステータス</td>
+      <td>アクティブ（2021-11-03）</td>
+    </tr>
+    <tr>
+      <td>定義</td>
+      <td><a name="l367">​</a>このプロファイルは<a href="Observation#Common2"><code class="language-plaintext highlighter-rouge">Observation</code></a>リソースに対して、[検体検査結果]のデータを送受信するための制約と拡張を定めたものであり、Observation（共通）プロファイルと共に使用される。　　　　　</td>
+    </tr>
+    <tr>
+      <td>公開者</td>
+      <td>FHIR&reg; Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>Copyright</td>
+      <td>FHIR&reg; Japanese implementation research working group in Japan Association of Medical Informatics (JAMI)</td>
+    </tr>
+    <tr>
+      <td>ソースリソース</td>
+      <td>https://simplifier.net/jp-core-draftv1/jpobservationlabresult</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>本プロファイル説明は、患者に関連付けられた検体検査結果を記録、検索、および取得のために、FHIR <code class="language-plaintext highlighter-rouge">Observation</code>リソースを使用するにあたっての、最低限の制約を記述したものである。</p>
+
+<p><code class="language-plaintext highlighter-rouge">Observation</code>リソースに対して本プロファイルに準拠する場合に必須となる要素や、サポートすべき拡張、用語、検索パラメータを定義する。</p>
+
+<p>なお、検査結果は、<code class="language-plaintext highlighter-rouge">Observation</code>リソースを参照する<code class="language-plaintext highlighter-rouge">DiagnosticReport</code>リソースを使用してグループ化および要約されたものである。各<code class="language-plaintext highlighter-rouge">Observation</code>リソースは、個々の検体検査と結果値、他の観察結果を参照する。</p>
+
+<h2 id="213112-背景および想定シナリオ">2.1.3.1.1.2. 背景および想定シナリオ</h2>
+
+<p>本プロファイルは、以下のようなユースケースを想定している。</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Patient</code>リソースからの指定された（患者の）検体採取日、検査項目、検査オーダの依頼科での検体検査情報の参照</li>
+  <li><code class="language-plaintext highlighter-rouge">Patient</code>リソースからの指定された（患者の）検体採取日、検査項目、検査結果値（範囲、または範囲外）検査オーダの依頼科での検体検査情報の参照</li>
+  <li><code class="language-plaintext highlighter-rouge">Patient</code>リソースからの指定された（患者の）検体採取日、検査項目、検査結果値（特定のコード）検査オーダの依頼科での検体検査情報の参照</li>
+  <li><code class="language-plaintext highlighter-rouge">Patient</code>リソースからの指定された（患者の）検体採取日、検査項目、検査結果値（特定の文字列）検査オーダの依頼科での検体検査情報の参照</li>
+  <li>検査項目、検査結果値に対し条件に合致する検体検査情報、または関連する他のリソース（<code class="language-plaintext highlighter-rouge">Observation</code>リソースや、<code class="language-plaintext highlighter-rouge">Patient</code>リソース等）の参照。</li>
+</ul>
+
+<h3 id="2131121-スコープ">2.1.3.1.1.2.1. スコープ</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Observtion</code>はヘルスケアの中心的な要素であり、診断の支援、進捗状況の監視、ベースラインやパターンの決定、さらには人口統計学的特性の把握に使用されます。ほとんどの<code class="language-plaintext highlighter-rouge">Observation</code>は、いくつかのメタデータを持つ単純な名前/値のペアのアサーションであるが、いくつかの<code class="language-plaintext highlighter-rouge">Observation</code>は、他の <code class="language-plaintext highlighter-rouge">Observation</code>を論理的にグループ化したり、あるいはマルチコンポーネントの<code class="language-plaintext highlighter-rouge">Observation</code>であったりする。</p>
+
+<p>このプロファイルでは上記想定シナリオにて用いられる<code class="language-plaintext highlighter-rouge">Observation</code>の用途がスコープであり、患者基本情報の中でも特に検体検査に該当する情報項目の１つを取り扱う際に、必要な要件を定義している。</p>
+
+<h3 id="2131122-関連するプロファイル">2.1.3.1.1.2.2. 関連するプロファイル</h3>
+
+<p>このプロファイルは、以下のリソースに対して定義された各プロファイルから直接参照される可能性がある。</p>
+
+<ul>
+  <li><a href="https://www.hl7.org/fhir/adverseevent.html"><code class="language-plaintext highlighter-rouge">AdverseEvent</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/appointment.html"><code class="language-plaintext highlighter-rouge">Appointment</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/careplan.html"><code class="language-plaintext highlighter-rouge">CarePlan</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/chargeitem.html"><code class="language-plaintext highlighter-rouge">ChargeItem</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/clinicalimpression.html"><code class="language-plaintext highlighter-rouge">ClinicalImpression</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/communication.html"><code class="language-plaintext highlighter-rouge">Communication</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/communicationrequest.html"><code class="language-plaintext highlighter-rouge">CommunicationRequest</code></a></li>
+  <li><a name="l534">​</a><a href="Condition"><code class="language-plaintext highlighter-rouge">Condition</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/contract.html"><code class="language-plaintext highlighter-rouge">Contract</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/devicerequest.html"><code class="language-plaintext highlighter-rouge">DeviceRequest</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/deviceusestatement.html"><code class="language-plaintext highlighter-rouge">DeviceUseStatement</code></a></li>
+  <li><a name="l554">​</a><a href="DiagnosticReport"><code class="language-plaintext highlighter-rouge">DiagnosticReport</code></a></li>
+  <li><a name="l559">​</a><a href="Encounter"><code class="language-plaintext highlighter-rouge">Encounter</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/familymemberhistory.html"><code class="language-plaintext highlighter-rouge">FamilyMemberHistory</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/goal.html"><code class="language-plaintext highlighter-rouge">Goal</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/guidanceresponse.html"><code class="language-plaintext highlighter-rouge">GuidanceResponse</code></a></li>
+  <li><a name="l579">​</a><a href="ImagingStudy2"><code class="language-plaintext highlighter-rouge">ImagingStudy</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/immunization.html"><code class="language-plaintext highlighter-rouge">Immunization</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/medicationadministration.html"><code class="language-plaintext highlighter-rouge">MedicationAdministration</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/MedicationRequest.html"><code class="language-plaintext highlighter-rouge">MedicationRequest</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/medicationstatement.html"><code class="language-plaintext highlighter-rouge">MedicationStatement</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/molecularsequence.html"><code class="language-plaintext highlighter-rouge">MolecularSequence</code></a></li>
+  <li><a name="l609">​</a><a href="ObservationLabResult"><code class="language-plaintext highlighter-rouge">Observation</code></a></li>
+  <li><a name="l614">​</a><a href="Procedure"><code class="language-plaintext highlighter-rouge">Procedure</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/questionnaireresponse.html"><code class="language-plaintext highlighter-rouge">QuestionnaireResponse</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/requestgroup.html"><code class="language-plaintext highlighter-rouge">RequestGroup</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/riskassessment.html"><code class="language-plaintext highlighter-rouge">RiskAssessment</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/servicerequest.html"><code class="language-plaintext highlighter-rouge">ServiceRequest</code></a></li>
+  <li><a href="https://www.hl7.org/fhir/supplyrequest.html"><code class="language-plaintext highlighter-rouge">SupplyRequest</code></a></li>
+</ul>
+
+<h2 id="213113-リソース定義">2.1.3.1.1.3. リソース定義</h2>
+<ul>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpobservationlabresult">リソース定義ページの参照</a></li>
+  <li><a href="https://simplifier.net/jp-core-draftv1/jpobservationlabresult/$download?format=json">リソース定義のダウンロード</a></li>
+</ul>
+
+<h3 id="2131131-必須要素">2.1.3.1.1.3.1. 必須要素</h3>
+
+<p>次のデータ項目はデータが存在しなければならない（必須）であるか、あるいは、データが送信システムに存在する場合はサポートされなければならない（Must Support）要素である。</p>
+
+<h4 id="21311311-必須">2.1.3.1.1.3.1.1. 必須</h4>
+<p>本プロファイルでは、次の要素を持たなければならない。</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">status</code>︓検体検査情報項目の状態は必須である。</li>
+  <li><code class="language-plaintext highlighter-rouge">category</code>︓このリソースが示す検体検査情報項目を分類するための区分であり、このプロファイルでは必須とする。</li>
+  <li><code class="language-plaintext highlighter-rouge">code</code>︓このリソースは何の検体検査情報項目であるかを示すため必須である。</li>
+  <li><code class="language-plaintext highlighter-rouge">subject</code>︓このリソースが示す検体検査情報項目が、どの患者のものかを示すため、このプロファイルでは参照する<code class="language-plaintext highlighter-rouge">patient</code>リソースの定義を必須とする。</li>
+  <li><code class="language-plaintext highlighter-rouge">effective[x]</code>：このリソースが示す検体検査情報項目が、いつ発生したかを示すためこのプロファイルでは必須とする。検体採取日時。</li>
+  <li><code class="language-plaintext highlighter-rouge">specimen</code>：このリソースが示す検体検査情報項目が、どの検体で検査されるのかを示すため、このプロファイルでは参照する<code class="language-plaintext highlighter-rouge">specimen</code>リソースの定義を必須とする。</li>
+</ul>
+
+<h4 id="21311312-mustsupport">2.1.3.1.1.3.1.2. MustSupport</h4>
+<p>本プロファイルでは、次の要素はMustSupportである。</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">value[x]</code>：このリソースが示す検体検査情報項目の結果である。</li>
+</ul>
+
+<h3 id="2131132-extensions定義">2.1.3.1.1.3.2. Extensions定義</h3>
+
+<p>このプロファイルでは拡張定義は行っていない。</p>
+
+<h3 id="2131133-用語定義">2.1.3.1.1.3.3. 用語定義</h3>
+<p>| Path                            | 定義                               | バインディング強度 | バリューセット |
+| ——————————- | ———————————- | —————— | ————– |
+| <code class="language-plaintext highlighter-rouge">Observation.category</code> | 「laboratoy」固定 | Preferred | <a href="https://hl7.org/fhir/valueset-observation-category.html"><code class="language-plaintext highlighter-rouge">ObservationCategoryCodes</code></a> |
+| <code class="language-plaintext highlighter-rouge">Observation.code</code> | JLAC10 | Preferred | <code class="language-plaintext highlighter-rouge">LabResultCode</code> |</p>
+
+<h3 id="2131134-制約一覧">2.1.3.1.1.3.4. 制約一覧</h3>
+
+  <!-- <span style="color:red;">レベルの指定が必要。</span>> -->
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>レベル</th>
+      <th>位置</th>
+      <th>説明</th>
+      <th>式</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>jp-core-1</td>
+      <td>Warning</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.effective[x]</code></td>
+      <td>一日を含む細かな検体採取日時を必要がある。（年月のみでは不足）</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.effectiveDateTime.exists() implies Observation.effectiveDateTime.toString().length() &gt;= 8</code></td>
+    </tr>
+    <tr>
+      <td>jp-core-2</td>
+      <td>Warning</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation</code></td>
+      <td><code class="language-plaintext highlighter-rouge">component</code> または、<code class="language-plaintext highlighter-rouge">hasMember</code> が存在しない場合、<code class="language-plaintext highlighter-rouge">value</code>が存在する必要がある。</td>
+      <td><code class="language-plaintext highlighter-rouge">component.empty() and hasMember.empty()) implies  value.exists()</code></td>
+    </tr>
+    <tr>
+      <td>obs-3</td>
+      <td>Guideline</td>
+      <td><code class="language-plaintext highlighter-rouge">Observation.referenceRange</code></td>
+      <td>可能な限り<code class="language-plaintext highlighter-rouge">low</code>、<code class="language-plaintext highlighter-rouge">high</code>に構造化すべき。構造化できない場合、あるいは<code class="language-plaintext highlighter-rouge">low</code>、<code class="language-plaintext highlighter-rouge">high</code>に該当しない場合は<code class="language-plaintext highlighter-rouge">text</code>を使用</td>
+      <td><code class="language-plaintext highlighter-rouge">low.exists() or high.exists() or text.exists()</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="213114-利用方法">2.1.3.1.1.4. 利用方法</h2>
+
+<h3 id="2131141-インタラクション一覧">2.1.3.1.1.4.1. インタラクション一覧</h3>
+
+<p><code class="language-plaintext highlighter-rouge">Observation</code>リソースのインタラクション一覧の定義はユースケースに依存せず共通であるため、共通情報プロファイルに記載されている。</p>
+
+<p><a name="l875">​</a><a href="Observation#ObsInteraction">Observation共通情報プロファイル#インタラクション一覧</a></p>
+
+<h3 id="2131142-operationおよびsearch-parameter-一覧">2.1.3.1.1.4.2. OperationおよびSearch Parameter 一覧</h3>
+
+<h4 id="21311421-search-parameter一覧">2.1.3.1.1.4.2.1. Search Parameter一覧</h4>
+
+<p>検体検査結果ユースケースのSearch Parameter一覧は共通情報プロファイルとは異なり以下の通りである。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>コンフォーマンス</th>
+      <th>パラメータ</th>
+      <th>型</th>
+      <th>例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SHOULD</td>
+      <td><code class="language-plaintext highlighter-rouge">subject</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">based-on</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code>,<code class="language-plaintext highlighter-rouge">token</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/Observation?subject=Patient/123&amp;code=http://loinc.org|8867-4&amp;date=le2020-12-31&amp;based-on=ServiceRequest/456</code></td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td><code class="language-plaintext highlighter-rouge">subject</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">value-quantity</code>,<code class="language-plaintext highlighter-rouge">based-on</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code>,<code class="language-plaintext highlighter-rouge">token</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">quantity</code>,<code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/Observation?subject=Patient/123&amp;code=http://loinc.org|8867-4&amp;date=le2020-12-31&amp;value-quantity=gt40&amp;based-on=ServiceRequest/456</code></td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td><code class="language-plaintext highlighter-rouge">subject</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">value-concept</code>,<code class="language-plaintext highlighter-rouge">based-on</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code>,<code class="language-plaintext highlighter-rouge">token</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/Observation?subject=Patient/123&amp;code=http://loinc.org|8867-4&amp;date=le2020-12-31&amp;value-concept=http://snomed.info/sct|1082004&amp;based-on=ServiceRequest/456</code></td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td><code class="language-plaintext highlighter-rouge">subject</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">value-string</code>,<code class="language-plaintext highlighter-rouge">based-on</code></td>
+      <td><code class="language-plaintext highlighter-rouge">reference</code>,<code class="language-plaintext highlighter-rouge">token</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">string</code>,<code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/Observation?subject=Patient/123&amp;code=http://loinc.org|8867-4&amp;date=le2020-12-31&amp;value-string=positive&amp;based-on=ServiceRequest/456</code></td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">value-quantity</code>,<code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code>,<code class="language-plaintext highlighter-rouge">quantity</code>,<code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/Observation?code=http://loinc.org|8867-4&amp;value-quantity=gt40&amp;subject=Patient/123</code></td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">value-concept</code>,<code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/Observation?code=http://loinc.org|8867-4&amp;value-concept=http://snomed.info/sct|1082004&amp;subject=Patient/123</code></td>
+    </tr>
+    <tr>
+      <td>SHOULD</td>
+      <td><code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">value-string</code>,<code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td><code class="language-plaintext highlighter-rouge">token</code>,<code class="language-plaintext highlighter-rouge">string</code>,<code class="language-plaintext highlighter-rouge">reference</code></td>
+      <td><code class="language-plaintext highlighter-rouge">GET [base]/Observation?code=http://loinc.org|8867-4&amp;value-string=positive&amp;subject=Patient/123</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="21311422-操作詳細">2.1.3.1.1.4.2.2. 操作詳細</h4>
+
+<h5 id="213114221-必須検索パラメータ">2.1.3.1.1.4.2.2.1. 必須検索パラメータ</h5>
+
+<p>このプロファイルでは必須（SHALL）としての検索項目は定義していない。</p>
+
+<h5 id="213114222-推奨検索パラメータ">2.1.3.1.1.4.2.2.2. 推奨検索パラメータ</h5>
+
+<p>次の検索パラメータはサポートすることが推奨される。（SHOULD）</p>
+
+<ol>
+  <li>臨床での検索：subject = Patient（対象患者）、検体採取日、検査項目、<code class="language-plaintext highlighter-rouge">basedOn = ServiceRequest</code>（検査オーダの依頼科）を指定した検索をサポートすることが望ましい。（SHOULD）</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">subject</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">based-on</code> の各検索パラメータに一致する<code class="language-plaintext highlighter-rouge">Observation</code>リソースを含むBundleを取得することができる。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?subject={reference}&amp;code={code}}&amp;date={date}}&amp;based-on={reference}
+</code></pre></div></div>
+
+<p>例：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?subject=Patient/123&amp;code=http://loinc.org|8867-4&amp;date=le2020-12-31&amp;based-on=ServiceRequest/456
+</code></pre></div></div>
+
+<ol>
+  <li>臨床（NST）での検索：<code class="language-plaintext highlighter-rouge">subject = Patient</code>（対象患者）、検査項目、検査値（数値、条件：基準値から外れている、等）、<code class="language-plaintext highlighter-rouge">basedOn = ServiceRequest</code>（検査オーダの依頼科）を指定した検索をサポートすることが望ましい。(SHOULD)</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">subject</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">value-quantity</code>,<code class="language-plaintext highlighter-rouge">based-on</code> の各検索パラメータに一致する<code class="language-plaintext highlighter-rouge">Observation</code>リソースを含むBundleを取得することができる。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?subject={reference}&amp;code={code}}&amp;date={date}}&amp;value-quantity={quantity}&amp;based-on={reference}
+</code></pre></div></div>
+
+<p>例：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?subject=Patient/123&amp;code=http://loinc.org\|8867-4&amp;date=le2020-12-31&amp;value-quantity=gt40&amp;based-on=ServiceRequest/456
+</code></pre></div></div>
+
+<ol>
+  <li>臨床（NST）での検索：<code class="language-plaintext highlighter-rouge">subject = Patient</code>（対象患者）、検査項目、検査値（コード）、<code class="language-plaintext highlighter-rouge">basedOn = ServiceRequest</code>（検査オーダの依頼科）を指定した検索をサポートすることが望ましい。(SHOULD)</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">subject</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">value-concept</code>,<code class="language-plaintext highlighter-rouge">based-on</code> の各検索パラメータに一致する<code class="language-plaintext highlighter-rouge">Observation</code>リソースを含むBundleを取得することができる。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?subject={reference}&amp;code={code}}&amp;date={date}}&amp;value-concept={code}&amp;based-on={reference}
+</code></pre></div></div>
+
+<p>例：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?subject=Patient/123&amp;code=http://loinc.org|8867-4&amp;date=le2020-12-31&amp;value-concept=http://snomed.info/sct|1082004&amp;based-on=ServiceRequest/456
+</code></pre></div></div>
+
+<ol>
+  <li>臨床（NST）での検索：subject = Patient（対象患者）、検査項目、検査値（文字列）、<code class="language-plaintext highlighter-rouge">basedOn = ServiceRequest</code>（検査オーダの依頼科）を指定した検索をサポートすることが望ましい。(SHOULD)</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">subject</code>,<code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">date</code>,<code class="language-plaintext highlighter-rouge">value-string</code>,<code class="language-plaintext highlighter-rouge">based-on</code> の各検索パラメータに一致する<code class="language-plaintext highlighter-rouge">Observation</code>リソースを含むBundleを取得することができる。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?subject={reference}&amp;code={code}}&amp;date={date}}&amp;value-string={string}&amp;based-on={reference}
+</code></pre></div></div>
+
+<p>例：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?subject=Patient/123&amp;code=http://loinc.org|8867-4&amp;date=le2020-12-31&amp;value-string=positive&amp;based-on=ServiceRequest/456
+</code></pre></div></div>
+
+<ol>
+  <li>研究での検索：検査項目、検査値（数値、条件：ある値以上／以下、等）、<code class="language-plaintext highlighter-rouge">subject = Patient</code>（対象患者で絞る場合あり）を指定した検索をサポートすることが望ましい。(SHOULD)</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">value-quantity</code>,<code class="language-plaintext highlighter-rouge">subject</code> の各検索パラメータに一致する<code class="language-plaintext highlighter-rouge">Observation</code>リソースを含むBundleを取得することができる。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?code={code}}&amp;value-quantity={quantity}&amp;subject={reference}&amp;
+</code></pre></div></div>
+
+<p>例：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?code=http://loinc.org|8867-4&amp;value-quantity=gt40&amp;subject=Patient/123
+</code></pre></div></div>
+
+<ol>
+  <li>研究での検索：検査項目、検査値（コード）、<code class="language-plaintext highlighter-rouge">subject = Patient</code>（対象患者で絞る場合あり）を指定した検索をサポートすることが望ましい。(SHOULD)</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">value-concept</code>,<code class="language-plaintext highlighter-rouge">subject</code> の各検索パラメータに一致する<code class="language-plaintext highlighter-rouge">Observation</code>リソースを含むBundleを取得することができる。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?code={code}}&amp;value-concept={code}&amp;subject={reference}
+</code></pre></div></div>
+
+<p>例：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?code=http://loinc.org|8867-4&amp;value-concept=http://snomed.info/sct|1082004&amp;subject=Patient/123
+</code></pre></div></div>
+
+<ol>
+  <li>研究での検索：検査項目、検査値（文字列）、<code class="language-plaintext highlighter-rouge">subject = Patient</code>（対象患者で絞る場合あり）を指定した検索をサポートすることが望ましい。(SHOULD)</li>
+</ol>
+
+<p><code class="language-plaintext highlighter-rouge">code</code>,<code class="language-plaintext highlighter-rouge">value-string</code>,<code class="language-plaintext highlighter-rouge">subject</code> の各検索パラメータに一致する<code class="language-plaintext highlighter-rouge">Observation</code>リソースを含むBundleを取得することができる。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?code={code}}&amp;value-string={string}&amp;subject={reference}
+</code></pre></div></div>
+
+<p>例：</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   GET [base]/Observation?code=http://loinc.org|8867-4&amp;value-string=positive&amp;subject=Patient/123
+</code></pre></div></div>
+
+<h5 id="213114223-オプション検索パラメータ">2.1.3.1.1.4.2.2.3. オプション検索パラメータ</h5>
+
+  <!-- オプションとして次の検索パラメータをサポートすることができる。(MAY) -->
+<p>このプロファイルでは、オプション検索パラメータ(MAY)は定義していない。</p>
+
+<h4 id="21311423-operation一覧">2.1.3.1.1.4.2.3. Operation一覧</h4>
+
+<p><code class="language-plaintext highlighter-rouge">Observation</code>リソースのOperation一覧の定義はユースケースに依存せず共通であるため、共通情報プロファイルに記載されている。</p>
+
+<p><a name="l1488">​</a><a href="Observation#ObsOperation">Observation共通情報プロファイル#Operation一覧</a></p>
+
+  <!-- #### 2.1.3.1.1.4.2.4. サンプル -->
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jpfhir.jp/">HL7 FHIR 日本実装検討WG</a>.  Package jp.jpfhir.experiments#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 1, 2022 16:21+0900">2022-04-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

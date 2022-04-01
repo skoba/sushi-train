@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="e36ff6f7-a0d9-4c59-9669-5650b9d4e209"/>
+  <meta>
+    <lastUpdated value="2022-04-01T16:21:14.789+09:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-EventStatus"/>
+    <resource>
+      <ValueSet>
+        <id value="jp-core-work-valueset-EventStatus"/>
+        <meta>
+          <versionId value="8"/>
+          <lastUpdated value="2021-08-17T03:37:59.553+00:00"/>
+          <source value="#arhvOhWjZNAcEKNY"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html">Procedureの状態 v1.0.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html">
+                <code>https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7fhir.jp-fhir-ImplementationGuide-jp-core-work-codesystem-EventStatus-preparation"> </a>  
+                  <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html#jp-core-work-codesystem-EventStatus-preparation">preparation</a>
+                </td>
+                <td>Preparation</td>
+                <td>コアイベントはまだ開始されていませんが、一部のステージングアクティビティが開始されています(e.gです。手術室準備)。準備段階は、請求目的のために追跡できます。</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7fhir.jp-fhir-ImplementationGuide-jp-core-work-codesystem-EventStatus-in-progress"> </a>  
+                  <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html#jp-core-work-codesystem-EventStatus-in-progress">in-progress</a>
+                </td>
+                <td>In Progress</td>
+                <td>イベントは現在発生中です。</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7fhir.jp-fhir-ImplementationGuide-jp-core-work-codesystem-EventStatus-not-done"> </a>  
+                  <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html#jp-core-work-codesystem-EventStatus-not-done">not-done</a>
+                </td>
+                <td>Not Done</td>
+                <td>イベントは準備ができないアクティビティの前に終了しました。I.eです。「メイン 」アクティビティはまだ開始されていません。準備活動と「メイン 」活動の境界は、状況に応じて異なります。</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7fhir.jp-fhir-ImplementationGuide-jp-core-work-codesystem-EventStatus-on-hold"> </a>  
+                  <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html#jp-core-work-codesystem-EventStatus-on-hold">on-hold</a>
+                </td>
+                <td>On Hold</td>
+                <td>イベントは一時停止されていますが、今後再開される予定です。</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7fhir.jp-fhir-ImplementationGuide-jp-core-work-codesystem-EventStatus-stopped"> </a>  
+                  <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html#jp-core-work-codesystem-EventStatus-stopped">stopped</a>
+                </td>
+                <td>Stopped</td>
+                <td>イベントは、意図したアクティビティーが完全に完了する前に終了しましたが、少なくとも一部の「メイン 」アクティビティー(準備ができていない)が発生した後に終了しました。</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7fhir.jp-fhir-ImplementationGuide-jp-core-work-codesystem-EventStatus-completed"> </a>  
+                  <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html#jp-core-work-codesystem-EventStatus-completed">completed</a>
+                </td>
+                <td>Completed</td>
+                <td>イベントは終了しました。</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7fhir.jp-fhir-ImplementationGuide-jp-core-work-codesystem-EventStatus-entered-in-error"> </a>  
+                  <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html#jp-core-work-codesystem-EventStatus-entered-in-error">entered-in-error</a>
+                </td>
+                <td>Entered in Error</td>
+                <td>この電子記録は存在すべきではなかったが、現実世界の決定がそれに基づいていた可能性はある。(実世界の活動が発生した場合、ステータスは「エラー入力」ではなく「停止」でなければなりません。)。</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---hl7fhir.jp-fhir-ImplementationGuide-jp-core-work-codesystem-EventStatus-unknown"> </a>  
+                  <a href="CodeSystem-jp-core-work-codesystem-EventStatus.html#jp-core-work-codesystem-EventStatus-unknown">unknown</a>
+                </td>
+                <td>Unknown</td>
+                <td>オーサリング/ソースシステムでは、このイベントに現在適用されているステータス値がわかりません。注記:この概念は「その他」には使用されません。リストされているステータスのいずれかが適用されると想定されますが、オーサリングシステムとソースシステムはどちらに該当するかわかりません。</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-EventStatus"/>
+        <version value="1.0.0"/>
+        <name value="EventStatus"/>
+        <title value="Procedureの状態"/>
+        <status value="draft"/>
+        <date value="2022-04-01T16:21:14+09:00"/>
+        <publisher value="HL7 FHIR 日本実装検討WG"/>
+        <contact>
+          <name value="HL7 FHIR 日本実装検討WG"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://jpfhir.jp/"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:f935f554-393c-4645-9ea6-a82106d9130d"/>
+          <timestamp value="2022-04-01T16:22:39+09:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus|1.0.0"/>
+          </parameter>
+          <contains>
+            <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+            <code value="preparation"/>
+            <display value="Preparation"/>
+          </contains>
+          <contains>
+            <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+            <code value="in-progress"/>
+            <display value="In Progress"/>
+          </contains>
+          <contains>
+            <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+            <code value="not-done"/>
+            <display value="Not Done"/>
+          </contains>
+          <contains>
+            <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+            <code value="on-hold"/>
+            <display value="On Hold"/>
+          </contains>
+          <contains>
+            <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+            <code value="stopped"/>
+            <display value="Stopped"/>
+          </contains>
+          <contains>
+            <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+            <code value="completed"/>
+            <display value="Completed"/>
+          </contains>
+          <contains>
+            <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+            <code value="entered-in-error"/>
+            <display value="Entered in Error"/>
+          </contains>
+          <contains>
+            <system value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"/>
+            <code value="unknown"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-ProcedureCodes"/>
+    <resource>
+      <ValueSet>
+        <id value="jp-core-work-valueset-ProcedureCodes"/>
+        <meta>
+          <versionId value="8"/>
+          <lastUpdated value="2021-08-17T03:38:15.455+00:00"/>
+          <source value="#mVE3UPRA1oq1NxrP"/>
+        </meta>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-jp-core-work-codesystem-ProcedureCodes.html">Procedureコード v1.0.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-ProcedureCodes"/>
+        <version value="1.0.0"/>
+        <name value="ProcedureCodes"/>
+        <title value="Procedureコード"/>
+        <status value="draft"/>
+        <date value="2022-04-01T16:21:14+09:00"/>
+        <publisher value="HL7 FHIR 日本実装検討WG"/>
+        <contact>
+          <name value="HL7 FHIR 日本実装検討WG"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://jpfhir.jp/"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:ece6bb4f-4cf4-4b8e-a60a-a05399a7a090"/>
+          <timestamp value="2022-04-01T16:22:39+09:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-ProcedureCodes|1.0.0"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

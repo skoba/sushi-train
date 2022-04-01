@@ -1,0 +1,186 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/core/experiments/MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8> a fhir:MedicationRequest;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "91c0caf5-6b57-4c80-b419-9196b23d41f8"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"91c0caf5-6b57-4c80-b419-9196b23d41f8\" </p></div><p><b>identifier</b>: id: 123456789012345, id: 123456789012345_01_001</p><p><b>status</b>: active</p><p><b>intent</b>: order</p><p><b>category</b>: 入院患者オーダ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v2-0482.html\">orderType</a>#I)</span>, 入院処方 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (MR9PCategory#IHP)</span>, 定時処方 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (JHSI0001#FTP)</span></p><p><b>medication</b>: <a href=\"urn:uuid:91c0caf5-6b57-4c80-b419-9196b23d41f8\">urn:uuid:91c0caf5-6b57-4c80-b419-9196b23d41f8</a></p><p><b>subject</b>: <a href=\"urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4\">urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4</a></p><p><b>authoredOn</b>: 2016-07-01</p><p><b>requester</b>: <a href=\"urn:uuid:b598aedf-28fb-406a-b38e-250d3e92ac60\">urn:uuid:b598aedf-28fb-406a-b38e-250d3e92ac60</a></p><p><b>insurance</b>: <a href=\"urn:uuid:df0ebf6d-e527-49d4-bce2-0885045a7afd\">urn:uuid:df0ebf6d-e527-49d4-bce2-0885045a7afd</a></p></div>"
+  ];
+  fhir:DomainResource.contained [
+     a fhir:Medication;
+     fhir:index 0;
+     fhir:Resource.id [ fhir:value "91c0caf5-6b57-4c80-b419-9196b23d41f8" ];
+     fhir:Medication.ingredient [
+       fhir:index 0;
+       fhir:Medication.ingredient.itemCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.74" ];
+           fhir:Coding.code [ fhir:value "100558502" ];
+           fhir:Coding.display [ fhir:value "ホリゾン注射液１０ｍｇ" ]
+         ]
+       ];
+       fhir:Medication.ingredient.strength [
+         fhir:Ratio.numerator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "アンプル" ];
+           fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+           fhir:Quantity.code [ fhir:value "AMP" ]
+         ];
+         fhir:Ratio.denominator [
+           fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ];
+           fhir:Quantity.unit [ fhir:value "回" ];
+           fhir:Quantity.system [ fhir:value "urn:oid:1.2.392.100495.20.2.101" ];
+           fhir:Quantity.code [ fhir:value "KAI" ]
+         ]
+       ]
+     ]
+  ], [
+     a fhir:BodyStructure;
+     fhir:index 1;
+     fhir:Resource.id [ fhir:value "0cdd1de5-d48f-4cf4-9238-2dba48fbbc39" ];
+     fhir:BodyStructure.location [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0550" ];
+         fhir:Coding.code [ fhir:value "ARM" ];
+         fhir:Coding.display [ fhir:value "腕" ]
+       ]
+     ];
+     fhir:BodyStructure.locationQualifier [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0495" ];
+         fhir:Coding.code [ fhir:value "L" ];
+         fhir:Coding.display [ fhir:value "左" ]
+       ]
+     ];
+     fhir:BodyStructure.patient [
+       fhir:Reference.reference [ fhir:value "urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4" ];
+       fhir:Reference.type [ fhir:value "Patient" ]
+     ]
+  ];
+  fhir:MedicationRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.11" ];
+     fhir:Identifier.value [ fhir:value "123456789012345" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.392.100495.20.3.81" ];
+     fhir:Identifier.value [ fhir:value "123456789012345_01_001" ]
+  ];
+  fhir:MedicationRequest.status [ fhir:value "active"];
+  fhir:MedicationRequest.intent [ fhir:value "order"];
+  fhir:MedicationRequest.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0482" ];
+       fhir:Coding.code [ fhir:value "I" ];
+       fhir:Coding.display [ fhir:value "入院患者オーダ" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7fhir.jp/medication/MR9PCategory" ];
+       fhir:Coding.code [ fhir:value "IHP" ];
+       fhir:Coding.display [ fhir:value "入院処方" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7fhir.jp/medication/JHSI0001" ];
+       fhir:Coding.code [ fhir:value "FTP" ];
+       fhir:Coding.display [ fhir:value "定時処方" ]
+     ]
+  ];
+  fhir:MedicationRequest.medicationReference [
+     fhir:Reference.reference [ fhir:value "urn:uuid:91c0caf5-6b57-4c80-b419-9196b23d41f8" ];
+     fhir:Reference.type [ fhir:value "Medication" ]
+  ];
+  fhir:MedicationRequest.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:79965040-5c95-4ce5-b8f7-efe606c364b4" ];
+     fhir:Reference.type [ fhir:value "Patient" ]
+  ];
+  fhir:MedicationRequest.authoredOn [ fhir:value "2016-07-01"^^xsd:date];
+  fhir:MedicationRequest.requester [
+     fhir:Reference.reference [ fhir:value "urn:uuid:b598aedf-28fb-406a-b38e-250d3e92ac60" ];
+     fhir:Reference.type [ fhir:value "PractitionerRole" ]
+  ];
+  fhir:MedicationRequest.insurance [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:df0ebf6d-e527-49d4-bce2-0885045a7afd" ];
+     fhir:Reference.type [ fhir:value "Coverage" ]
+  ];
+  fhir:MedicationRequest.dosageInstruction [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequestDevice" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "http://hl7fhir.jp/medication/99ILL" ];
+           fhir:Coding.code [ fhir:value "01" ];
+           fhir:Coding.display [ fhir:value "シリンジ" ]
+         ]
+       ]
+     ];
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.boundsPeriod [
+           fhir:Period.start [ fhir:value "2016-07-01T10:00:00+09:00"^^xsd:dateTime ]
+         ]
+       ]
+     ];
+     fhir:Dosage.site [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/bodySite" ];
+         fhir:Extension.valueReference [
+           fhir:Reference.reference [ fhir:value "urn:uuid:0cdd1de5-d48f-4cf4-9238-2dba48fbbc39" ];
+           fhir:Reference.type [ fhir:value "BodyStructure" ]
+         ]
+       ]
+     ];
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.35" ];
+         fhir:Coding.code [ fhir:value "30" ];
+         fhir:Coding.display [ fhir:value "静脈注射" ]
+       ]
+     ];
+     fhir:Dosage.method [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "urn:oid:1.2.392.100495.20.2.34" ];
+         fhir:Coding.code [ fhir:value "3" ];
+         fhir:Coding.display [ fhir:value "注射" ]
+       ]
+     ];
+     fhir:Dosage.doseAndRate [
+       fhir:index 0;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ];
+         fhir:Quantity.unit [ fhir:value "ミリリッター" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://jpfhir.jp/core/experiments/MedicationRequest/91c0caf5-6b57-4c80-b419-9196b23d41f8.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

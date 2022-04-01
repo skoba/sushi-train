@@ -1,0 +1,38 @@
+{
+  "resourceType": "ValueSet",
+  "id": "jp-core-work-valueset-EventStatus",
+  "meta": {
+    "versionId": "8",
+    "lastUpdated": "2021-08-17T03:37:59.553+00:00",
+    "source": "#arhvOhWjZNAcEKNY"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-jp-core-work-codesystem-EventStatus.html\"><code>https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus</code></a></li></ul></div>"
+  },
+  "url": "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-valueset-EventStatus",
+  "version": "1.0.0",
+  "name": "EventStatus",
+  "title": "Procedureの状態",
+  "status": "draft",
+  "date": "2022-04-01T16:21:14+09:00",
+  "publisher": "HL7 FHIR 日本実装検討WG",
+  "contact": [
+    {
+      "name": "HL7 FHIR 日本実装検討WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://jpfhir.jp/"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "https://hl7fhir.jp/fhir/ImplementationGuide/jp-core-work-codesystem-EventStatus"
+      }
+    ]
+  }
+}
