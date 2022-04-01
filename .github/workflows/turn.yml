@@ -7,15 +7,15 @@ on:
     branches: [ main ]
 
 env:
-  OUTPUT_DIR: ../docs
+  OUTPUT_DIR: docs
 
 jobs:
   turn:
 
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby-version: ['2.7', '3.0'] #, '3.1']
+    # strategy:
+    #   matrix:
+    #     ruby-version: ['2.7', '3.0'] #, '3.1']
 
     steps:
     - uses: actions/checkout@v2
@@ -25,19 +25,19 @@ jobs:
       uses: ruby/setup-ruby@v1
     # uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
       with:
-        ruby-version: ${{ matrix.ruby-version }}
-        working-directory: JP_CORE_EXPERIMENTAL
+        ruby-version: 3.1  # ${{ matrix.ruby-version }}
+        working-directory: ./
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Set up npm
       uses: actions/setup-node@v2
       with:
         node-version: '12.x'
         cache: 'npm'
-        cache-dependency-path: JP_CORE_EXPERIMENTAL/package-lock.json
+        cache-dependency-path: ./package-lock.json
     - name: Setup Sushi
       run: npm install -g fsh-sushi
     - name: Turn the table
-      working-directory: JP_CORE_EXPERIMENTAL
+      working-directory: ./
       run: bundle exec rake
     # - name: Check broken links.
     #   working-directory: JP_CORE_EXPERIMENTAL
